@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="keep youny.">
+  <meta name="author" content="Gloria">
+  <meta name="keywords" content="Gloria">
+  <title>CSS基础-实验楼 - Gloria</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_pf9vaxs7x7b.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Gloria</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-10-03 20:28" pubdate>
+        2020年10月3日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      28
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">CSS基础-实验楼</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h4 id="高级框操作"><a href="#高级框操作" class="headerlink" title="高级框操作"></a>高级框操作</h4><p>当你使用绝对的值设置了一个框的大小（如，固定像素的宽/高），允许的大小可能不适合放置内容，这种情况下内容会从盒子溢流。我们使用 overflow 属性来控制这种情况的发生。常用的值：</p>
+<ul>
+<li>auto:当内容过多的时候溢流的内容被隐藏，然后出现滚动条，让我们滚动查看所有的内容。</li>
+<li>hidden: 当内容过多，溢流的内容被隐藏。</li>
+<li>visible: 当内容过多，溢流的内容被显示在盒子的外边。</li>
+</ul>
+<h4 id="CSS-框类型"><a href="#CSS-框类型" class="headerlink" title="CSS 框类型"></a>CSS 框类型</h4><p>display 属性有很多的属性值。这里着重讲三个常见的 :block, inline, 和 inline-block。</p>
+<ul>
+<li>块级元素的特点：<ol>
+<li>一个块级元素独占一行。</li>
+<li>元素的高度、宽度、行高以及顶和底边距都可设置。</li>
+<li>元素宽度在不设置的情况下，是它本身父容器的 100%（和父元素的宽度一致），除非设定一个宽度。</li>
+<li>常见的块级元素：<div>、<p>、<h1>、<form>、<ul>和 <li>。</li>
+</ol>
+</li>
+<li>行内元素的特点：<ol>
+<li>和其他元素都在一行上。</li>
+<li>元素的高度、宽度、行高及顶部和底部边距不可设置。</li>
+<li>元素的宽度就是它包含的文字或图片的宽度，不可改变。</li>
+<li>常见的行内元素：<a>、<span>、<br>、<i>、<em>、<strong>、<label>。</li>
+</ol>
+</li>
+<li>行内块元素特点：同时具备内联元素、块状元素的特点。常见行内块元素：<img>、<input>。</li>
+</ul>
+<h4 id="Web-字体"><a href="#Web-字体" class="headerlink" title="Web 字体"></a>Web 字体</h4><p>首先我们通过 @font-face 指定要下载的字体文件。</p>
+<pre><code class="hljs css"><span class="hljs-keyword">@font-face</span> &#123;
+      <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Bitstream Vera Serif Bold&quot;</span>;
+      <span class="hljs-attribute">src</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf&quot;</span>);
+    &#125;</code></pre>
+
+<p>然后使用 @font-face 中指定的字体种类名称来将你的定制字体应用到你需要的地方，比如说：</p>
+<pre><code class="hljs css"><span class="hljs-selector-tag">body</span> &#123; <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Bitstream Vera Serif Bold&quot;</span>, serif &#125;</code></pre>
+
+<h4 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h4><p> flex 模型： <img src="https://mdn.mozillademos.org/files/3739/flex_terms.png/vm" srcset="/img/loading.gif" alt="img"></p>
+<h5 id="容器的属性："><a href="#容器的属性：" class="headerlink" title="容器的属性："></a>容器的属性：</h5><ul>
+<li>flex-direction 属性：设置主轴的方向（也就是项目的排列方向）。它的取值有：<ul>
+<li>row（默认值）：主轴为水平方向，起点在左端。</li>
+<li>row-reverse：主轴为水平方向，起点在右端。</li>
+<li>column：主轴为垂直方向，起点在上沿。</li>
+<li>column-reverse：主轴为垂直方向，起点在下沿。</li>
+</ul>
+</li>
+<li>flex-wrap属性：默认情况下，项目都排在一条线（轴线）上。flex-wrap 属性定义如果一条轴线排不下，如何换行。它的取值有：<ul>
+<li>nowrap（默认）：不换行。</li>
+<li>wrap：换行，第一行在上方。</li>
+<li>wrap-reverse：换行，第一行在下方。</li>
+</ul>
+</li>
+<li>flex-flow 属性是 flex-direction 属性和 flex-wrap 属性的简写形式，默认值为 row nowrap。</li>
+<li>justify-content 属性定义了项目在主轴上的对齐方式。它的取值有：<ul>
+<li>flex-start：使所有 flex 项都位于主轴的开始处。</li>
+<li>flex-end：使所有 flex 项到主轴的结尾处。</li>
+<li>center：使 flex 项在主轴居中。</li>
+<li>space-between：使 flex 项两端对齐，项目之间的间隔都相等。</li>
+<li>space-around：使每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</li>
+</ul>
+</li>
+<li>align-items 属性定义项目在交叉轴上如何对齐。它可能取5个值，具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下：<ul>
+<li>flex-start：交叉轴的起点对齐。</li>
+<li>flex-end：交叉轴的终点对齐。</li>
+<li>center：交叉轴的中点对齐。</li>
+<li>baseline: 项目的第一行文字的基线对齐。</li>
+<li>stretch（默认值）：如果项目未设置高度或设为 auto，将占满整个容器的高度。</li>
+</ul>
+</li>
+<li>align-content 属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。它的可能取值为：<ul>
+<li>flex-start：与交叉轴的起点对齐。</li>
+<li>flex-end：与交叉轴的终点对齐。</li>
+<li>center：与交叉轴的中点对齐。</li>
+<li>space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。</li>
+<li>space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li>
+<li>stretch（默认值）：轴线占满整个交叉轴。</li>
+</ul>
+</li>
+</ul>
+<h5 id="项目的属性："><a href="#项目的属性：" class="headerlink" title="项目的属性："></a>项目的属性：</h5><ul>
+<li>order 属性定义项目的排列顺序。数值越小，排列越靠前，默认为 0。</li>
+<li>flex-grow 属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。如果所有项目的 flex-grow 属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的 flex-grow 属性为 2，其他项目都为 1，则前者占据的剩余空间将比其他项多一倍。</li>
+<li>flex-shrink 属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小。如果所有项目的 flex-shrink 属性都为 1，当空间不足时，都将等比例缩小。如果一个项目的 flex-shrink 属性为 0，其他项目都为 1，则空间不足时，前者不缩小。负值对该属性无效。</li>
+<li>flex-basis 属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为 auto，即项目的本来大小。它可以设为跟 width 或 height 属性一样的值（比如 350 px），则项目将占据固定空间。</li>
+<li>flex 属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 1 auto。后两个属性可选。该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</li>
+<li>align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。该属性可能取 6 个值，除了 auto，其他都与 align-items 属性完全一致。</li>
+</ul>
+<h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><ul>
+<li><p>background-image 还有一组可用的值：颜色渐变。通过 linear-gradient() 函数设置，函数至少需要用逗号分隔的三个参数——背景中渐变的方向，开始的颜色和结尾的颜色。例如：</p>
+</li>
+<li><style>
+  .box{
+            width: 100px;
+            height: 100px;
+            background-image:     linear-gradient(to bottom, red, blue);
+            }
+</style>
+
+
+</li>
+</ul>
+<h4 id="轮廓"><a href="#轮廓" class="headerlink" title="轮廓"></a>轮廓</h4><ul>
+<li>outline-color 设置轮廓的颜色。取值和其余颜色的取值一样。</li>
+<li>outline-style 设置轮廓的样式。取值如下：</li>
+</ul>
+<p><img src="https://doc.shiyanlou.com/document-uid897174labid9222timestamp1545984710417.png/wm" srcset="/img/loading.gif" alt="img"></p>
+<ul>
+<li>outline-width 设置轮廓的宽度。它的值有：<ul>
+<li>thin 规定细轮廓。</li>
+<li>medium 默认取值规定中等的轮廓。</li>
+<li>thick 规定粗的轮廓。</li>
+<li>length 允许你自定义轮廓粗细的值。</li>
+<li>inherit 规定应该从父元素继承轮廓宽度的设置。</li>
+</ul>
+</li>
+<li>outline 上面三个属性的连写。</li>
+</ul>
+<pre><code class="hljs css">&lt;<span class="hljs-selector-tag">style</span>&gt;
+      <span class="hljs-selector-tag">p</span> &#123;
+          <span class="hljs-attribute">outline</span>: red dotted thick;
+          <span class="hljs-attribute">width</span>:<span class="hljs-number">100px</span>;
+          <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+      &#125;
+  &lt;/style&gt;</code></pre>
+<h4 id="盒子阴影"><a href="#盒子阴影" class="headerlink" title="盒子阴影"></a>盒子阴影</h4><p>box-shadow 属性设置盒子阴影。box-shadow 有四个值:</p>
+<ul>
+<li><p>第一个值是水平偏移量（水平阴影）：即向右的距离，阴影被从原始的框中偏移(如果值为负的话则为左)。</p>
+</li>
+<li><p>第二个值是垂直偏移量（垂直阴影）：即阴影从原始盒子中向下偏移的距离(或向上，如果值为负)。</p>
+</li>
+<li><p>第三个值是模糊半径（影子大小）：即在阴影中应用的模糊度。</p>
+</li>
+<li><p>第四个值是阴影的基本颜色。你可以使用任何长度和颜色单位来定义这些值。</p>
+<p>box-shadow: 5px 5px 5px red;</p>
+</li>
+</ul>
+<p>使用 inset 关键字，把它放在一个影子声明的开始，使它变成一个内部阴影，而不是一个外部阴影。</p>
+<p> box-shadow: inset 5px 5px 5px red;</p>
+<h4 id="选择器分类"><a href="#选择器分类" class="headerlink" title="选择器分类"></a>选择器分类</h4><ul>
+<li>基础选择器：标签选择器，类选择器，ID 选择器，通配符选择器</li>
+<li>组合选择器：标签指定式选择器，后代选择器，并集选择器</li>
+<li>属性选择器</li>
+<li>伪类选择器</li>
+</ul>
+<h4 id="样式优先级"><a href="#样式优先级" class="headerlink" title="样式优先级"></a>样式优先级</h4><ul>
+<li>优先级：<ul>
+<li>规则（1）：行内样式 &gt; 页内样式 &gt; 外部引用样式 &gt; 浏览器默认样式。</li>
+<li>规则（2）：important &gt; 内联 &gt; ID &gt; 伪类|类 | 属性选择 &gt; 标签 &gt; 伪对象 &gt; 通配符 &gt; 继承。另外权重会叠加，所以为了便于理解，权重设置如下：<ul>
+<li>1 表示标签选择器的权重</li>
+<li>10 表示类选择器的权重</li>
+<li>100 表示 ID 选择器的权重</li>
+<li>1000 表示内联样式的权重</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>注：权重相同时，CSS 遵循就近原则。也就是说靠近元素的样式具有最大的优先级，或者说排在最后的样式优先级最大。所有都相同时，声明靠后的优先级大。</p>
+<h4 id="CSS-排版"><a href="#CSS-排版" class="headerlink" title="CSS 排版"></a>CSS 排版</h4><h5 id="静态定位"><a href="#静态定位" class="headerlink" title="静态定位"></a>静态定位</h5><pre><code class="hljs css"><span class="hljs-selector-tag">position</span>：<span class="hljs-selector-tag">static</span>;</code></pre>
+
+<p>静态定位是每个元素获取的默认值，所以我们基本上都不需要再单独设置它</p>
+<h5 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h5><pre><code class="hljs css"><span class="hljs-selector-tag">position</span>：<span class="hljs-selector-tag">absolute</span>;</code></pre>
+
+<p>绝对定位有以下特点：</p>
+<ul>
+<li>绝对定位以浏览器左上角为基准设置位置</li>
+<li>当一个盒子包含在另一个盒子中，父盒子未设置定位，子盒子以浏览器左上角为基准设置位置； 当父盒子设置定位，子盒子以父盒子左上角为基准设置位置</li>
+<li>绝对定位不占空间位置（类似于浮动）</li>
+</ul>
+<h5 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a>相对定位</h5><pre><code class="hljs css"><span class="hljs-selector-tag">position</span>：<span class="hljs-selector-tag">relative</span>;</code></pre>
+
+<p>相对定位有以下特点：</p>
+<ul>
+<li>相对定位以元素自身的位置为基准设置位置</li>
+<li>相对定位要占空间位置</li>
+<li>一般子元素设置绝对定位，父元素设置相对定位（子绝父相）</li>
+</ul>
+<h5 id="固定定位"><a href="#固定定位" class="headerlink" title="固定定位"></a>固定定位</h5><p>固定定位表现类似于绝对定位，只有一个主要区别：绝对定位固定元素是相对于 <html> 元素或其最近的定位祖先，而固定定位固定元素则是相对于浏览器视口本身。固定定位也不占空间位置，语法为：</p>
+<pre><code class="hljs css"><span class="hljs-selector-tag">position</span>：<span class="hljs-selector-tag">fixed</span>;</code></pre>
+
+<h5 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h5><p>z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。用于处理当多个元素重叠的时候，哪些元素设置在其他元素的顶部。特别需要注意的是元素可拥有负的 z-index 属性值，属性值没有单位，只有数字。Z-index 仅能在定位元素上奏效（例如 position:absolute;）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/CSS/">CSS</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/10/03/Linux-%E9%85%8D%E7%BD%AELEMP%E7%8E%AF%E5%A2%83/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Linux 配置LEMP环境</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/10/03/HTML%E5%9F%BA%E7%A1%80-%E5%AE%9E%E9%AA%8C%E6%A5%BC/">
+                        <span class="hidden-mobile">HTML基础-实验楼</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "CSS基础-实验楼&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
