@@ -302,41 +302,32 @@
 
 
 <h4 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h4><ul>
-<li>标题：<header></li>
-<li>导航栏：<nav></li>
-<li>主要内容：<main>具有代表性的内容段落主题可以使用 <article>, <section>，<div>元素。</li>
-<li>侧栏：<aside>经常嵌套在<main>中</li>
-<li>页脚：<footer></li>
+<li>标题：header</li>
+<li>导航栏：nav</li>
+<li>主要内容：main 具有代表性的内容段落主题可以使用 article   section，div元素。</li>
+<li>侧栏：aside经常嵌套在main中</li>
+<li>页脚：footer</li>
 </ul>
-<h4 id="表单基本标签"><a href="#表单基本标签" class="headerlink" title="表单基本标签"></a>表单基本标签</h4><p>表格的其他常用属性：<br><img src="https://doc.shiyanlou.com/document-uid897174labid9222timestamp1545370661694.png/wm" srcset="/img/loading.gif" alt="表格常用属性"></p>
+<h4 id="表单基本标签"><a href="#表单基本标签" class="headerlink" title="表单基本标签"></a>表单基本标签</h4><p>表格的其他常用属性：</p>
 <p>colspan  合并行</p>
 <p>rowspan 和并列</p>
 <p>caption 定义标题</p>
 <ul>
-<li><thead></thead>：用于定义表格的头部，一般包含网页的logo和导航等头部信息,位于<table></table>之中。
+<li><p>thead：用于定义表格的头部，一般包含网页的logo和导航等头部信息,位于table之中。</p>
 </li>
-<li><tfoot></tfoot>：用于定义表格的页脚，一般包含网页底部的企业信息，地址联系方式等，位于<table></table>标记之中，<thead></thead>标记之后。
+<li><p>tfoot：用于定义表格的页脚，一般包含网页底部的企业信息，地址联系方式等，位于table标记之中，thead标记之后。</p>
 </li>
-<li><tbody></tbody>：用于定义表格的主体，一般包含网页中除头部和底部之外的其他内容，位于<table></table>标记之中，<tfoot></tfoot>标记之后。
-
+<li><p>tbody：用于定义表格的主体，一般包含网页中除头部和底部之外的其他内容，位于table标记之中，tfoot标记之后。</p>
 <h5 id="注：案例-：搜狐股票"><a href="#注：案例-：搜狐股票" class="headerlink" title="注：案例 ：搜狐股票"></a>注：案例 ：搜狐股票</h5></li>
 </ul>
 <h4 id="多媒体嵌入"><a href="#多媒体嵌入" class="headerlink" title="多媒体嵌入"></a>多媒体嵌入</h4><ul>
 <li><p>video </p>
-<p><img src="https://doc.shiyanlou.com/document-uid897174labid9222timestamp1545359137370.png/wm" srcset="/img/loading.gif" alt="img"></p>
 </li>
 <li><p>audio </p>
-<audio controls>
-            <source src="http://labfile.oss.aliyuncs.com/courses/1236/平凡之路.mp3" type="audio/mp3">
-                平凡之路
-</audio>
-
 </li>
-</ul>
-<p>音频播放器所占用的空间比视频播放器要小，由于没有视觉部件，只需要显示出能控制音频播放的控件。它不支持 width/height 属性。</p>
-<ul>
+<li><p>音频播放器所占用的空间比视频播放器要小，由于没有视觉部件，只需要显示出能控制音频播放的控件。它不支持 width/height 属性。</p>
+</li>
 <li><p>iframe </p>
-<p><img src="https://doc.shiyanlou.com/document-uid897174labid9222timestamp1545289083920.png/wm" srcset="/img/loading.gif" alt="avatar"></p>
 </li>
 </ul>
 <h4 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h4><p>表单在网页中主要负责数据采集功能。一个表单有三个基本组成部分：</p>
@@ -345,9 +336,8 @@
 <li>表单域：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。</li>
 <li>表单按钮：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的 CGI 脚本或者取消输入，还可以用表单按钮来控制其他定义了处理脚本的处理工作。</li>
 </ul>
-<fieldset> 元素组合表单中的相关数据，<legend> 元素为 <fieldset> 元素定义标题。
-
-<p><label> 标签的 for 属性应当与相关元素的 id 属性相同，使得<label> 标签与 <input> 正确相关联。</p>
+<p>fieldset 元素组合表单中的相关数据，legend 元素为 fieldset元素定义标题。</p>
+<p>label 标签的 for 属性应当与相关元素的 id 属性相同，使得label 标签与 input 正确相关联。</p>
 <p>原生表单组件，主要包含文本输入框、单行文本框、e-mail 输入框、密码输入框、搜索框、电话号码输入框、URL 输入框、多行文本框、下拉组件、可勾选组件、按钮。</p>
 <h4 id="文本输入框"><a href="#文本输入框" class="headerlink" title="文本输入框"></a>文本输入框</h4><p>所有文本域的通用规范：</p>
 <ul>
@@ -359,12 +349,10 @@
 </li>
 <li><p>如果浏览器支持的话，可以进行拼写检查。</p>
 <p>文本区域在右下角有一个拖放操作，允许用户调整它的大小。这种调整能力可以通过使用 CSS 设置文本区域的 resize 值为 none 来关闭。</p>
-<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="下拉组件"><a href="#下拉组件" class="headerlink" title="下拉组件"></a>下拉组件</h4><p><select>和<option>标记的常用属性：</p>
-<p><img src="https://doc.shiyanlou.com/document-uid897174labid9222timestamp1545639862281.png/wm" srcset="/img/loading.gif" alt="img"></p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="下拉组件"><a href="#下拉组件" class="headerlink" title="下拉组件"></a>下拉组件</h4><p>自动补全组件:</p>
+<p>使用<datalist>元素来为表单小部件提供建议 的、自动完成的值，并使用一些<option>子元素来指定要显示的值。然后使用 list 属性将数据列表绑定到一个文本域(通常是一个 <input>元素)。</p>
 </li>
 </ul>
-<p><strong>自动补全组件：</strong></p>
-<p>使用<datalist>元素来为表单小部件提供建议的、自动完成的值，并使用一些<option>子元素来指定要显示的值。然后使用 list 属性将数据列表绑定到一个文本域(通常是一个 <input>元素)。</p>
 
             </div>
             <hr>

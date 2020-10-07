@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      1k 字
     </span>
   
 
@@ -189,7 +189,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      15
+      14
        分钟
     </span>
   
@@ -229,7 +229,6 @@ sudo ufw <span class="hljs-keyword">allow</span> <span class="hljs-string">&#x27
 
 <h5 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h5><p>sudo ufw status</p>
 <p>浏览器输入ip地址或域名</p>
-<p>![image-20200330152040551](/Users/gloriazhang/Library/Application Support/typora-user-images/image-20200330152040551.png)</p>
 <h4 id="2-安装MySQL"><a href="#2-安装MySQL" class="headerlink" title="2.安装MySQL"></a>2.安装MySQL</h4><pre><code class="hljs sql">sudo apt <span class="hljs-keyword">install</span> mysql-<span class="hljs-keyword">server</span></code></pre>
 
 <p>mysql -u root -p</p>
@@ -282,7 +281,7 @@ sudo ufw <span class="hljs-keyword">allow</span> <span class="hljs-string">&#x27
 <p>如下</p>
 <pre><code class="hljs nginx"><span class="hljs-section">server</span> &#123;
         <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>;
-        <span class="hljs-attribute">root</span> /var/www/html;
+        <span class="hljs-attribute">root</span> /var/html;
         <span class="hljs-attribute">index</span> index.php index.html index.htm index.nginx-debian.html;
         <span class="hljs-attribute">server_name</span> man.com;
 
@@ -313,7 +312,7 @@ sudo ufw <span class="hljs-keyword">allow</span> <span class="hljs-string">&#x27
 
 <pre><code class="hljs ebnf"><span class="hljs-attribute">sudo systemctl reload nginx</span></code></pre>
 
-<h3 id="三、建一个PHP文件测试配置"><a href="#三、建一个PHP文件测试配置" class="headerlink" title="三、建一个PHP文件测试配置"></a>三、建一个PHP文件测试配置</h3><pre><code class="hljs awk">sudo nano <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/html/i</span>nfo.php</code></pre>
+<h3 id="三、建一个PHP文件测试配置"><a href="#三、建一个PHP文件测试配置" class="headerlink" title="三、建一个PHP文件测试配置"></a>三、建一个PHP文件测试配置</h3><pre><code class="hljs awk">sudo nano <span class="hljs-regexp">/var/</span>html/info.php</code></pre>
 
 <p>配置如下</p>
 <pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span>
@@ -326,7 +325,7 @@ phpinfo();</code></pre>
 <p>wow！配置成功！</p>
 <p>![image-20200330164401080](/Users/gloriazhang/Library/Application Support/typora-user-images/image-20200330164401080.png)</p>
 <p>最后，我们最好删除测试文件，因为它实际上可以为未经授权的用户提供有关您的配置的一些提示，这些提示可能有助于他人尝试闯入。</p>
-<pre><code class="hljs awk">sudo rm <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/html/i</span>nfo.php</code></pre>
+<pre><code class="hljs awk">sudo rm <span class="hljs-regexp">/var/</span>html/info.php</code></pre>
 
 
 
@@ -340,13 +339,12 @@ phpinfo();</code></pre>
 </ul>
 </li>
 </ul>
-<h5 id="2）使用文件传输工具例如-filezilla-将上面两个文件传到服务器上，移动到Nginx目录下"><a href="#2）使用文件传输工具例如-filezilla-将上面两个文件传到服务器上，移动到Nginx目录下" class="headerlink" title="2）使用文件传输工具例如 filezilla 将上面两个文件传到服务器上，移动到Nginx目录下"></a>2）使用文件传输工具例如 <a target="_blank" rel="noopener" href="https://filezilla-project.org/download.php?platform=osx">filezilla</a> 将上面两个文件传到服务器上，移动到Nginx目录下</h5><p>![image-20200403132753503](/Users/gloriazhang/Library/Application Support/typora-user-images/image-20200403132753503.png)</p>
-<h5 id="3）在-etc-nginx-sites-available-目录下新建一个配置文件"><a href="#3）在-etc-nginx-sites-available-目录下新建一个配置文件" class="headerlink" title="3）在 /etc/nginx/sites-available 目录下新建一个配置文件"></a>3）在 /etc/nginx/sites-available 目录下新建一个配置文件</h5><pre><code class="hljs awk">sudo vi <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-available/</span><span class="hljs-number">1</span>inc.cn</code></pre>
+<h5 id="2）使用文件传输工具例如-filezilla-将上面两个文件传到服务器上，移动到Nginx目录下"><a href="#2）使用文件传输工具例如-filezilla-将上面两个文件传到服务器上，移动到Nginx目录下" class="headerlink" title="2）使用文件传输工具例如 filezilla 将上面两个文件传到服务器上，移动到Nginx目录下"></a>2）使用文件传输工具例如 <a target="_blank" rel="noopener" href="https://filezilla-project.org/download.php?platform=osx">filezilla</a> 将上面两个文件传到服务器上，移动到Nginx目录下</h5><h5 id="3）在-etc-nginx-sites-available-目录下新建一个配置文件"><a href="#3）在-etc-nginx-sites-available-目录下新建一个配置文件" class="headerlink" title="3）在 /etc/nginx/sites-available 目录下新建一个配置文件"></a>3）在 /etc/nginx/sites-available 目录下新建一个配置文件</h5><pre><code class="hljs awk">sudo vi <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-available/</span><span class="hljs-number">1</span>inc.cn</code></pre>
 
 <pre><code class="hljs nginx"><span class="hljs-section">server</span> &#123;
         <span class="hljs-attribute">listen</span> <span class="hljs-number">443</span>;
         <span class="hljs-attribute">ssl</span> <span class="hljs-literal">on</span>;
-        <span class="hljs-attribute">root</span> /var/www/html;
+        <span class="hljs-attribute">root</span> /var/html;
         <span class="hljs-attribute">index</span> index.php index.html index.htm index.nginx-debian.html;
         <span class="hljs-attribute">server_name</span> www.1inc.cn;
         <span class="hljs-attribute">ssl_certificate</span> 1_www.1inc.cn_bundle.crt;
@@ -389,7 +387,7 @@ phpinfo();</code></pre>
      <span class="hljs-attribute">ssl_prefer_server_ciphers</span> <span class="hljs-literal">on</span>;
      <span class="hljs-attribute">location</span> / &#123;
         <span class="hljs-comment">#网站主页路径。此路径仅供参考，具体请您按照实际目录操作。</span>
-         <span class="hljs-attribute">root</span> /var/www/html/<span class="hljs-regexp">www.*</span>*<span class="hljs-regexp">*.cn</span>; 
+         <span class="hljs-attribute">root</span> /var/html/<span class="hljs-regexp">www.*</span>*<span class="hljs-regexp">*.cn</span>; 
          <span class="hljs-attribute">index</span>  index.html index.htm;
      &#125;
  &#125;</code></pre>
@@ -408,7 +406,8 @@ phpinfo();</code></pre>
 <p>#####6）检查配置文件，直到不出错</p>
 <pre><code class="hljs ebnf"><span class="hljs-attribute">sudo nginx -t</span></code></pre>
 
-<p>![image-20200403133538833](/Users/gloriazhang/Library/Application Support/typora-user-images/image-20200403133538833.png)</p>
+
+
 <p>7）最后，重新加载Nginx进行必要的更改</p>
 <pre><code class="hljs ebnf"><span class="hljs-attribute">sudo systemctl reload nginx</span></code></pre>
 
