@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      978 字
+      977 字
     </span>
   
 
@@ -253,16 +253,12 @@ sudo ufw <span class="hljs-keyword">allow</span> <span class="hljs-string">&#x27
 
 
 
-
-
-
-
 <p>有以上输出，则可以退出mysql</p>
 <pre><code class="hljs mysql">exit</code></pre>
 
 
 
-<p><strong>Note</strong>此时 sudo mysql 无法继续访问mysql，我们可以通过以下命令登入：</p>
+<p><strong>Note</strong>  : 此时 sudo mysql 无法继续访问mysql，我们可以通过以下命令登入：</p>
 <pre><code class="hljs ebnf"><span class="hljs-attribute">mysql -u root -p</span></code></pre>
 
 <h5 id="ERROR-1819-HY000"><a href="#ERROR-1819-HY000" class="headerlink" title="ERROR 1819(HY000)"></a>ERROR 1819(HY000)</h5><p>如果出现 ERROR 1819 (HY000): Your password does not satisfy the current policy requirements</p>
@@ -368,10 +364,6 @@ phpinfo();</code></pre>
 
 
 
-
-
-
-
 <p>以下为官方配置文件，可参照更改</p>
 <pre><code class="hljs nginx"><span class="hljs-section">server</span> &#123;
      <span class="hljs-comment">#SSL 访问端口号为 443</span>
@@ -395,24 +387,14 @@ phpinfo();</code></pre>
      &#125;
  &#125;</code></pre>
 
-
-
 <h5 id="4）创建链接启动服务器"><a href="#4）创建链接启动服务器" class="headerlink" title="4）创建链接启动服务器"></a>4）创建链接启动服务器</h5><pre><code class="hljs awk">sudo ln -s <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-available/</span><span class="hljs-number">1</span>inc.cn <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-enabled/</span>
 </code></pre>
 
-
-
 <h5 id="5）然后，从-sites-enabled-目录中取消默认配置文件的链接："><a href="#5）然后，从-sites-enabled-目录中取消默认配置文件的链接：" class="headerlink" title="5）然后，从/ sites-enabled /目录中取消默认配置文件的链接："></a>5）然后，从/ sites-enabled /目录中取消默认配置文件的链接：</h5><pre><code class="hljs gradle">sudo unlink <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-enabled/</span><span class="hljs-keyword">default</span></code></pre>
 
+<h5 id="6）检查配置文件，直到不出错"><a href="#6）检查配置文件，直到不出错" class="headerlink" title="6）检查配置文件，直到不出错"></a>6）检查配置文件，直到不出错</h5><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo nginx -t</span></code></pre>
 
-
-<p>#####6）检查配置文件，直到不出错</p>
-<pre><code class="hljs ebnf"><span class="hljs-attribute">sudo nginx -t</span></code></pre>
-
-
-
-<p>7）最后，重新加载Nginx进行必要的更改</p>
-<pre><code class="hljs ebnf"><span class="hljs-attribute">sudo systemctl reload nginx</span></code></pre>
+<h5 id="7）最后，重新加载Nginx进行必要的更改"><a href="#7）最后，重新加载Nginx进行必要的更改" class="headerlink" title="7）最后，重新加载Nginx进行必要的更改"></a>7）最后，重新加载Nginx进行必要的更改</h5><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo systemctl reload nginx</span></code></pre>
 
 
             </div>
