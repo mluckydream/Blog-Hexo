@@ -1,0 +1,1624 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="keep youny.">
+  <meta name="author" content="Gloria">
+  <meta name="keywords" content="Gloria">
+  <title>Gloria</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_pf9vaxs7x7b.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Gloria</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-05-04 19:50" pubdate>
+        2020年5月4日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      19.8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      219
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h3 id="提问"><a href="#提问" class="headerlink" title="提问"></a>提问</h3><p><strong>“请问这份工作到岗的第一个月，有哪些紧急的需要完成的工作内容“（意思是我回去后可以提前先准备，以备高质高量的完成工作职责）</strong></p>
+<p>您好，我是…，目前是软件工程大三在校生，我在校期间参加多项课程实践活动，参与了多个应用系统的开发与设计，熟悉web开发工具和应用系统的各种开发方法，我曾，，，，也曾，，，，，对于我今天所应聘的岗位，我认为，，，，因此我认为我能够胜任该岗位，能够得到本次面试机会也让我深感荣幸，谢谢。（辽宁人）</p>
+<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><h4 id="HTTP协议常见状态码"><a href="#HTTP协议常见状态码" class="headerlink" title="HTTP协议常见状态码"></a>HTTP协议常见状态码</h4><ul>
+<li><code>200 OK</code> 客户端请求成功</li>
+<li><code>301 Moved Permanently</code> 请求永久重定向表示请求的资源已被分配了新的 URI</li>
+<li><code>302 Moved Temporarily</code> 请求临时重定向</li>
+<li><code>304 Not Modified</code> 文件未修改，可以直接使用缓存的文件。</li>
+<li><code>400 Bad Request</code> 由于客户端请求有语法错误，不能被服务器所理解。</li>
+<li><code>401 Unauthorized</code> 请求未经授权。这个状态代码必须和WWW-Authenticate报头域一起使用</li>
+<li><code>403 Forbidden</code> 服务器收到请求，但是拒绝提供服务。服务器通常会在响应正文中给出不提供服务的原因</li>
+<li><code>404 Not Found</code> 请求的资源不存在，例如，输入了错误的URL</li>
+<li><code>500 Internal Server Error</code> 服务器发生不可预期的错误，导致无法完成客户端的请求。</li>
+<li><code>503 Service Unavailable</code> 服务器当前不能够处理客户端的请求，在一段时间之后，服务器可能会恢复正常。</li>
+</ul>
+<h4 id="HTTP-和-HTTPS-区别"><a href="#HTTP-和-HTTPS-区别" class="headerlink" title="HTTP 和 HTTPS 区别"></a>HTTP 和 HTTPS 区别</h4><ol>
+<li>HTTP 传输的数据都是未加密的，也就是明文的，HTTPS 协议是由 HTTP 和 SSL 协议构建的可进行加密传输和身份认证的网络协议，比 HTTP 协议的安全性更高。</li>
+<li>HTTPS 协议需要 CA 证书，费用较高；</li>
+<li>使用不同的链接方式，端口也不同，一般而言，HTTP 协议的端口为 80，HTTPS 的端口为 443；</li>
+</ol>
+<h4 id="HTTPS-协议的工作原理"><a href="#HTTPS-协议的工作原理" class="headerlink" title="HTTPS 协议的工作原理"></a>HTTPS 协议的工作原理</h4><ol>
+<li>客户使用 HTTPS URL 访问服务器，则要求 web 服务器建立 SSL 链接。</li>
+<li>web 服务器接收到客户端的请求之后，会将网站的证书（证书中包含了公钥），返回给客户端。</li>
+<li>客户端和 web 服务器端开始协商 SSL 链接的安全等级，也就是加密等级。</li>
+<li>客户端浏览器通过双方协商一致的安全等级，建立会话密钥，然后通过网站的公钥来加密会话密钥，并传送给网站。</li>
+<li>web 服务器通过自己的私钥解密出会话密钥。</li>
+<li>web 服务器通过会话密钥加密与客户端之间进行通信。</li>
+</ol>
+<h4 id="HTTP-2-0-特性"><a href="#HTTP-2-0-特性" class="headerlink" title="HTTP/2.0 特性"></a>HTTP/2.0 特性</h4><blockquote>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/34074946">HTTP/2 相比 1.0 有哪些重大改进？</a></p>
+</blockquote>
+<ol>
+<li>首部压缩</li>
+<li>多路复用</li>
+<li>二进制分帧</li>
+<li>服务端推送</li>
+</ol>
+<h4 id="TCP-和-UDP-之间的区别"><a href="#TCP-和-UDP-之间的区别" class="headerlink" title="TCP 和 UDP 之间的区别"></a>TCP 和 UDP 之间的区别</h4><p>TCP：传输控制协议     UDP：用户数据报协议</p>
+<ol>
+<li>TCP 是面向连接的，UDP 是无连接的即发送数据前不需要先建立链接；</li>
+<li>TCP 提供可靠的服务。也就是说，通过 TCP 连接传送的数据，无差错，不丢失，不重复，且按序到达；UDP 尽最大努力交付，即不保证可靠交付。</li>
+<li>TCP 是面向字节流，UDP 面向报文；</li>
+<li>TCP 只能是 1 对 1 的，UDP 支持 1 对 1,1 对多；</li>
+<li>TCP 的首部较大为 20 字节，而 UDP 只有 8 字节；</li>
+</ol>
+<p>####WebSocket 协议</p>
+<blockquote>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://www.runoob.com/html/html5-websocket.html">HTML5 WebSocket</a></p>
+</blockquote>
+<p>WebSocket 是 HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议。</p>
+<p>WebSocket 使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在 WebSocket API 中，浏览器和服务器只需要完成一次握手，两者之间就直接可以创建持久性的连接，并进行双向数据传输。</p>
+<p>现在，很多网站为了实现推送技术，所用的技术都是 Ajax 轮询。轮询是在特定的的时间间隔（如每 1 秒），由浏览器对服务器发出 HTTP 请求，然后由服务器返回最新的数据给客户端的浏览器。这种传统的模式带来很明显的缺点，即浏览器需要不断的向服务器发出请求，然而 HTTP 请求可能包含较长的头部，其中真正有效的数据可能只是很小的一部分，显然这样会浪费很多的带宽等资源。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/lf2021/Front-End-Interview/blob/master/images/websocket.png"><img src="https://github.com/lf2021/Front-End-Interview/raw/master/images/websocket.png" srcset="/img/loading.gif" alt="websocket和ajax轮询的对比图"></a></p>
+<p>应用场景:实现即时通讯:如股票交易行情分析、聊天室、在线游戏等，替代轮询和长轮询</p>
+<h4 id="HTTP-请求的方式"><a href="#HTTP-请求的方式" class="headerlink" title="HTTP 请求的方式"></a>HTTP 请求的方式</h4><ol>
+<li>GET：请求指定的页面信息，并返回实体主体。</li>
+<li>HEAD：类似于 GET 请求，只不过返回的响应中没有具体的内容，用于获取报头</li>
+<li>POST：向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST 请求可能会导致新的资源的建立和/或已有资源的修改。</li>
+<li>PUT：从客户端向服务器传送的数据取代指定的文档的内容。</li>
+<li>DELETE：请求服务器删除指定的页面。</li>
+<li>CONNECT：HTTP/1.1 协议中预留给能够将连接改为管道方式的代理服务器。</li>
+<li>OPTIONS：允许客户端查看服务器的性能。</li>
+<li>TRACE：回显服务器收到的请求，主要用于测试或诊断。</li>
+</ol>
+<h4 id="GET-和-POST-的区别"><a href="#GET-和-POST-的区别" class="headerlink" title="GET 和 POST 的区别"></a>GET 和 POST 的区别</h4><p>两者本质上都是 TCP 链接</p>
+<ol>
+<li>get 参数通过 url 传递，post 放在请求体 (request body) 中。</li>
+<li>get 请求在 url 中传递的参数是有长度限制的，而 post 没有。</li>
+<li>get 比 post 更不安全，因为参数直接暴露在 url 中，所以不能用来传递敏感信息。</li>
+<li>get 请求只能进行 url 编码，而 post 支持多种编码方式。</li>
+<li>get 请求参数会被完整保留在浏览历史记录里，而 post 中的参数不会被保留。</li>
+<li>get 产生一个 TCP 数据包；post 产生两个 TCP 数据包。 对于 get 方式的请求，浏览器会把 http header 和 data 一并发送出去，服务器响应 200（返回数据）； 而对于 post，浏览器先发送 header，服务器响应 100 continue，浏览器再发送 data，服务器响应 200 ok（返回数据）。</li>
+</ol>
+<h4 id="浏览器输入-URL-之后发生了什么"><a href="#浏览器输入-URL-之后发生了什么" class="headerlink" title="浏览器输入 URL 之后发生了什么"></a>浏览器输入 URL 之后发生了什么</h4><blockquote>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://4ark.me/post/b6c7c0a2.html">在浏览器输入 URL 回车之后发生了什么（超详细版）</a></p>
+</blockquote>
+<ol>
+<li>DNS 解析</li>
+<li>TCP 连接</li>
+<li>发送 HTTP 请求</li>
+<li>服务器处理请求并返回 HTTP 报文</li>
+<li>浏览器解析渲染页面</li>
+<li>连接结束</li>
+</ol>
+<h4 id="DNS-的具体过程"><a href="#DNS-的具体过程" class="headerlink" title="DNS 的具体过程"></a>DNS 的具体过程</h4><ol>
+<li>输入 IP，此时电脑发送一个 DNS 请求到本地 DNS 服务器（一般是网络接入服务商提供 eg:电信，移动）</li>
+<li>本地 DNS 服务器会首先查询它的缓存记录，若有，则直接返回结果，若没有，本地 DNS 服务器还要向 DNS 根服务器进行查询；</li>
+<li>DNS 根服务器没有记录具体域名和 IP 地址的对应关系，而是告诉本地 DNS 服务器，可到域服务器上继续查询，并给出域服务器地址</li>
+<li>本地服务器继续向域服务器发出请求，返回域名的解析服务器地址</li>
+<li>本地 DNS 向域名解析服务器发出请求，收到域名与 IP 地址对应关系</li>
+<li>本地 DNS 服务器将 IP 地址返回电脑，且保存副本到缓存已备下次查询</li>
+</ol>
+<h4 id="Cookie-和-WebStorage-SessionStorage-和-LocalStorage-的区别"><a href="#Cookie-和-WebStorage-SessionStorage-和-LocalStorage-的区别" class="headerlink" title="Cookie 和 WebStorage(SessionStorage 和 LocalStorage)的区别"></a>Cookie 和 WebStorage(SessionStorage 和 LocalStorage)的区别</h4><ol>
+<li>都会在浏览器端保存，有大小限制，同源限制</li>
+<li>cookie 会在请求时发送到服务器，作为会话标识，服务器可修改 cookie；web storage 不会发送到服务器</li>
+<li>cookie 有 path 概念，子路径可以访问父路径 cookie，父路径不能访问子路径 cookie</li>
+<li>有效期：cookie 在设置的有效期内有效，默认为浏览器关闭；sessionStorage 在窗口关闭前有效；localStorage 长期有效，直到用户删除</li>
+<li>作用域不同 sessionStorage：不在不同的浏览器窗口中共享，即使是同一个页面；localStorage：在所有同源窗口都是共享的；cookie：也是在所有同源窗口中共享的</li>
+<li>存储大小不同：cookie 数据不能超过 4K；webStorage 虽然也有存储大小的限制，但是比 cookie 大得多，可以达到 5M 或更大</li>
+</ol>
+<h4 id="cookie-和-session-的区别"><a href="#cookie-和-session-的区别" class="headerlink" title="cookie 和 session 的区别"></a>cookie 和 session 的区别</h4><h5 id="1-存储位置不同："><a href="#1-存储位置不同：" class="headerlink" title="1.存储位置不同："></a>1.存储位置不同：</h5><blockquote>
+<p>cookie 数据存放在客户的浏览器上</p>
+<p>session 数据放在服务器上。</p>
+</blockquote>
+<h5 id="2-存储容量不同："><a href="#2-存储容量不同：" class="headerlink" title="2.存储容量不同："></a>2.存储容量不同：</h5><blockquote>
+<p>单个 cookie 保存的数据不能超过 4K，一个站点最多保存 20 个 cookie。</p>
+<p>对于 session 来说并没有上限，但出于对服务器端的性能考虑，session 内不要存放过多的东西，并且设置 session 删除机制。</p>
+</blockquote>
+<h5 id="3-存储方式不同："><a href="#3-存储方式不同：" class="headerlink" title="3.存储方式不同："></a>3.存储方式不同：</h5><blockquote>
+<p>cookie 中只能保管 ASCII 字符串，并需要通过编码方式存储为 Unicode 字符或者二进制数据。</p>
+<p>session 中能够存储任何类型的数据，包括且不限于 string，integer，list，map 等。</p>
+</blockquote>
+<h5 id="4-隐私策略不同"><a href="#4-隐私策略不同" class="headerlink" title="4.隐私策略不同"></a>4.隐私策略不同</h5><blockquote>
+<p>cookie 对客户端是可见的，别有用心的人可以分析存放在本地的 cookie 并进行 cookie 欺骗，所以它是不安全的。</p>
+<p>session 存储在服务器上，不存在敏感信息泄漏的风险。</p>
+</blockquote>
+<h5 id="5-有效期不同"><a href="#5-有效期不同" class="headerlink" title="5.有效期不同"></a>5.有效期不同</h5><blockquote>
+<p>cookie 保管在客户端，不占用服务器资源。对于并发用户十分多的网站，cookie 是很好的选择。</p>
+<p>session 是保管在服务器端的，每个用户都会产生一个 session。假如并发访问的用户十分多，会产生十分多的 session，耗费大量的内存。</p>
+</blockquote>
+<p>####能设置或读取子域的cookie吗</p>
+<blockquote>
+<p>不 行! 只能向当前域或者更高级域设置cookie</p>
+<p>例如 client.com 不能向 a.client.com 设置cookie, 而 a.client.com 可以向 client.com 设置cookie</p>
+<p>读取cookie情况同上</p>
+</blockquote>
+<h4 id="客户端设置cookie与服务端设置cookie有什么区别"><a href="#客户端设置cookie与服务端设置cookie有什么区别" class="headerlink" title="客户端设置cookie与服务端设置cookie有什么区别"></a>客户端设置cookie与服务端设置cookie有什么区别</h4><blockquote>
+<p>无论是客户端还是服务端, 都只能向自己的域或者更高级域设置cookie，例如 client.com 不能向 server.com 设置cookie, 同样 server.com 也不能向 client.com 设置cookie</p>
+<p>服务端可以设置 <code>httpOnly: true</code>, 带有该属性的cookie客户端无法读取</p>
+<p>客户端只会带上与请求同域的cookie, 例如 client.com/index.html 会带上 client.com 的cookie，server.com/app.js 会带上 server.com 的cookie, 并且也会带上httpOnly的cookie</p>
+</blockquote>
+<h4 id="同域-跨域ajax请求到底会不会带上cookie"><a href="#同域-跨域ajax请求到底会不会带上cookie" class="headerlink" title="同域/跨域ajax请求到底会不会带上cookie"></a>同域/跨域ajax请求到底会不会带上cookie</h4><blockquote>
+<p>fetch在默认情况下, 不管是同域还是跨域ajax请求都不会带上cookie, 只有当设置了 credentials 时才会带上该ajax请求所在域的cookie, 服务端需要设置响应头<code>Access-Control-Allow-Credentials: true</code>, 否则浏览器会因为安全限制而报错, 拿不到响应</p>
+<p>axios和jQuery在同域ajax请求时会带上cookie, 跨域请求不会, 跨域请求需要设置 <code>withCredentials</code> 和服务端响应头</p>
+</blockquote>
+<ul>
+<li><p>fetch 设置 credentials 使fetch带上cookie</p>
+<pre><code class="hljs css"><span class="hljs-selector-tag">fetch</span>(<span class="hljs-selector-tag">url</span>, &#123;
+    <span class="hljs-attribute">credentials</span>: <span class="hljs-string">&quot;include&quot;</span>, // include, same-origin, omit
+&#125;)</code></pre>
+</li>
+<li><p>axios 设置 withCredentials 使axios带上cookie</p>
+<pre><code class="hljs routeros">axios.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&#x27;http://server.com&#x27;</span>, &#123;withCredentials: <span class="hljs-literal">true</span>&#125;)</code></pre>
+</li>
+<li><p>jQuery 设置 withCredentials</p>
+<pre><code class="hljs yaml"><span class="hljs-string">$.ajax(&#123;</span>
+    <span class="hljs-attr">method:</span> <span class="hljs-string">&#x27;get&#x27;</span><span class="hljs-string">,</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">&#x27;http://server.com&#x27;</span><span class="hljs-string">,</span>
+    <span class="hljs-attr">xhrFields:</span> &#123;
+        <span class="hljs-attr">withCredentials:</span> <span class="hljs-literal">true</span>
+    &#125;
+<span class="hljs-string">&#125;)</span></code></pre>
+
+</li>
+</ul>
+<h3 id="前端攻击技术"><a href="#前端攻击技术" class="headerlink" title="前端攻击技术"></a>前端攻击技术</h3><h4 id="XSS攻击-cross-site-script"><a href="#XSS攻击-cross-site-script" class="headerlink" title="XSS攻击(cross-site script)"></a>XSS攻击(cross-site script)</h4><ol>
+<li><p>XSS攻击形式： 主要是通过html标签注入，篡改网页，插入恶意的脚本，前端可能没有经过严格的校验直接就进到数据库，数据库又通过前端程序又回显到浏览器</p>
+<pre><code class="hljs xml">例如一个留言板：
+如果内容是
+hello!<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;type/javascript src=&quot;</span>恶意网址&quot;&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+这样会通过前端代码来执行js脚本，如果这个恶意网址通过cookie获得了用户的私密信息，那么用户的信息就被盗了</code></pre>
+</li>
+<li><p>攻击的目的： 攻击者可通过这种方式拿到用户的一些信息，例如cookie 获取敏感信息，甚至自己建网站，做一些非法的操作等；或者，拿到数据后以用户的身份进行勒索，发一下不好的信息等。</p>
+</li>
+<li><p>攻击防御 方法1：cookie中设置 HttpOnly 属性 方法2：首先前端要对用户输入的信息进行过滤，可以用正则，通过替换标签的方式进行转码或解码，例如&lt;&gt; 空格 &amp; ‘’ “”等替换成html编码</p>
+<pre><code class="hljs arcade">htmlEncodeByRegExp:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">str</span>)</span>&#123;  
+  <span class="hljs-keyword">var</span> s = <span class="hljs-string">&quot;&quot;</span>;
+  <span class="hljs-keyword">if</span>(str.length == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&quot;</span>;
+  s = str.replace(<span class="hljs-regexp">/&amp;/g</span>,<span class="hljs-string">&quot;&amp;amp;&quot;</span>);
+  s = s.replace(<span class="hljs-regexp">/&lt;/g</span>,<span class="hljs-string">&quot;&amp;lt;&quot;</span>);
+  s = s.replace(<span class="hljs-regexp">/&gt;/g</span>,<span class="hljs-string">&quot;&amp;gt;&quot;</span>);
+  s = s.replace(<span class="hljs-regexp">/ /g</span>,<span class="hljs-string">&quot;&amp;nbsp;&quot;</span>);
+  s = s.replace(<span class="hljs-regexp">/\&#x27;/g</span>,<span class="hljs-string">&quot;&amp;#39;&quot;</span>);
+  s = s.replace(<span class="hljs-regexp">/\&quot;/g</span>,<span class="hljs-string">&quot;&amp;quot;&quot;</span>);
+  <span class="hljs-keyword">return</span> s;  
+  &#125;</code></pre>
+
+</li>
+</ol>
+<h4 id="CSRF攻击-cross-site-request-forgery-跨站请求伪造"><a href="#CSRF攻击-cross-site-request-forgery-跨站请求伪造" class="headerlink" title="CSRF攻击(cross site request forgery,跨站请求伪造)"></a>CSRF攻击(cross site request forgery,跨站请求伪造)</h4><ol>
+<li><p>XSS攻击形式： CSRF也是一种网络攻击方式，比起xss攻击，是另外一种更具危险性的攻击方式，xss是站点用户进行攻击，而csrf是通过伪装成站点用户进行攻击，而且防范的资源也少，难以防范</p>
+<p>csrf攻击形式：攻击者盗用用户的身份信息，并以用户的名义进行发送恶意的请求等，例如发邮件，盗取账号等非法手段</p>
+<pre><code class="hljs plain">例如：你登录网站，并在本地种下了cookie
+如果在没退出该网站的时候 不小心访问了恶意网站，而且这个网站需要你发一些请求等
+此时，你是携带cookie进行访问的，那么你的重在cookie里的信息就会被恶意网站捕捉到，那么你的信息就被盗用，导致一些不法分子做一些事情</code></pre>
+</li>
+<li><p>攻击防御：</p>
+</li>
+</ol>
+<ul>
+<li><p>验证HTTP Referer字段</p>
+<pre><code class="hljs lasso">在HTTP头中有<span class="hljs-keyword">Referer</span>字段，他记录该HTTP请求的来源地址，如果跳转的网站与来源地址相符，那就是合法的，如果不符则可能是csrf攻击，拒绝该请求</code></pre>
+</li>
+<li><p>在请求地址中添加token并验证</p>
+<pre><code class="hljs livecodeserver">这种的话在请求的时候加一个<span class="hljs-keyword">token</span>，值可以是随机产生的一段数字，
+<span class="hljs-keyword">token</span>是存入数据库之后，后台返给客户端的，如果客户端再次登录的时候，
+后台发现<span class="hljs-keyword">token</span>没有，或者通过查询数据库不正确，那么就拒绝该请求
+
+如果想防止一个账号避免在不同的机器上登录，那么我们就可以通过<span class="hljs-keyword">token</span>来判断，
+如果<span class="hljs-keyword">a</span>机器登录后，我们就将用户的<span class="hljs-keyword">token</span>从数据库清除，从新生成，
+那么另外一台b机器在执行操作的时候，<span class="hljs-keyword">token</span>就失效了，只能重新登录，这样就可以防止两台机器登同一账号</code></pre>
+</li>
+<li><p>在HTTP头中自定义属性并验证</p>
+<pre><code class="hljs vim">如果说通过每次请求的时候都得加token那么各个接口都得加很麻烦，
+那么我们通过http的请求头来设置token
+例如：
+    $.ajax(&#123;
+        ur<span class="hljs-variable">l:</span> <span class="hljs-string">&#x27;/v1/api&#x27;</span>,
+        dataType: <span class="hljs-string">&#x27;json&#x27;</span>,
+        dat<span class="hljs-variable">a:</span> param,
+        <span class="hljs-built_in">type</span>:<span class="hljs-string">&#x27;post&#x27;</span>,
+        header<span class="hljs-variable">s:</span> &#123;<span class="hljs-string">&#x27;Accept&#x27;</span>:<span class="hljs-string">&#x27;application/json&#x27;</span>,<span class="hljs-string">&#x27;Authorization&#x27;</span>:tokenValue&#125;
+        succes<span class="hljs-variable">s:function</span>(<span class="hljs-keyword">res</span>)&#123;
+            console.<span class="hljs-built_in">log</span>(<span class="hljs-keyword">res</span>)
+        &#125;
+    &#125;)</code></pre>
+
+</li>
+</ul>
+<h4 id="浏览器缓存过程"><a href="#浏览器缓存过程" class="headerlink" title="浏览器缓存过程"></a>浏览器缓存过程</h4><blockquote>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000008956069">HTTP 强缓存和协商缓存</a></p>
+</blockquote>
+<h5 id="浏览器缓存分为：强缓存和协商缓存"><a href="#浏览器缓存分为：强缓存和协商缓存" class="headerlink" title="浏览器缓存分为：强缓存和协商缓存"></a>浏览器缓存分为：强缓存和协商缓存</h5><p>在浏览器第一次发起请求时，本地无缓存，向 web 服务器发送请求，服务器起端响应请求，浏览器端缓存。在第一次请求时，服务器会将页面最后修改时间通过 Last-Modified 标识由服务器发送给客户端，客户端记录修改时间；服务器还会生成一个 Etag，并发送给客户端。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/lf2021/Front-End-Interview/blob/master/images/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98.png"><img src="https://github.com/lf2021/Front-End-Interview/raw/master/images/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98.png" srcset="/img/loading.gif" alt="浏览器缓存"></a></p>
+<p>根据上图，浏览器在第一次请求发生后，再次发送请求时：</p>
+<ul>
+<li>浏览器请求某一资源时，会先获取该资源缓存的 header 信息，然后根据 header 中的 Cache-Control 和 Expires 来判断是否过期。若没过期则直接从缓存中获取资源信息，包括缓存的 header 的信息，所以此次请求不会与服务器进行通信。这里判断是否过期，则是强缓存相关。</li>
+<li>如果显示已过期，浏览器会向服务器端发送请求，这个请求会携带第一次请求返回的有关缓存的 header 字段信息，比如客户端会通过 If-None-Match 头将先前服务器端发送过来的 Etag 发送给服务器，服务会对比这个客户端发过来的 Etag 是否与服务器的相同，若相同，就将 If-None-Match 的值设为 false，返回状态 304，客户端继续使用本地缓存，不解析服务器端发回来的数据，若不相同就将 If-None-Match 的值设为 true，返回状态为 200，客户端重新请求服务器端返回的数据；客户端还会通过 If-Modified-Since 头将先前服务器端发过来的最后修改时间戳发送给服务器，服务器端通过这个时间戳判断客户端的页面是否是最新的，如果不是最新的，则返回最新的内容，如果是最新的，则返回 304，客户端继续使用本地缓存。</li>
+</ul>
+<h4 id="强缓存-Expires-和-Cache-Control-的使用"><a href="#强缓存-Expires-和-Cache-Control-的使用" class="headerlink" title="强缓存 Expires 和 Cache-Control 的使用"></a>强缓存 Expires 和 Cache-Control 的使用</h4><p>强缓存是利用 http 头中的 Expires 和 Cache-Control 两个字段来控制的，用来表示资源的缓存时间。强缓存中，普通刷新会忽略它，但不会清除它，需要强制刷新。浏览器强制刷新，请求会带上<code>Cache-Control:no-cache</code> 和 <code>Pragma:no-cache</code></p>
+<h5 id="Expires"><a href="#Expires" class="headerlink" title="Expires"></a>Expires</h5><p>Expires 的值是一个绝对时间的 GMT 格式的时间字符串。比如 Expires 值是：<code>expires:Fri, 14 Apr 2017 10:47:02 GMT</code>。这个时间代表这这个资源的失效时间，只要发送请求时间是在 Expires 之前，那么本地缓存始终有效，则在缓存中读取数据。</p>
+<p>缺点： 由于失效的时间是一个绝对时间，所以当服务器与客户端时间偏差较大时，误差很大，就会导致缓存混乱。</p>
+<h5 id="Cache-Control"><a href="#Cache-Control" class="headerlink" title="Cache-Control"></a>Cache-Control</h5><p>Cache-Control 主要是利用该字段的 <code>max-age</code> 值来进行判断，它是一个相对时间，例如<code>Cache-Control:max-age=3600</code>，代表着资源的有效期是 3600 秒。</p>
+<p>cache-control 除了该字段外，还有下面几个比较常用的设置值：</p>
+<ul>
+<li>no-cache：不使用本地缓存。需要使用缓存协商，先与服务器确认返回的响应是否被更改，如果之前的响应中存在 ETag，那么请求的时候会与服务端验证，如果资源未被更改，则可以避免重新下载。</li>
+<li>no-store：直接禁止游览器缓存数据，每次用户请求该资源，都会向服务器发送一个请求，每次都会下载完整的资源。</li>
+<li>public：可以被所有的用户缓存，包括终端用户和 CDN 等中间代理服务器。</li>
+<li>private：只能被终端用户的浏览器缓存，不允许 CDN 等中继缓存服务器对其缓存。</li>
+</ul>
+<p>Cache-Control 与 Expires 可以在服务端配置同时启用，同时启用的时候 Cache-Control 优先级高。如：</p>
+<pre><code class="hljs angelscript">cache-control:max-age=<span class="hljs-number">691200</span>
+expires:Fri, <span class="hljs-number">15</span> May <span class="hljs-number">2020</span> <span class="hljs-number">10</span>:<span class="hljs-number">47</span>:<span class="hljs-number">02</span> GMT</code></pre>
+
+<p>那么表示资源可以被缓存的最长时间为 691200 秒。</p>
+<h4 id="协商缓存"><a href="#协商缓存" class="headerlink" title="协商缓存"></a>协商缓存</h4><p>协商缓存就是由服务器来确定缓存资源是否可用，所以客户端与服务器端要通过某种标识来进行通信，从而让服务器判断请求资源是否可以缓存访问。</p>
+<h4 id="Etag-和-If-None-Match"><a href="#Etag-和-If-None-Match" class="headerlink" title="Etag 和 If-None-Match"></a>Etag 和 If-None-Match</h4><p><code>Etag/If-None-Match</code>返回的是一个校验码。<code>Etag</code>可以保证每一个资源是唯一的，资源变化都会导致<code>Etag</code>变化。服务器根据浏览器上送的<code>If-None-Match</code>值来判断是否命中缓存。</p>
+<p>与<code>Last-Modified</code>不一样的是，当服务器返回 304 (Not Modified) 的响应时，由于<code>Etag</code>重新生成过，response header 中还会把这个<code>Etag</code>返回，即使这个<code>Etag</code>跟之前的没有变化。</p>
+<h4 id="Last-Modify-If-Modify-Since"><a href="#Last-Modify-If-Modify-Since" class="headerlink" title="Last-Modify / If-Modify-Since"></a>Last-Modify / If-Modify-Since</h4><pre><code class="hljs sas">浏览器第一次请求一个资源的时候，服务器返回的header中会加上Last-<span class="hljs-meta">Modify</span>，Last-<span class="hljs-meta">modify</span>是一个时间标识该资源的最后修改时间，例如Last-<span class="hljs-meta">Modify</span>: Thu,31 Dec 2037 23:59:59 GMT。
+当浏览器再次请求该资源时，request的请求头中会包含<span class="hljs-meta">If</span>-<span class="hljs-meta">Modify</span>-Since，该值为缓存之前返回的Last-<span class="hljs-meta">Modify</span>。服务器收到<span class="hljs-meta">If</span>-<span class="hljs-meta">Modify</span>-Since后，根据资源的最后修改时间判断是否命中缓存。
+如果命中缓存，则返回304，并且不会返回资源内容，并且不会返回Last-<span class="hljs-meta">Modify</span>。</code></pre>
+
+<h4 id="为什么要有-Etag"><a href="#为什么要有-Etag" class="headerlink" title="为什么要有 Etag"></a>为什么要有 Etag</h4><blockquote>
+<p>两个都可以确定缓存资源的是否可用，有什么区别呢？</p>
+</blockquote>
+<p><code>Etag</code> 的出现主要是为了解决几个 <code>Last-Modified</code> 比较难解决的问题：</p>
+<ol>
+<li>一些文件也许会周期性的更改，但是他的内容并不改变(仅仅改变的修改时间)，这个时候我们并不希望客户端认为这个文件被修改了，而重新 GET；</li>
+<li>某些文件修改非常频繁，比如在秒以下的时间内进行修改，(比方说 1s 内修改了 N 次)，<code>If-Modified-Since</code> 能检查到的力度是秒级的，这种修改无法判断；</li>
+<li>某些服务器不能精确的得到文件的最后修改时间。</li>
+</ol>
+<p><code>Last-Modified</code> 与 <code>ETag</code> 是可以一起使用的，服务器会优先验证<code>ETag</code>，一致的情况下，才会继续比对 <code>Last-Modified</code>，最后才决定是否返回 304。</p>
+<h4 id="什么是路由"><a href="#什么是路由" class="headerlink" title="什么是路由"></a>什么是路由</h4><p>路由就是根据网址的不同返回不同的内容给用户。</p>
+<h4 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h4><p>异步的 javaScript 和 Xml</p>
+<p>是一种无需加载整个页面的情况下，对页面进行局部刷新。提升用户体验。</p>
+<p>异步 客户端不需要等待服务器端的响应</p>
+<h4 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h4><p>JavaScript对象表示法</p>
+<h5 id="Java-对象转为-Json数据-——解析器-jackjon"><a href="#Java-对象转为-Json数据-——解析器-jackjon" class="headerlink" title="Java 对象转为 Json数据 ——解析器 jackjon"></a>Java 对象转为 Json数据 ——解析器 jackjon</h5><ul>
+<li>导入 jackson 相关的 jar 包</li>
+<li>创建 Jackson 核心对象 ObjectMapper</li>
+<li>调用 ObjectMapper 的相关方法进行转换 writeValue(),, writeValueAsString()</li>
+</ul>
+<h5 id="json数据转为-Java对象"><a href="#json数据转为-Java对象" class="headerlink" title="json数据转为 Java对象"></a>json数据转为 Java对象</h5><ul>
+<li>初始化 json 字符串</li>
+<li>创建 ObjectMapper 对象</li>
+<li>转换为java对象，person对象 readValue</li>
+</ul>
+<h4 id="为什么使用异步提交表单数据"><a href="#为什么使用异步提交表单数据" class="headerlink" title="为什么使用异步提交表单数据"></a>为什么使用异步提交表单数据</h4><p>因为我们前台使用的是 html 作为视图层，不能直接从 servlet相关的域对象获取值，只能通过 ajax相应数据。</p>
+<p>###Html语义化</p>
+<p>语义化是指根据内容的结构（内容语义化），选择合适的标签（代码语义化），便于开发者阅读和写出更优雅的代码的同时，方便爬虫抓取有效信息和浏览器的解析。</p>
+<p>header section article aside</p>
+<p>ARIA即Accessible Rich Internet Application，中文译为无障碍富互联网应用。可以为一些有功能障碍（如听力，视力）的人群通过屏幕阅读器例如voiceover等，提供无障碍访问动态、可交互Web内容。</p>
+<h4 id="模块化CSS"><a href="#模块化CSS" class="headerlink" title="模块化CSS"></a>模块化CSS</h4><p>自下而上的思维，需要从构建整个网站的可复用——乐高</p>
+<p>平时都是将所有按钮创都设置为橙色，模块化CSS会建一个橙色的按钮类，这样它可以在任何地方使用。class</p>
+<p>BEM </p>
+<p>代码原则。他们的核心概念是 —— <strong>块（block）</strong>（Nicole 称之为“物体（object）”）由子<strong>元素（element）\</strong>构成，并且可以**修改（modified）**（或“主题化”）。</p>
+<h5 id="不要使用-id，CSS嵌套不超过一层，为类名添加前缀"><a href="#不要使用-id，CSS嵌套不超过一层，为类名添加前缀" class="headerlink" title="不要使用 id，CSS嵌套不超过一层，为类名添加前缀"></a>不要使用 id，CSS嵌套不超过一层，为类名添加前缀</h5><p>前端-高保真的实现UI设计稿，高效率的从后端获取数据并渲染到页面上。</p>
+<h4 id="BOM-DOM"><a href="#BOM-DOM" class="headerlink" title="BOM DOM"></a>BOM DOM</h4><p><strong>浏览器解析 html 并抽象成一个树结构的文档对象</strong>，以方便 js 操作，这个文档对象这就是 dom。渲染页面。</p>
+<h5 id="Bom-将浏览器的各个组成部分封装成对象。提供了独立与内容的、可以与浏览器进行交互的对象结构。"><a href="#Bom-将浏览器的各个组成部分封装成对象。提供了独立与内容的、可以与浏览器进行交互的对象结构。" class="headerlink" title="Bom 将浏览器的各个组成部分封装成对象。提供了独立与内容的、可以与浏览器进行交互的对象结构。"></a>Bom 将浏览器的各个组成部分封装成对象。提供了独立与内容的、可以与浏览器进行交互的对象结构。</h5><p>window</p>
+<ul>
+<li><p>alert confirm Prompt</p>
+</li>
+<li><p>open close</p>
+</li>
+<li><p>SetTimeout.   clearTimeout.  setInterval. claerInterval</p>
+</li>
+</ul>
+<p>history</p>
+<p>Location</p>
+<p>navigator</p>
+<p>screen</p>
+<h5 id="Dom-当网页被加载时，浏览器会创建页面的文档对象模型。"><a href="#Dom-当网页被加载时，浏览器会创建页面的文档对象模型。" class="headerlink" title="Dom 当网页被加载时，浏览器会创建页面的文档对象模型。"></a>Dom 当网页被加载时，浏览器会创建页面的文档对象模型。</h5><h4 id="Grunt"><a href="#Grunt" class="headerlink" title="Grunt"></a>Grunt</h4><p>自动执行指定的任务，就像流水线，把资源放上去然后通过不同插件进行加工，它们包含活跃的社区，丰富的插件，能方便的打造各种工作流。</p>
+<p>侧重对整个过程的控制管理，实现简单、对架构无要求、不改变开发模式，所以非常适合前端、小型、需要快速启动的项目。</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h4 id="搭建过什么服务器？"><a href="#搭建过什么服务器？" class="headerlink" title="搭建过什么服务器？"></a>搭建过什么服务器？</h4><p>用 linux配置 LEMP - Ubuntu/Nginx/PHP/MySQL 环境</p>
+<p>  1.安装Nginx      Apt    验证 ufw status</p>
+<ol start="2">
+<li><p>安装 MySQL</p>
+</li>
+<li><p>安装PHP并配置Nginx组建</p>
+<p>这时 Nginx就可以使用PHP处理器处理动态内容了</p>
+</li>
+</ol>
+<p>配置服务器环境</p>
+<p>配置SSL</p>
+<p>Linux配置Oracle</p>
+<h4 id="Nginx反向代理"><a href="#Nginx反向代理" class="headerlink" title="Nginx反向代理"></a>Nginx反向代理</h4><h4 id="反向代理："><a href="#反向代理：" class="headerlink" title="反向代理："></a>反向代理：</h4><p>我们将请求发送到服务器，然后服务器对我们的请求进行转发，我们只需要和代理服务器进行通信就好。</p>
+<h4 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h4><p>对于目标服务器来讲，感受不到真实的客户端，与它通信的是代理客户端，如科学上网的软件就是正向代理。</p>
+<p><img src="https://img-bj-1300704262.cos.ap-beijing.myqcloud.com/nginx-fw.png" srcset="/img/loading.gif" alt="nginx-fw.png"></p>
+<p>简而言之，服务端代理被称为反向代理，客户端代理被称为正向代理。</p>
+<h4 id="HTTP-HTTPS、TCP-IP、WebSocket"><a href="#HTTP-HTTPS、TCP-IP、WebSocket" class="headerlink" title="HTTP/HTTPS、TCP/IP、WebSocket"></a>HTTP/HTTPS、TCP/IP、WebSocket</h4><h5 id="TCP-三次握手——HTTP"><a href="#TCP-三次握手——HTTP" class="headerlink" title="TCP 三次握手——HTTP"></a>TCP 三次握手——HTTP</h5><p>实际通讯中，序号并不是从1开始的，而是用随机数计算出一个初始值，这是防止通信过程很容易被预测，防止攻击。初始值时随机的，那么就需要在开始收发数据之前将初始值告知通信对象。</p>
+<h5 id="TLS握手——HTTPS"><a href="#TLS握手——HTTPS" class="headerlink" title="TLS握手——HTTPS"></a>TLS握手——HTTPS</h5><p>默认端口号 443</p>
+<p>TSL/SSL安全层</p>
+<p>数据链路层——网络层——传输层——安全 层——应用层</p>
+<p>1999年改名 SSL3==TLS1.0</p>
+<p><code>TLS</code> 由记录协议、握手协议、警告协议、变更密码规范协议、扩展协议等几个子协议组成，综合使用了对称加密、非对称加密、身份认证等许多密码学前沿技术。</p>
+<p>靠近应用层的握手协议 <code>TLS Handshaking Protocols</code></p>
+<ol start="2">
+<li>靠近 TCP 的记录层协议 <code>TLS Record Protocol</code></li>
+</ol>
+<h5 id="TCL握手何时发生"><a href="#TCL握手何时发生" class="headerlink" title="TCL握手何时发生"></a>TCL握手何时发生</h5><ol>
+<li>每当用户通过<code>HTTPS</code>导航到网站并且浏览器首先开始查询网站的原始服务器时，就会进行<code>TLS</code>握手。</li>
+<li>每当其他任何通信使用<code>HTTPS</code>（包括<code>API</code>调用和<code>HTTPS</code>查询上的DNS）时，也会发生<code>TLS</code>握手。</li>
+<li>通过TCP握手打开TCP连接后，会发生<code>TLS</code> 握手。</li>
+</ol>
+<h5 id="TCL握手会发生什么"><a href="#TCL握手会发生什么" class="headerlink" title="TCL握手会发生什么"></a>TCL握手会发生什么</h5><ul>
+<li>指定将使用的TLS版本（TLS 1.0、1.2、1.3等）</li>
+<li>确定将使用哪些加密套件。</li>
+<li>通过服务器的公钥和SSL证书颁发机构的数字签名来验证服务器的身份</li>
+<li>握手完成后，生成会话密钥以使用对称加密</li>
+</ul>
+<h5 id="TCL握手具体流程"><a href="#TCL握手具体流程" class="headerlink" title="TCL握手具体流程"></a>TCL握手具体流程</h5><p>客户端<code>hello</code>：客户端通过向服务器发送“问候”消息来发起握手。该消息将包括客户端支持的TLS版本，支持的加密套件以及称为“客户端随机”的随机字节字符串。</p>
+<p>服务器<code>hello</code>：为回复客户端<code>hello</code>消息，服务器发送一条消息，其中包含服务器的<code>SSL</code>证书，服务器选择的加密套件和“服务器随机数”，即服务器生成的另一个随机字节串。</p>
+<p>客户端发送公钥加密的预主密钥。</p>
+<p>服务器用自己的私钥解密加密的预主密钥。</p>
+<ul>
+<li>客户端<code>finished</code>：客户端发送“完成”消息，该消息已用会话密钥加密。</li>
+<li>服务器<code>finished</code>：服务器发送一条用会话密钥加密的“完成”消息。</li>
+</ul>
+<p>握手完成，后续通过主密钥加解密</p>
+<h5 id="WebSocket握手——基于TCP协议"><a href="#WebSocket握手——基于TCP协议" class="headerlink" title="WebSocket握手——基于TCP协议"></a>WebSocket握手——基于TCP协议</h5><p><code>Websocket</code>协议解决了服务器与客户端全双工通信的问题。</p>
+<p><code>WebSocket</code>是双向通信协议，模拟<code>Socket</code>协议，可以双向发送或接受信息。<code>HTTP</code>是单向的。</p>
+<p><code>Socket</code>是应用层与<code>TCP/IP</code>协议族通信的中间软件抽象层，它是一组接口。</p>
+<p>HTTP<code>和</code>https<code>使用的是完全不同的连接方式，用的端口也不一样,前者是</code>80<code>,后者是</code>443。</p>
+<p>应用层协议</p>
+<p>单工        信息单向传输    广播电视</p>
+<p>半双工     信息双向传送，但不能同时双向传送 bb机</p>
+<p>全双工     信息能同时双向传送    电话</p>
+<h4 id="XSS"><a href="#XSS" class="headerlink" title="XSS"></a>XSS</h4><p>Cross-Site Scripting（跨站脚本攻击）简称 XSS，是一种<strong>代码注入攻击</strong>。攻击者通过在目标网站上注入恶意脚本，使之在用户的浏览器上运行。利用这些恶意脚本，攻击者可获取用户的敏感信息如 Cookie、SessionID 等，进而危害数据安全。</p>
+<p>在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。</p>
+<p>在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。</p>
+<p>在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。</p>
+<p>在标签的 href、src 等属性中，包含 <code>javascript:</code> (伪协议)等可执行代码。</p>
+<p>在 onload、onerror、onclick 等事件中，注入不受控制代码。</p>
+<p>在 style 属性和标签中，包含类似 <code>background-image:url(&quot;javascript:...&quot;);</code> 的代码（新版本浏览器已经可以防范）。</p>
+<p>在 style 属性和标签中，包含类似 <code>expression(...)</code> 的 CSS 表达式代码（新版本浏览器已经可以防范）。</p>
+<h5 id="存储型-XSS-的攻击步骤："><a href="#存储型-XSS-的攻击步骤：" class="headerlink" title="存储型 XSS 的攻击步骤："></a>存储型 XSS 的攻击步骤：</h5><ol>
+<li><p>攻击者将恶意代码提交到目标网站的数据库中。</p>
+</li>
+<li><p>用户打开目标网站时，网站服务端将恶意代码从数据库取出，拼接在 HTML 中返回给浏览器。</p>
+</li>
+<li><p>用户浏览器接收到响应后解析执行，混在其中的恶意代码也被执行。</p>
+</li>
+<li><p>恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网站接口执行攻击者指定的操作。</p>
+</li>
+</ol>
+<h5 id="反射型-XSS-的攻击步骤："><a href="#反射型-XSS-的攻击步骤：" class="headerlink" title="反射型 XSS 的攻击步骤："></a>反射型 XSS 的攻击步骤：</h5><ol>
+<li>攻击者构造出特殊的 URL，其中包含恶意代码。</li>
+<li>用户打开带有恶意代码的 URL 时，网站服务端将恶意代码从 URL 中取出，拼接在 HTML 中返回给浏览器。</li>
+<li>用户浏览器接收到响应后解析执行，混在其中的恶意代码也被执行。</li>
+<li>恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网站接口执行攻击者指定的操作。</li>
+</ol>
+<p>反射型 XSS 跟存储型 XSS 的区别是：存储型 XSS 的恶意代码存在数据库里，反射型 XSS 的恶意代码存在 URL 里。</p>
+<p>反射型 XSS (也被称为非持久性XSS)漏洞常见于通过 URL 传递参数的功能，如网站搜索、跳转等。</p>
+<h5 id="DOM-型-XSS-的攻击步骤："><a href="#DOM-型-XSS-的攻击步骤：" class="headerlink" title="DOM 型 XSS 的攻击步骤："></a>DOM 型 XSS 的攻击步骤：</h5><ol>
+<li>攻击者构造出特殊的 URL，其中包含恶意代码。</li>
+<li>用户打开带有恶意代码的 URL。</li>
+<li>用户浏览器接收到响应后解析执行，前端 JavaScript 取出 URL 中的恶意代码并执行。</li>
+<li>恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网站接口执行攻击者指定的操作。</li>
+</ol>
+<p>DOM 型 XSS 跟前两种 XSS 的区别：DOM 型 XSS 攻击中，取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。</p>
+<h4 id="防御XSS"><a href="#防御XSS" class="headerlink" title="防御XSS"></a>防御XSS</h4><p>只要有输入数据的地方，就可能存在 XSS 危险。</p>
+<ul>
+<li><p>httpOnly: 在 cookie 中设置 HttpOnly 属性后，js脚本将无法读取到 cookie 信息。</p>
+</li>
+<li><p>输入过滤: 一般是用于对于输入格式的检查，例如：邮箱，电话号码，用户名，密码……等，按照规定的格式输入。不仅仅是前端负责，后端也要做相同的过滤检查。因为攻击者完全可以绕过正常的输入流程，直接利用相关接口向服务器发送设置。</p>
+</li>
+<li><p>转义 HTML: 如果拼接 HTML 是必要的，就需要对于引号，尖括号，斜杠进行转义,但这还不是很完善.想对 HTML 模板各处插入点进行充分的转义,就需要采用合适的转义库.(可以看下这个<a target="_blank" rel="noopener" href="https://jsxss.com/zh/index.html">库</a>,还是中文的)</p>
+</li>
+<li><p>白名单: 对于显示富文本来说，不能通过上面的办法来转义所有字符，因为这样会把需要的格式也过滤掉。这种情况通常采用白名单过滤的办法，当然也可以通过黑名单过滤，但是考虑到需要过滤的标签和标签属性实在太多，更加推荐使用白名单的方式。</p>
+</li>
+</ul>
+<h4 id="预防存储型和反射型-XSS-攻击"><a href="#预防存储型和反射型-XSS-攻击" class="headerlink" title="预防存储型和反射型 XSS 攻击"></a>预防存储型和反射型 XSS 攻击</h4><p>存储型和反射型 XSS 都是在服务端取出恶意代码后，插入到响应 HTML 里的，攻击者刻意编写的“数据”被内嵌到“代码”中，被浏览器所执行。</p>
+<p>预防这两种漏洞，有两种常见做法：</p>
+<ul>
+<li>改成纯前端渲染，把代码和数据分隔开。</li>
+<li>对 HTML 做充分转义。</li>
+</ul>
+<p>HTML转义前面已经说过,这里仅仅谈谈纯前端渲染</p>
+<p><strong>纯前端渲染的过程：</strong></p>
+<ol>
+<li>浏览器先加载一个静态 HTML，此 HTML 中不包含任何跟业务相关的数据。</li>
+<li>然后浏览器执行 HTML 中的 JavaScript。</li>
+<li>JavaScript 通过 Ajax 加载业务数据，调用 DOM API 更新到页面上。</li>
+</ol>
+<p>在纯前端渲染中，我们会明确的告诉浏览器：下面要设置的内容是文本（<code>.innerText</code>），还是属性（<code>.setAttribute</code>），还是样式（<code>.style</code>）等等。浏览器不会被轻易的被欺骗，执行预期外的代码了。</p>
+<p>但纯前端渲染还需注意避免 DOM 型 XSS 漏洞（例如 <code>onload</code> 事件和 <code>href</code> 中的 <code>javascript:xxx</code> 等，请参考下文”预防 DOM 型 XSS 攻击“部分）。</p>
+<p>在很多内部、管理系统中，采用纯前端渲染是非常合适的。但对于性能要求高，或有 SEO 需求的页面，我们仍然要面对拼接 HTML 的问题,这时就需要对HTML进行充分的转义。</p>
+<h4 id="预防-DOM-型-XSS-攻击"><a href="#预防-DOM-型-XSS-攻击" class="headerlink" title="预防 DOM 型 XSS 攻击"></a>预防 DOM 型 XSS 攻击</h4><p>DOM 型 XSS 攻击，实际上就是网站前端 JavaScript代码本身不够严谨，把不可信的数据当作代码执行了。</p>
+<p>在使用 <code>.innerHTML</code>、<code>.outerHTML</code>、<code>document.write()</code> 时要特别小心，不要把不可信的数据作为 HTML 插到页面上，而应尽量使用 <code>.textContent</code>、<code>.setAttribute()</code> 等。</p>
+<p>如果用 Vue/React 技术栈，并且不使用 <code>v-html</code>/<code>dangerouslySetInnerHTML</code> 功能，就在前端 render 阶段避免 <code>innerHTML</code>、<code>outerHTML</code> 的 XSS 隐患。</p>
+<p>DOM 中的内联事件监听器，如 <code>location</code>、<code>onclick</code>、<code>onerror</code>、<code>onload</code>、<code>onmouseover</code> 等，`` 标签的 <code>href</code> 属性，JavaScript 的 <code>eval()</code>、<code>setTimeout()</code>、<code>setInterval()</code> 等，都能把字符串作为代码运行。如果不可信的数据拼接到字符串中传递给这些 API，很容易产生安全隐患，请务必避免。</p>
+<h4 id="Linux常用操作"><a href="#Linux常用操作" class="headerlink" title="Linux常用操作"></a>Linux常用操作</h4><p>如何挂起一个正在执行进程，转到后台执行？</p>
+<p>答：只需按ctrl+z</p>
+<p>2、安装linux需要最少磁盘分区是多少，如何检查启动信息？</p>
+<p>安装linux时至少需要/root分区，不过推荐最少使用3个分区，root, boot 和 swap</p>
+<p>执行cat /var/log/messages</p>
+<p>可以查看启动信息</p>
+<p>3、什么程序负责监控系统事件？</p>
+<p>‘syslogd’</p>
+<p>4、执行命令fsck的最低要求是什么？</p>
+<p>/root必须是只读模式</p>
+<p>5、如何拷贝/home的目录结构到另一个目录？</p>
+<p>cp io</p>
+<p>6、如何自动化Linux中日志的轮转</p>
+<p>logrotate</p>
+<p>7、如何查询哪个用户执行的计划任务？</p>
+<p>at命令加-l</p>
+<p>8、如何在不解压tar包的情况下，查看其内容？</p>
+<p>tar命令加-tvf</p>
+<p>9、什么是Page Fault？什么情况下会发生？</p>
+<p>程序请求数据时，如果内存中没有找到数据，这种情况就是Page Fault，在程序关闭时会发生Page Fault</p>
+<p>10、什么是程序返回码？</p>
+<p>返回码是Shell的特性，返回码代表着程序的状态，程序成功执行则返回0。</p>
+<p><strong>#!/bin/bash 的作用？</strong></p>
+<p><code>#!/bin/bash</code> 是 Shell 脚本的第一行，称为释伴（shebang）行。</p>
+<ul>
+<li><p>这里 <code>#</code> 符号叫做 hash ，而 <code>!</code> 叫做 bang。</p>
+</li>
+<li><p>它的意思是命令通过 <code>/bin/bash</code> 来执行。</p>
+</li>
+</ul>
+<h3 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h3><h4 id="什么是java"><a href="#什么是java" class="headerlink" title="什么是java"></a>什么是java</h4><p>Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程 。</p>
+<h4 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h4><p>Java Virtual Machine是Java虚拟机，Java程序需要运行在虚拟机上，不同的平台有自己的虚拟机，因此Java语言可以实现跨平台。</p>
+<h4 id="JRE"><a href="#JRE" class="headerlink" title="JRE"></a>JRE</h4><p>Java Runtime Environment包括Java虚拟机和Java程序所需的核心类库等。核心类库主要是java.lang包：包含了运行Java程序必不可少的系统类，如基本数据类型、基本数学函数、字符串处理、线程、异常处理类等，系统缺省加载这个包</p>
+<p>如果想要运行一个开发好的Java程序，计算机中只需要安装JRE即可。</p>
+<h4 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h4><p>Java Development Kit是提供给Java开发人员使用的，其中包含了Java的开发工具，也包括了JRE。所以安装了JDK，就无需再单独安装JRE了。其中的开发工具：编译工具(javac.exe)，打包工具(jar.exe)等</p>
+<h4 id="什么是字节码？采用字节码的最大好处是什么"><a href="#什么是字节码？采用字节码的最大好处是什么" class="headerlink" title="什么是字节码？采用字节码的最大好处是什么"></a>什么是字节码？采用字节码的最大好处是什么</h4><h5 id="字节码：Java源代码经过虚拟机编译器编译后产生的文件（即扩展为-class的文件），它不面向任何特定的处理器，只面向虚拟机。"><a href="#字节码：Java源代码经过虚拟机编译器编译后产生的文件（即扩展为-class的文件），它不面向任何特定的处理器，只面向虚拟机。" class="headerlink" title="字节码：Java源代码经过虚拟机编译器编译后产生的文件（即扩展为.class的文件），它不面向任何特定的处理器，只面向虚拟机。"></a>字节码：Java源代码经过虚拟机编译器编译后产生的文件（即扩展为.class的文件），它不面向任何特定的处理器，只面向虚拟机。</h5><h5 id="采用字节码的好处："><a href="#采用字节码的好处：" class="headerlink" title="采用字节码的好处："></a>采用字节码的好处：</h5><p>Java语言通过字节码的方式，在一定程度上解决了传统解释型语言执行效率低的问题，同时又保留了解释型语言可移植的特点。所以Java程序运行时比较高效，而且，由于字节码并不专对一种特定的机器，因此，Java程序无须重新编译便可在多种不同的计算机上运行。</p>
+<h4 id="什么是Java程序的主类？应用程序和小程序的主类有何不同？"><a href="#什么是Java程序的主类？应用程序和小程序的主类有何不同？" class="headerlink" title="什么是Java程序的主类？应用程序和小程序的主类有何不同？"></a>什么是Java程序的主类？应用程序和小程序的主类有何不同？</h4><p>一个程序中可以有多个类，但只能有一个类是主类。在Java应用程序中，这个主类是指包含main()方法的类。而在Java小程序中，这个主类是一个继承自系统类JApplet或Applet的子类。应用程序的主类不一定要求是public类，但小程序的主类要求必须是public类。主类是Java程序执行的入口点。<br>简单说应用程序是从主线程启动(也就是main()方法)。applet小程序没有main方法，主要是嵌在浏览器页面上运行(调用init()线程或者run()来启动)，嵌入浏览器这点跟flash的小游戏类似。</p>
+<h4 id="Java和C-的区别"><a href="#Java和C-的区别" class="headerlink" title="Java和C++的区别"></a>Java和C++的区别</h4><p>我知道很多人没学过C++，但是面试官就是没事喜欢拿咱们Java和C++比呀！没办法！！！就算没学过C++，也要记下来！</p>
+<ul>
+<li>都是面向对象的语言，都支持封装、继承和多态</li>
+<li>Java不提供指针来直接访问内存，程序内存更加安全</li>
+<li>Java的类是单继承的，C++支持多重继承；虽然Java的类不可以多继承，但是接口可以多继承。</li>
+<li>Java有自动内存管理机制，不需要程序员手动释放无用内存</li>
+</ul>
+<h4 id="Java有哪些数据类型"><a href="#Java有哪些数据类型" class="headerlink" title="Java有哪些数据类型"></a>Java有哪些数据类型</h4><p>定义：Java语言是强类型语言，对于每一种数据都定义了明确的具体的数据类型，在内存中分配了不同大小的内存空间。</p>
+<ul>
+<li><p>基本数据类型</p>
+<ul>
+<li>数值型<ul>
+<li>整数类型(byte,short,int,long)</li>
+<li>浮点类型(float,double)</li>
+</ul>
+</li>
+<li>字符型(char)</li>
+<li>布尔型(boolean)</li>
+</ul>
+</li>
+<li><p>引用数据类型</p>
+<ul>
+<li><p>类(class)</p>
+</li>
+<li><p>接口(interface)</p>
+</li>
+<li><p>数组([])</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>###浏览器</p>
+<h4 id="浏览器输入-URL-发生了什么"><a href="#浏览器输入-URL-发生了什么" class="headerlink" title="浏览器输入 URL 发生了什么?"></a>浏览器输入 URL 发生了什么?</h4><ol>
+<li>DNS 解析</li>
+<li>TCP 连接</li>
+<li>发送 HTTP 请求</li>
+<li>服务器处理请求并返回 HTTP 报文</li>
+<li>浏览器解析渲染页面</li>
+<li>连接结束</li>
+</ol>
+<h4 id="TCP-和-UDP-区别"><a href="#TCP-和-UDP-区别" class="headerlink" title="TCP 和 UDP 区别?"></a>TCP 和 UDP 区别?</h4><p>![image-20200527164947185](/Users/gloriazhang/Library/Application Support/typora-user-images/image-20200527164947185.png)</p>
+<p>UDP 在传送数据之前不需要先建立连接，远地主机在收到 UDP 报文后，不需要给出任何确认。虽然 UDP 不提供可靠交付，但在某些情况下 UDP 确是一种最有效的工作方式（一般用于即时通信），比如： QQ 语音、 QQ 视频 、直播等等</p>
+<p>TCP 提供面向连接的服务。在传送数据之前必须先建立连接，数据传送结束后要释放连接。 TCP 不提供广播或多播服务。由于 TCP 要提供可靠的，面向连接的传输服务（TCP 的可靠体现在 TCP 在传递数据之前，会有三次握手来建立连接，而且在数据传递时，有确认、窗口、重传、拥塞控制机制，在数据传完后，还会断开连接用来节约系统资源），这一难以避免增加了许多开销，如确认，流量控制，计时器以及连接管理等。这不仅使协议数据单元的首部增大很多，还要占用许多处理机资源。TCP 一般用于文件传输、发送和接收邮件、远程登录等场景。</p>
+<h4 id="TCP-如何保证传输可靠性"><a href="#TCP-如何保证传输可靠性" class="headerlink" title="TCP 如何保证传输可靠性?"></a>TCP 如何保证传输可靠性?</h4><ol>
+<li>应用数据被分割成 TCP 认为最适合发送的数据块。</li>
+<li>TCP 给发送的每一个包进行编号，接收方对数据包进行排序，把有序数据传送给应用层。</li>
+<li><strong>校验和：</strong> TCP 将保持它首部和数据的检验和。这是一个端到端的检验和，目的是检测数据在传输过程中的任何变化。如果收到段的检验和有差错，TCP 将丢弃这个报文段和不确认收到此报文段。</li>
+<li>TCP 的接收端会丢弃重复的数据。</li>
+<li><strong>流量控制：</strong> TCP 连接的每一方都有固定大小的缓冲空间，TCP 的接收端只允许发送端发送接收端缓冲区能接纳的数据。当接收方来不及处理发送方的数据，能提示发送方降低发送的速率，防止包丢失。TCP 使用的流量控制协议是可变大小的滑动窗口协议。 （TCP 利用滑动窗口实现流量控制）</li>
+<li><strong>拥塞控制：</strong> 当网络拥塞时，减少数据的发送。</li>
+<li><strong>ARQ 协议：</strong> 也是为了实现可靠传输的，它的基本原理就是每发完一个分组就停止发送，等待对方确认。在收到确认后再发下一个分组。</li>
+<li><strong>超时重传：</strong> 当 TCP 发出一个段后，它启动一个定时器，等待目的端确认收到这个报文段。如果不能及时收到一个确认，将重发这个报文段。</li>
+</ol>
+<h3 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h3><h4 id="既然有了字节流-为什么还要有字符流"><a href="#既然有了字节流-为什么还要有字符流" class="headerlink" title="既然有了字节流,为什么还要有字符流?"></a>既然有了字节流,为什么还要有字符流?</h4><p>字符流是由 Java 虚拟机将字节转换得到的，问题就出在这个过程还算是非常耗时，并且，如果我们不知道编码类型就很容易出现乱码问题。所以， I/O 流就干脆提供了一个直接操作字符的接口，方便我们平时对字符进行流操作。如果音频文件、图片等媒体文件用字节流比较好，如果涉及到字符的话使用字符流比较好。</p>
+<h4 id="深拷贝和浅拷贝的区别"><a href="#深拷贝和浅拷贝的区别" class="headerlink" title="深拷贝和浅拷贝的区别"></a>深拷贝和浅拷贝的区别</h4><ol>
+<li><strong>浅拷贝</strong>：对基本数据类型进行值传递，对引用数据类型进行引用传递般的拷贝，此为浅拷贝。</li>
+<li><strong>深拷贝</strong>：对基本数据类型进行值传递，对引用数据类型，创建一个新的对象，并复制其内容，此为深拷贝。</li>
+</ol>
+<h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><h3 id="阿里"><a href="#阿里" class="headerlink" title="阿里"></a>阿里</h3><h4 id="元素如何水平居中"><a href="#元素如何水平居中" class="headerlink" title="元素如何水平居中"></a>元素如何水平居中</h4><h4 id="fixed-relative-absolute的区别"><a href="#fixed-relative-absolute的区别" class="headerlink" title="fixed relative absolute的区别"></a>fixed relative absolute的区别</h4><h4 id="时间冒泡-捕获"><a href="#时间冒泡-捕获" class="headerlink" title="时间冒泡/捕获"></a>时间冒泡/捕获</h4><h4 id="跨域的方法"><a href="#跨域的方法" class="headerlink" title="跨域的方法"></a>跨域的方法</h4><h4 id="js-深拷贝与浅拷贝"><a href="#js-深拷贝与浅拷贝" class="headerlink" title="js 深拷贝与浅拷贝"></a>js 深拷贝与浅拷贝</h4><h4 id="解释MVVM框架"><a href="#解释MVVM框架" class="headerlink" title="解释MVVM框架"></a>解释MVVM框架</h4><h4 id="数据双向绑定原因"><a href="#数据双向绑定原因" class="headerlink" title="数据双向绑定原因"></a>数据双向绑定原因</h4><h4 id="虚拟-DOM及其优缺点"><a href="#虚拟-DOM及其优缺点" class="headerlink" title="虚拟 DOM及其优缺点"></a>虚拟 DOM及其优缺点</h4><h3 id="宇宙条"><a href="#宇宙条" class="headerlink" title="宇宙条"></a>宇宙条</h3><h4 id="如果递归多了，会发生什么？如何解决？"><a href="#如果递归多了，会发生什么？如何解决？" class="headerlink" title="如果递归多了，会发生什么？如何解决？"></a>如果递归多了，会发生什么？如何解决？</h4><p>答案：会发生递归栈溢出，利用setTimeout的特点：任务在之后的事件循环执行，可以解决一些递归栈溢出的问题</p>
+<h4 id="浏览器访问一个url所展示页面的流程。详细说明"><a href="#浏览器访问一个url所展示页面的流程。详细说明" class="headerlink" title="浏览器访问一个url所展示页面的流程。详细说明"></a>浏览器访问一个url所展示页面的流程。详细说明</h4><p>总体来说分为以下几个过程:</p>
+<ol>
+<li><p>DNS解析</p>
+<p>一个网址到IP地址的转换，寻找对应资源</p>
+</li>
+<li><p>TCP连接</p>
+<p>HTTP协议是使用TCP作为其传输层协议的</p>
+</li>
+<li><p>发送HTTP请求</p>
+<p>发送HTTP请求的过程就是构建HTTP请求报文并通过TCP协议中发送到服务器指定端口(HTTP协议80/8080, HTTPS协议443)。HTTP请求报文是由三部分组成: <strong>请求行</strong>, <strong>请求报头</strong>和<strong>请求正文</strong>。</p>
+</li>
+<li><p>服务器处理请求并返回HTTP报文</p>
+<p>它会对TCP连接进行处理，对HTTP协议进行解析，并按照报文格式进一步封装成HTTP Request对象，供上层使用。</p>
+</li>
+<li><p>浏览器解析渲染页面</p>
+<p>浏览器解析HTML文件构建DOM树，然后解析CSS文件构建渲染树，等到渲染树构建完成后，浏览器开始布局渲染树并将其绘制到屏幕上。这个过程比较复杂，涉及到两个概念: reflow(回流)和repain(重绘)。</p>
+</li>
+<li><p>连接结束</p>
+</li>
+</ol>
+<p>前端的本质是什么。我的理解是: 将信息快速并友好的展示给用户并能够与用户进行交互。</p>
+<h4 id="接4，聊了DNS的详细过程，TCP三次握手，UDP，网络分层"><a href="#接4，聊了DNS的详细过程，TCP三次握手，UDP，网络分层" class="headerlink" title="接4，聊了DNS的详细过程，TCP三次握手，UDP，网络分层"></a>接4，聊了DNS的详细过程，TCP三次握手，UDP，网络分层</h4><p>递归查询（ip地址），迭代查询</p>
+<h4 id="聊了强缓存，协商缓存，及缓存涉及的headers"><a href="#聊了强缓存，协商缓存，及缓存涉及的headers" class="headerlink" title="聊了强缓存，协商缓存，及缓存涉及的headers"></a>聊了强缓存，协商缓存，及缓存涉及的headers</h4><h4 id="介绍HTTP1-0-HTTP1-1-HTTP2"><a href="#介绍HTTP1-0-HTTP1-1-HTTP2" class="headerlink" title="介绍HTTP1.0,HTTP1.1,HTTP2"></a>介绍HTTP1.0,HTTP1.1,HTTP2</h4><h4 id="什么是重绘重排"><a href="#什么是重绘重排" class="headerlink" title="什么是重绘重排"></a>什么是重绘重排</h4><h4 id="Script为什么放在页面的底部"><a href="#Script为什么放在页面的底部" class="headerlink" title="Script为什么放在页面的底部"></a>Script为什么放在页面的底部</h4><h4 id="如果实现上传图片的功能，前端后端分别怎么做"><a href="#如果实现上传图片的功能，前端后端分别怎么做" class="headerlink" title="如果实现上传图片的功能，前端后端分别怎么做"></a>如果实现上传图片的功能，前端后端分别怎么做</h4><h4 id="如果想实现前端预览图片，怎么做"><a href="#如果想实现前端预览图片，怎么做" class="headerlink" title="如果想实现前端预览图片，怎么做"></a>如果想实现前端预览图片，怎么做</h4><h4 id="前后端如何涉及，可以实现鉴别不同用户发起的请求？提示：cookie、session相关"><a href="#前后端如何涉及，可以实现鉴别不同用户发起的请求？提示：cookie、session相关" class="headerlink" title="前后端如何涉及，可以实现鉴别不同用户发起的请求？提示：cookie、session相关"></a>前后端如何涉及，可以实现鉴别不同用户发起的请求？提示：cookie、session相关</h4><h4 id="举例子常见的设计模式，比如Vue中用到了哪些设计模式？"><a href="#举例子常见的设计模式，比如Vue中用到了哪些设计模式？" class="headerlink" title="举例子常见的设计模式，比如Vue中用到了哪些设计模式？"></a>举例子常见的设计模式，比如Vue中用到了哪些设计模式？</h4><h3 id="字节跳动前端"><a href="#字节跳动前端" class="headerlink" title="字节跳动前端"></a>字节跳动前端</h3><p>作者：萝依ly<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/423769">https://www.nowcoder.com/discuss/423769</a><br>来源：牛客网</p>
+<h4 id="一面（一"><a href="#一面（一" class="headerlink" title="一面（一"></a>一面（一</h4><h5 id="1-instanceOf实现的原理"><a href="#1-instanceOf实现的原理" class="headerlink" title="1.instanceOf实现的原理"></a>1.instanceOf实现的原理</h5><p>其实 instanceof 主要的实现原理就是只要右边变量的 prototype 在左边变量的原型链上即可。因此，instanceof 在查找的过程中会遍历左边变量的原型链，直到找到右边变量的 prototype，如果查找失败，则会返回 false，告诉我们左边变量并非是右边变量的实例。</p>
+<h5 id="2-typeof"><a href="#2-typeof" class="headerlink" title="2.typeof"></a>2.typeof</h5><p>typeof一般被用于判断一个变量的类型，我们可以利用typeof来判断number、string、object、boolean、function、undefined、symbol这七种类型。当判断不是object时其它都好说。</p>
+<h5 id="3-js的类型"><a href="#3-js的类型" class="headerlink" title="3.js的类型"></a>3.js的类型</h5><p>JavaScript中有6种数据类型：数字（number）、字符串（string）、布尔值（boolean）、undefined、null、对象（Object）。 其中对象类型包括：数组（Array）、函数（Function）、还有两个特殊的对象：正则（RegExp）和日期（Date）</p>
+<h5 id="4-给了一段setTimeout、Promise判断输出顺序-x"><a href="#4-给了一段setTimeout、Promise判断输出顺序-x" class="headerlink" title="4.给了一段setTimeout、Promise判断输出顺序 x"></a>4.给了一段setTimeout、Promise判断输出顺序 x</h5><p>优先级： promise.Trick()&gt;promise的回调&gt;setTimeout&gt;setImmediate</p>
+<h5 id="5-事件循环"><a href="#5-事件循环" class="headerlink" title="5.事件循环"></a>5.事件循环</h5><p>一个 JavaScript 运行时包含了一个待处理消息的消息队列。每一个消息都关联着一个用以处理这个消息的回调函数。</p>
+<p>在 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop#%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF">事件循环</a> 期间的某个时刻，运行时会从最先进入队列的消息开始处理队列中的消息。被处理的消息会被移出队列，并作为输入参数来调用与之关联的函数。正如前面所提到的，调用一个函数总是会为其创造一个新的栈帧。</p>
+<p>函数的处理会一直进行到执行栈再次为空为止；然后事件循环将会处理队列中的下一个消息（如果还有的话）</p>
+<p>之所以称之为 <strong>事件循环</strong>，是因为它经常按照类似如下的方式来被实现：</p>
+<pre><code class="hljs js"><span class="hljs-keyword">while</span> (queue.waitForMessage()) &#123;
+  queue.processNextMessage();
+&#125;</code></pre>
+
+<p><code>queue.waitForMessage()</code> 会同步地等待消息到达(如果当前没有任何消息等待被处理)。</p>
+<h5 id="6-BFC"><a href="#6-BFC" class="headerlink" title="6.BFC"></a>6.BFC</h5><p><strong>块格式化上下文（Block Formatting Context，BFC）</strong> 是Web页面的可视CSS渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域。</p>
+<p>块格式化上下文对浮动定位（参见 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/float"><code>float</code></a>）与清除浮动（参见 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/clear"><code>clear</code></a>）都很重要。浮动定位和清除浮动时只会应用于同一个BFC内的元素。浮动不会影响其它BFC中元素的布局，而清除浮动只能清除同一BFC中在它前面的元素的浮动。外边距折叠（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">Margin collapsing</a>）也只会发生在属于同一BFC的块级元素之间。</p>
+<h5 id="7-position的属性，fixed是相对于什么定位的"><a href="#7-position的属性，fixed是相对于什么定位的" class="headerlink" title="7.position的属性，fixed是相对于什么定位的"></a>7.position的属性，fixed是相对于什么定位的</h5><pre><code class="hljs capnproto"><span class="hljs-keyword">fixed</span></code></pre>
+
+<p>元素会被移出正常文档流，并不为元素预留空间，而是通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。<code>fixed</code> 属性会创建新的层叠上下文。当元素祖先的 <code>transform</code>, <code>perspective</code> 或 <code>filter</code> 属性非 <code>none</code> 时，容器由视口改为该祖先。</p>
+<h5 id="8-闭包"><a href="#8-闭包" class="headerlink" title="8.闭包"></a>8.闭包</h5><p>内部函数 <code>displayName()</code> <em>在执行前</em>，从外部函数返回。</p>
+<p>闭包很有用，因为它允许将函数与其所操作的某些数据（环境）关联起来。这显然类似于面向对象编程。在面向对象编程中，对象允许我们将某些数据（对象的属性）与一个或者多个方法相关联。</p>
+<p>使用闭包来定义公共函数，并令其可以访问私有函数和变量</p>
+<h5 id="9-new之后发生了什么"><a href="#9-new之后发生了什么" class="headerlink" title="9.new之后发生了什么"></a>9.new之后发生了什么</h5><p>用new操作符创建对象发生的事情:</p>
+<ul>
+<li>创建一个新对象；</li>
+<li>将构造函数的作用域赋给这个对象（因此this就指向了这个对象）；</li>
+<li>执行构造函数中的代码（为这个对象添加属性和方法，以及执行构造函数中其他的代码）；</li>
+<li>把这个新对象返回；<br> 注意：原本的构造函数是window对象的方法，如果不用new操作符而直接调用，那么构造函数的执行对象就 是window，即this指向了window。现在用new操作符后，this就指向了新生成的对象。理解这一步至关重要</li>
+</ul>
+<p>。</p>
+<p>  10.es6有什么觉得好用 </p>
+<p>剪头函数 const imprt</p>
+<p>数组元素的查询**</p>
+<p>在数组里查询一个元素，或者查询他的index是一个非常常见的对数组的操作。在ES6中提供了两个新的数组方法，find()和findIndex()来做这件事。</p>
+<p>ES6中新增了一个String.repeat()方法用来复制字符串。</p>
+<p>面试官：对这个数组去重:Set</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">const</span> dupArr = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">4</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">5</span>,<span class="hljs-number">32</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]；</code></pre>
+
+<p>doddle：</p>
+<pre><code class="hljs javascript">[...new <span class="hljs-built_in">Set</span>()]; <span class="hljs-comment">// [2, 3, 4, 5, 6, 7, 32]</span></code></pre>
+
+<p>ES6中新增了3个新方法用来帮助开发者搜索String中的文本片段。他们是startsWith()、endsWith()以及includes()。我简直太爱这些方法了，因为indexOf()总是有一些奇怪的性能问题让我纠结，而且indexOf在使用上很容易出错</p>
+<p>  11.__proto__是用来作什么的 </p>
+<p>__proto__（隐式原型）与prototype（显式原型）</p>
+<p> __proto__是<strong>每个对象</strong>都有的一个属性，而prototype是<strong>函数</strong>才会有的属性。</p>
+<p>\2. __proto__指向的是<strong>当前对象</strong>的<strong>原型对象</strong>，而prototype指向的，是以<strong>当前函数</strong>作为<strong>构造函数</strong>构造出来的<strong>对象</strong>的<strong>原型对象</strong>。</p>
+<p>  12.强缓存/协商缓存 </p>
+<p>  13.bind、apply、call </p>
+<p><strong>bind()</strong> 函数会创建一个新的<strong>绑定函数</strong>（<strong>bound function</strong>，BF）。绑定函数是一个 exotic function object（怪异函数对象，ECMAScript 2015 中的术语），它包装了原函数对象。调用<strong>绑定函数</strong>通常会导致执行<strong>包装函数</strong>。<br><strong>绑定函数</strong>具有以下内部属性：</p>
+<ul>
+<li><p><strong>[[BoundTargetFunction]]</strong> - 包装的函数对象</p>
+</li>
+<li><p><strong>[[BoundThis]]</strong> - 在调用包装函数时始终作为 <strong>this</strong> 值传递的值。</p>
+</li>
+<li><p><strong>[[BoundArguments]]</strong> - 列表，在对包装函数做任何调用都会优先用列表元素填充参数列表。</p>
+</li>
+<li><p><strong>[[Call]]</strong> - 执行与此对象关联的代码。通过函数调用表达式调用。内部方法的参数是一个<strong>this</strong>值和一个包含通过调用表达式传递给函数的参数的列表。</p>
+<p>14.如何实现bind（说的思路 </p>
+</li>
+</ul>
+<p>bind() 方法会创建一个新函数。当这个新函数被调用时，bind() 的第一个参数将作为它运行时的 this，之后的一序列参数将会在传递的实参前传入作为它的参数。(来自于 MDN )</p>
+<p>  function foo() {<br>      console.log(this.a);<br>  }<br>  var obj = { a: 2 };<br>  foo.call(obj);      // 2</p>
+<p>  15.如何进行拷贝 </p>
+<p>  16.浏览器是多线程的吗 </p>
+<p>浏览器内核是多线程浏览器内核是多线程，在内核控制下各线程相互配合以保持同步，一个浏览器通常由以下常驻线程组成：</p>
+<ul>
+<li><p>GUI 渲染线程</p>
+</li>
+<li><p>JavaScript引擎线程</p>
+</li>
+<li><p>定时触发器线程</p>
+</li>
+<li><p>事件触发线程</p>
+</li>
+<li><p>异步http请求线程</p>
+<p>17.node是多线程的吗&amp;为什么 </p>
+<p>18.js是单线程还是多线程 </p>
+</li>
+</ul>
+<p>Javascript是单线程的, 那么为什么Javascript要是单线程的？</p>
+<p>这是因为Javascript这门脚本语言诞生的使命所致：JavaScript为处理页面中用户的交互，以及操作DOM树、CSS样式树来给用户呈现一份动态而丰富的交互体验和服务器逻辑的交互处理。如果JavaScript是多线程的方式来操作这些UI DOM，则可能出现UI操作的冲突； 如果Javascript是多线程的话，在多线程的交互下，处于UI中的DOM节点就可能成为一个临界资源，假设存在两个线程同时操作一个DOM，一个负责修改一个负责删除，那么这个时候就需要浏览器来裁决如何生效哪个线程的执行结果。当然我们可以通过锁来解决上面的问题。但为了避免因为引入了锁而带来更大的复杂性，Javascript在最初就选择了单线程执行</p>
+<p>  19.同源策略&amp;跨域的解决方案 </p>
+<p>  20.进程与线程的区别 </p>
+<p>  进程是具有一定独立功能的程序关于某个数据集合上的一次运行活动,进程是系统进行资源分配和调度的一个独立单位. </p>
+<p>线程是进程的一个实体,是CPU调度和分派的基本单位,它是比进程更小的能独立运行的基本单位. … 一个线程可以创建和撤销另一个线程;同一个进程中的多个线程之间可以并发执行.</p>
+<p>  编程： </p>
+<p>  使用JS实现一个 repeat 方法 log 4次 hello world, 每次间隔3秒  </p>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">repeat</span>(<span class="hljs-params">func, times, wait</span>) </span>&#123;
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">message</span> =&gt;</span> &#123;
+    <span class="hljs-keyword">let</span> timer = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> &#123;
+      times-- &gt; <span class="hljs-number">0</span> ? func(message) : <span class="hljs-built_in">clearInterval</span>(timer);
+    &#125;, wait);
+  &#125;;
+&#125;
+<span class="hljs-keyword">const</span> repeatFunc = repeat(<span class="hljs-built_in">console</span>.log, <span class="hljs-number">4</span>, <span class="hljs-number">3000</span>);
+repeatFunc(<span class="hljs-string">&quot;hellworld&quot;</span>);</code></pre>
+
+<p>  加大难度版：输出第几次helloworld</p>
+<h4 id="一面（二"><a href="#一面（二" class="headerlink" title="一面（二"></a>一面（二</h4><p>作者：来坛天子笑~<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/394983">https://www.nowcoder.com/discuss/394983</a><br>来源：牛客网</p>
+<p>自我介绍      </p>
+<h5 id="重排重绘"><a href="#重排重绘" class="headerlink" title="重排重绘( )"></a>重排重绘( )</h5><h5 id="设计一个百度搜索框（重点问了下面出现的提示要怎么设置样式？position？导致重排？）"><a href="#设计一个百度搜索框（重点问了下面出现的提示要怎么设置样式？position？导致重排？）" class="headerlink" title="设计一个百度搜索框（重点问了下面出现的提示要怎么设置样式？position？导致重排？）"></a>设计一个百度搜索框（重点问了下面出现的提示要怎么设置样式？position？导致重排？）</h5><h5 id=""><a href="#" class="headerlink" title=""></a></h5><h5 id="DNS是什么？解析域名、得到IP、创建tcp连接、交互（面试官：没了？然后就解释三次握手，首次返回html文档，请求css、js静态文件、四次挥手）"><a href="#DNS是什么？解析域名、得到IP、创建tcp连接、交互（面试官：没了？然后就解释三次握手，首次返回html文档，请求css、js静态文件、四次挥手）" class="headerlink" title="DNS是什么？解析域名、得到IP、创建tcp连接、交互（面试官：没了？然后就解释三次握手，首次返回html文档，请求css、js静态文件、四次挥手）"></a>DNS是什么？解析域名、得到IP、创建tcp连接、交互（面试官：没了？然后就解释三次握手，首次返回html文档，请求css、js静态文件、四次挥手）</h5><h5 id="怎样移动一个标签却不导致重排？transform"><a href="#怎样移动一个标签却不导致重排？transform" class="headerlink" title="怎样移动一个标签却不导致重排？transform"></a>怎样移动一个标签却不导致重排？transform</h5><h5 id="怎么进行性能优化？首页、小图片拼接，样式内联"><a href="#怎么进行性能优化？首页、小图片拼接，样式内联" class="headerlink" title="怎么进行性能优化？首页、小图片拼接，样式内联"></a>怎么进行性能优化？首页、小图片拼接，样式内联</h5><h5 id="html5的标签有哪些？说一下怎么用的？-css3用过哪一些？border-radius、transition。。。"><a href="#html5的标签有哪些？说一下怎么用的？-css3用过哪一些？border-radius、transition。。。" class="headerlink" title="html5的标签有哪些？说一下怎么用的？          css3用过哪一些？border-radius、transition。。。"></a>html5的标签有哪些？说一下怎么用的？          css3用过哪一些？border-radius、transition。。。</h5><h5 id="cdn是什么？缓存"><a href="#cdn是什么？缓存" class="headerlink" title="cdn是什么？缓存"></a>cdn是什么？缓存</h5><h5 id="说一些http的状态码？早上刚背了一遍…"><a href="#说一些http的状态码？早上刚背了一遍…" class="headerlink" title="说一些http的状态码？早上刚背了一遍…"></a>说一些http的状态码？早上刚背了一遍…</h5><h5 id="给一数组和一数字，求数组中出现次数大于数组长度除该数字的项？（去重、统计，这里因为一个if语句卡了好久，感觉很降分）"><a href="#给一数组和一数字，求数组中出现次数大于数组长度除该数字的项？（去重、统计，这里因为一个if语句卡了好久，感觉很降分）" class="headerlink" title="给一数组和一数字，求数组中出现次数大于数组长度除该数字的项？（去重、统计，这里因为一个if语句卡了好久，感觉很降分）"></a>给一数组和一数字，求数组中出现次数大于数组长度除该数字的项？（去重、统计，这里因为一个if语句卡了好久，感觉很降分）</h5><h5 id="平时怎么学习前端？"><a href="#平时怎么学习前端？" class="headerlink" title="平时怎么学习前端？"></a>平时怎么学习前端？</h5><h5 id="二进制相加，给两字符串求值？我刚好早上看一个大数相加的例子，然后就改一下，说了一下思路"><a href="#二进制相加，给两字符串求值？我刚好早上看一个大数相加的例子，然后就改一下，说了一下思路" class="headerlink" title="二进制相加，给两字符串求值？我刚好早上看一个大数相加的例子，然后就改一下，说了一下思路"></a>二进制相加，给两字符串求值？我刚好早上看一个大数相加的例子，然后就改一下，说了一下思路</h5><h5 id="做过什么项目？讲一下项目的内容和用到的技术？（我没有用到什么牛逼的技术…）"><a href="#做过什么项目？讲一下项目的内容和用到的技术？（我没有用到什么牛逼的技术…）" class="headerlink" title="做过什么项目？讲一下项目的内容和用到的技术？（我没有用到什么牛逼的技术…）"></a>做过什么项目？讲一下项目的内容和用到的技术？（我没有用到什么牛逼的技术…）</h5><h5 id="箭头函数this指向和const声明的值"><a href="#箭头函数this指向和const声明的值" class="headerlink" title="箭头函数this指向和const声明的值"></a>箭头函数this指向和const声明的值</h5><h5 id="有什么要问我的？（尬聊了一会…）"><a href="#有什么要问我的？（尬聊了一会…）" class="headerlink" title="有什么要问我的？（尬聊了一会…）"></a>有什么要问我的？（尬聊了一会…）</h5><h5 id="数组异步求和"><a href="#数组异步求和" class="headerlink" title="数组异步求和"></a>数组异步求和</h5><h4 id="一面（3"><a href="#一面（3" class="headerlink" title="一面（3"></a>一面（3</h4><h5 id="实现一个百度搜索框，包括垂直左右居中，自适应的特性"><a href="#实现一个百度搜索框，包括垂直左右居中，自适应的特性" class="headerlink" title="实现一个百度搜索框，包括垂直左右居中，自适应的特性"></a>实现一个百度搜索框，包括垂直左右居中，自适应的特性</h5><h5 id="js中的数据类型，如何判断数组，每个方法都问了原理，还手写了instanceof"><a href="#js中的数据类型，如何判断数组，每个方法都问了原理，还手写了instanceof" class="headerlink" title="js中的数据类型，如何判断数组，每个方法都问了原理，还手写了instanceof"></a>js中的数据类型，如何判断数组，每个方法都问了原理，还手写了instanceof</h5><h5 id="cookie的特性，关于安全方面的特性，还问了跨域请求的解决方法"><a href="#cookie的特性，关于安全方面的特性，还问了跨域请求的解决方法" class="headerlink" title="cookie的特性，关于安全方面的特性，还问了跨域请求的解决方法"></a>cookie的特性，关于安全方面的特性，还问了跨域请求的解决方法</h5><h5 id="实现一个每秒输出hello-world的函数，要求第三次输出后停止，用闭包实现"><a href="#实现一个每秒输出hello-world的函数，要求第三次输出后停止，用闭包实现" class="headerlink" title="实现一个每秒输出hello world的函数，要求第三次输出后停止，用闭包实现"></a>实现一个每秒输出hello world的函数，要求第三次输出后停止，用闭包实现</h5><h5 id="实现归并排序"><a href="#实现归并排序" class="headerlink" title="实现归并排序"></a>实现归并排序</h5><h5 id="BFC的相关特性和应用"><a href="#BFC的相关特性和应用" class="headerlink" title="BFC的相关特性和应用"></a>BFC的相关特性和应用</h5><h5 id="diff算法"><a href="#diff算法" class="headerlink" title="diff算法"></a>diff算法</h5><h5 id="浏览器渲染的流程，这个问的非常详细，比如说，问了css的层叠性，还有绘制指令的具体顺序，浏览器进程线程之间的切换和通信等等"><a href="#浏览器渲染的流程，这个问的非常详细，比如说，问了css的层叠性，还有绘制指令的具体顺序，浏览器进程线程之间的切换和通信等等" class="headerlink" title="浏览器渲染的流程，这个问的非常详细，比如说，问了css的层叠性，还有绘制指令的具体顺序，浏览器进程线程之间的切换和通信等等"></a>浏览器渲染的流程，这个问的非常详细，比如说，问了css的层叠性，还有绘制指令的具体顺序，浏览器进程线程之间的切换和通信等等</h5><h5 id="问了网络非常多的内容，包括拥塞控制、流量控制、三握手四挥手、网络请求的方法、状态码、然后给了很多网络请求的情景，让我说出返回的响应头、还有强缓存和协商缓存"><a href="#问了网络非常多的内容，包括拥塞控制、流量控制、三握手四挥手、网络请求的方法、状态码、然后给了很多网络请求的情景，让我说出返回的响应头、还有强缓存和协商缓存" class="headerlink" title="问了网络非常多的内容，包括拥塞控制、流量控制、三握手四挥手、网络请求的方法、状态码、然后给了很多网络请求的情景，让我说出返回的响应头、还有强缓存和协商缓存"></a>问了网络非常多的内容，包括拥塞控制、流量控制、三握手四挥手、网络请求的方法、状态码、然后给了很多网络请求的情景，让我说出返回的响应头、还有强缓存和协商缓存</h5><h5 id="手写ajax原生请求"><a href="#手写ajax原生请求" class="headerlink" title="手写ajax原生请求"></a>手写ajax原生请求</h5><h5 id="浏览器中的js和nodejs有什么区别"><a href="#浏览器中的js和nodejs有什么区别" class="headerlink" title="浏览器中的js和nodejs有什么区别"></a>浏览器中的js和nodejs有什么区别</h5><h5 id="跨域请求中的CORS策略，简单请求和非简单请求都问了，问了很多细节"><a href="#跨域请求中的CORS策略，简单请求和非简单请求都问了，问了很多细节" class="headerlink" title="跨域请求中的CORS策略，简单请求和非简单请求都问了，问了很多细节"></a>跨域请求中的CORS策略，简单请求和非简单请求都问了，问了很多细节</h5><h5 id="实现一个千分位的函数"><a href="#实现一个千分位的函数" class="headerlink" title="实现一个千分位的函数"></a>实现一个千分位的函数</h5><h4 id="二面（2"><a href="#二面（2" class="headerlink" title="二面（2"></a>二面（2</h4><p>Event Loop机制，先说过程，然后再做一道题 </p>
+<p>  浏览器的回收机制，新生代，老生代 </p>
+<p>  实现一个字符串转换出所有可能的IP地址，leetcode有原题好像，面试官说思路正确，但是结果运行总是出问题，调试了好久 </p>
+<p>  为什么学习前端，学习多久了</p>
+<p>一面（4</p>
+<ul>
+<li>使用键去获得JavaScript对象中的值时，时间复杂度是多少？为什么？ </li>
+<li>ES6中用过的语法或者知识点 </li>
+<li>proxy相比Object.defineProperty的优势（前面我提到了proxy） </li>
+<li>闭包的概念以及用途 </li>
+<li>http响应状态码 </li>
+<li>永久重定向和临时重定向的区别？如何实现 </li>
+<li>说出知道的http请求方法，还有就是put和post的区别，put和patch的区别。 </li>
+<li>幂等的请求靠什么来实现的？是该方法自身实现还是需要后端实现？ </li>
+<li>浏览器缓存策略 </li>
+<li>跨域的解决办法 </li>
+<li>cookie的特性 </li>
+<li>前端可能会存在哪些安全风险？如何防范 </li>
+<li>为什么要有微任务 </li>
+<li>… 还有一些问题记不清了 </li>
+</ul>
+<p>然后做了两道题：</p>
+<ul>
+<li>实现一个sum函数，sum(1,2)(3).valueOf()这样调用后的结果为6 </li>
+<li>对字符串去重，要求时间复杂度为O(n)。</li>
+</ul>
+<h4 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h4><p>作者：dvacy<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/433891">https://www.nowcoder.com/discuss/433891</a><br>来源：牛客网</p>
+<ul>
+<li>typescript中的泛型的理解 </li>
+<li>http/2了解过吗？相对于http/1.x有什么优势？http2又带来什么问题 </li>
+<li>tcp三次握手 </li>
+<li>https加密原理 </li>
+<li>前端安全 </li>
+<li>promise 和 async/await 解决了什么问题以及它们的错误处理；then方法中的第二个回调和catch的区别 </li>
+<li>weakMap 和 weakSet 相对于 Map 和 Set 的区别 </li>
+<li>…记不到了记不到了 </li>
+</ul>
+<p>然后做了两道题：</p>
+<ul>
+<li>数组倒序输出（不能使用reverse方法） </li>
+<li>实现一个compose函数，接收一个数组[a,b,c]，调用compose([a,b,c])(param)后和a(b(c(param)))效果相同。</li>
+</ul>
+<h4 id="一面（5"><a href="#一面（5" class="headerlink" title="一面（5"></a>一面（5</h4><p>作者：昵称仅能修改一次<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/432882">https://www.nowcoder.com/discuss/432882</a><br>来源：牛客网</p>
+<p>vue相比react解决了什么问题   </p>
+<p>​    正向代理与反向代理   </p>
+<p>​    手写中间件测试请求时间   </p>
+<p>​     对称加密与非对称加密    </p>
+<p>​    http和https区别   </p>
+<p>​    ES6有什么了解<br> promise介绍一下<br> async和await源码<br> 迭代器 生成器了解吗<br> for in for of区别<br> apply bind call区别   </p>
+<p>​    event loop   </p>
+<p>​    跨域以及处理方法<br> 排序算法了解哪些<br> 手写桶排序   </p>
+<p>​    还有什么想问我的</p>
+<h4 id="二面-1"><a href="#二面-1" class="headerlink" title="二面"></a>二面</h4><p>this指向出了道题</p>
+<p>es5 es6继承方式</p>
+<p>深拷贝和浅拷贝区别</p>
+<p>手写深拷贝<br>二叉树代码题<br>网络安全方面以及如何处理 （详细展开）</p>
+<h4 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h4><p>作者：昵称仅能修改一次<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/432882">https://www.nowcoder.com/discuss/432882</a><br>来源：牛客网</p>
+<p>vue生命周期<br> created 和 mounted区别   </p>
+<p>​    进程和线程的区别   </p>
+<p>​    tcp怎么保证可靠   </p>
+<p>​    vuex工作原理<br> action和mutations区别联系   </p>
+<p>​    介绍简历项目<br> 性能优化<br> img src为什么不能用空 应该用什么<br> 懒加载优化<br> 白屏优化</p>
+<p>​    loader的运行原理与作用<br> plugin原理 两者区别   </p>
+<p>​    智力题：红蓝墨水问题<br> 代码：判断两个数组包含关系<br> 还有什么想问我的吗</p>
+<h4 id="HR面"><a href="#HR面" class="headerlink" title="HR面"></a>HR面</h4><p>作者：昵称仅能修改一次<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/432882">https://www.nowcoder.com/discuss/432882</a><br>来源：牛客网</p>
+<p>未来规划<br> 为什么选择字节跳动<br> 为什么选择这所大学 不去南方念书<br> 大二就来实习的原因<br> 来到字节跳动想获得什么<br> 项目背景 功能介绍<br> 最近在看什么书   </p>
+<p>​    为什么选择前端<br> 怎么学习前端<br> 还收到了什么offer<br> 实习时间<br> 你的东北口音很重</p>
+<p>   反问环节</p>
+<h4 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h4><p>作者：牛客433739746号<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/432823">https://www.nowcoder.com/discuss/432823</a><br>来源：牛客网</p>
+<p>1.自我介绍</p>
+<p>2.经验方面：之前实习过吗？之前面试过吗？之前参加过工作室吗？是否和他人合作开发过项目？</p>
+<p>3.Vue的生命周期</p>
+<p>4.假设存在一个长度为1000（非常大）的数据列表，在v-for中渲染必然造成卡顿，如何优化</p>
+<p>5.用户登陆后如何记住用户的登录状态</p>
+<p>6.浏览器怎么识别cookie是否过期？不同网站如何获取不同的cookie</p>
+<p>8.CSRF攻击知道吗？原理是什么？在后端如何防范？</p>
+<p>9.选一个最熟悉的项目，讲一下项目设计的思路</p>
+<p>10.为什么选择PHP来写后端接口</p>
+<p>11.算法题</p>
+<p>![image-20200531110839694](/Users/gloriazhang/Library/Application Support/typora-user-images/image-20200531110839694.png)</p>
+<h4 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h4><h5 id="1-我们前几天遇到一个问题，使用https也不安全，响应数据中途被修改了，比如说非会员被改成了会员，那你要怎么解决？"><a href="#1-我们前几天遇到一个问题，使用https也不安全，响应数据中途被修改了，比如说非会员被改成了会员，那你要怎么解决？" class="headerlink" title="1.我们前几天遇到一个问题，使用https也不安全，响应数据中途被修改了，比如说非会员被改成了会员，那你要怎么解决？"></a>1.我们前几天遇到一个问题，使用https也不安全，响应数据中途被修改了，比如说非会员被改成了会员，那你要怎么解决？</h5><h5 id="那么后端的session要存在哪里怎么保存？"><a href="#那么后端的session要存在哪里怎么保存？" class="headerlink" title="那么后端的session要存在哪里怎么保存？"></a>那么后端的session要存在哪里怎么保存？</h5><h4 id="html-css"><a href="#html-css" class="headerlink" title="html/css"></a>html/css</h4><h5 id="讲一下盒模型吧？（margin-padding-border-content-…）"><a href="#讲一下盒模型吧？（margin-padding-border-content-…）" class="headerlink" title="讲一下盒模型吧？（margin padding border content …）"></a>讲一下盒模型吧？（margin padding border content …）</h5><h5 id="怎么修改盒模型？（box-？？？一时想不起，然后面试官就告诉我了）"><a href="#怎么修改盒模型？（box-？？？一时想不起，然后面试官就告诉我了）" class="headerlink" title="怎么修改盒模型？（box-？？？一时想不起，然后面试官就告诉我了）"></a>怎么修改盒模型？（box-？？？一时想不起，然后面试官就告诉我了）</h5><h5 id="讲一下css权重（-important，内联，外联，id。。。。）"><a href="#讲一下css权重（-important，内联，外联，id。。。。）" class="headerlink" title="讲一下css权重（!important，内联，外联，id。。。。）"></a>讲一下css权重（!important，内联，外联，id。。。。）</h5><h3 id="学而思前端"><a href="#学而思前端" class="headerlink" title="学而思前端"></a>学而思前端</h3><ol>
+<li><p>触发BFC的方式有哪些</p>
+<ul>
+<li>根元素(<html>) </li>
+<li>overflow 值不为 visible 的块元素 </li>
+<li>浮动元素（元素的 float 不是 none） </li>
+<li>绝对定位元素（元素的 position 为 absolute 或 fixed） </li>
+<li>行内块元素（元素的 display 为 inline-block） </li>
+<li>弹性元素（display为 flex 或 inline-flex元素的直接子元素） </li>
+<li>网格元素（display为 grid 或 inline-grid 元素的直接子元素） </li>
+</ul>
+</li>
+<li><p>@font-face</p>
+</li>
+<li><p>transform 有哪些属性</p>
+</li>
+<li><p>css 动画，有没有做过动画</p>
+</li>
+<li><p>requestanimationframe 有用过吗？知道是干嘛的吗</p>
+<p><code>window.requestAnimationFrame() 告诉浏览器——你希望执行一个动画，并且要求浏览器在下次重绘之前调用指定的回调函数更新动画。该方法需要传入一个回调函数作为参数，该回调函数会在浏览器下一次重绘之前执行。</code></p>
+</li>
+<li><p>请求后端的方式</p>
+</li>
+<li><p>Ajax 的流程</p>
+</li>
+<li><p>那你知道哪些头字段</p>
+</li>
+<li><p>服务器主动向客户端发送数据</p>
+<p>websocket</p>
+</li>
+<li><p>移动端布局的实现方式</p>
+</li>
+<li><p>rem 原理</p>
+</li>
+<li><p>vh vw 了解吗</p>
+</li>
+<li><p>vue 中如何获取原生的 DOM 结点<br>refs<br>ref</p>
+</li>
+<li><p>vuex 有用过吗</p>
+</li>
+<li><p>NextTick 是干嘛用的</p>
+</li>
+<li><p>如何实现私有变量</p>
+</li>
+<li><p>ES6 知道哪些</p>
+</li>
+<li><p>箭头函数跟普通函数的区别</p>
+</li>
+<li><p>fill() 方法怎么用的</p>
+</li>
+<li><p>Array.from()方法 怎么用的</p>
+</li>
+<li><p>Proxy 是干嘛用的</p>
+</li>
+<li><p>Object.defineProperty() 方法是干嘛的</p>
+</li>
+<li><p>讲讲 git 的流程</p>
+</li>
+<li><p>webpack 有自己配置过吗？讲讲</p>
+</li>
+<li><p>听说过正则吗？出题：xiao-wang-xiao 变成 xiaoWangXiao</p>
+</li>
+<li><p>todo-list 实现思路</p>
+</li>
+<li><p>数据结构了解吗？知道哪些排序方法</p>
+</li>
+<li><p>冒泡和快排讲一下思路</p>
+</li>
+</ol>
+<h4 id="二面-2020-5-26-30min"><a href="#二面-2020-5-26-30min" class="headerlink" title="二面 2020/5/26 30min"></a>二面 2020/5/26 30min</h4><ol>
+<li>项目介绍 </li>
+<li>vue react 的区别 </li>
+<li>虚拟DOM  Diff算法 </li>
+<li>JS DOM API 罗列几个 </li>
+<li>事件绑定的方法 </li>
+<li>数据结构 排序算法以及时间复杂 </li>
+<li>栈 队列 树 图 广度优先 深度优先 DP问了个遍 </li>
+<li>你觉得你最有成就感的事 </li>
+<li>为什么不走机器学习方向 </li>
+<li>矩阵论 你知道两个矩阵为什么相乘吗 你知道3D游戏里人物的旋转就是用的矩阵相乘 </li>
+</ol>
+<h4 id="HR面-2020-5-27"><a href="#HR面-2020-5-27" class="headerlink" title="HR面 2020/5/27"></a>HR面 2020/5/27</h4><ol>
+<li>研究生是保研吗 </li>
+<li>家是南京的吗 </li>
+<li>挑一到两个你认为比较重要的经历或者故事讲讲 </li>
+<li>通过这个面试或者这个实习你想获得什么 </li>
+<li>你对好未来有了解吗或者你对在线教育这个行业有什么见解吗 </li>
+<li>在线教育这种形式在疫情期间被越来越多的人知道，你对在线教育的发展形式从做技术的角度来看，你认为有哪些机遇和挑战 </li>
+<li>你是希望走纯技术还是走综合路线（带团队） </li>
+<li>毕业之后的发展规划 </li>
+<li>你还有在面其他公司的提前批吗</li>
+</ol>
+<h3 id="二面-2020-5-12-45min"><a href="#二面-2020-5-12-45min" class="headerlink" title="二面 2020/5/12 45min"></a>二面 2020/5/12 45min</h3><ol>
+<li><p>项目介绍</p>
+</li>
+<li><p>项目你觉得比较难的地方</p>
+</li>
+<li><p>城市选择页面是怎么实现的</p>
+</li>
+<li><p>城市列表的数据是从哪来的</p>
+</li>
+<li><p>移动端布局的怎么实现的</p>
+</li>
+<li><p>移动端 200ms 延迟的原因，如何解决 回答 fastclick 库</p>
+</li>
+<li><p>fastclick 库是怎么实现的 在检测到 touchend 事件的时候，会通过 DOM 自定义事件立即出发模拟一个 click 事件，并把浏览器在 300ms 之后真正的 click 事件阻止掉</p>
+</li>
+<li><p>如何阻止真正的 click 事件</p>
+</li>
+<li><p>事件流有哪些阶段</p>
+</li>
+<li><p>捕获阶段可以应用在哪儿</p>
+</li>
+<li><p>监听事件的方式</p>
+</li>
+<li><p>addEventListener 的参数有哪些</p>
+</li>
+<li><p>浏览器缓存，怎么判断是否从缓存中取</p>
+</li>
+<li><p>地址栏输入 URL 后经历了哪些步骤</p>
+</li>
+<li><p>区分 ‘123’ 和 123 的方法</p>
+</li>
+<li><p>flex 有哪些属性</p>
+</li>
+<li><p>flex-basis 属性是干嘛的</p>
+</li>
+<li><p>vue 双向数据绑定，哪些不能双向绑定 数组的下标方式，因为 vue2 里面是用的 Object.defineProperty() 方法 可以通过 vue3 proxy 方式</p>
+</li>
+<li><p>Object.defineProperty 是干嘛的，参数有哪些</p>
+</li>
+<li><p>vue3 相对于 vue2 的区别 proxy，并且 proxy 不能向下兼容(回答有点问题)</p>
+</li>
+<li><p>怎么样向下兼容 babel</p>
+</li>
+<li><p><code>import &#123;A&#125; from &#39;...&#39;</code> <code>import A from &#39;...&#39;</code> <code>require(&#39;...&#39;)</code>的区别</p>
+</li>
+<li><p>项目用什么打包的</p>
+</li>
+<li><p>webpack 的功能</p>
+</li>
+<li><p>手撕代码：1203040506 –&gt; 1234560000 （移动 0 到最后）</p>
+</li>
+<li><p>实现 find(numbers, n, sum)的方法：在 numbers 数组中找到 n 个数的和为 sum，讲讲思路</p>
+<pre><code class="hljs excel">我回答的是：
+<span class="hljs-built_in">n</span>=<span class="hljs-number">2</span>的时候，就是在数组中找到两个数的和为<span class="hljs-built_in">sum</span>，这个很简单
+<span class="hljs-built_in">n</span>=<span class="hljs-number">3</span>的时候，可以遍历数组，先拿出一个数num，剩下的数组成一个数组，在剩下的数组中寻找两个数的和为<span class="hljs-built_in">sum</span>-num，这就回到了<span class="hljs-built_in">n</span>=<span class="hljs-number">2</span>的情况
+<span class="hljs-built_in">n</span>&gt;<span class="hljs-number">3</span>的时候依次类推</code></pre>
+</li>
+<li><p>你用过 python，那你说说在处理数据（比如 excel 表格数据）的时候 python 好还是 js 好</p>
+</li>
+<li><p>nodejs 是什么 nodejs 也可以读取 excel 数据，推荐可以了解一下</p>
+</li>
+<li><p>了解哪些新技术 Web Assembly</p>
+</li>
+<li><p>web assembly 是个什么 (框架?语言?规范？)</p>
+<p>官网定义：</p>
+<ul>
+<li>WebAssembly/wasm WebAssembly 或者 wasm 是一个可移植、体积小、加载快并且兼容 Web 的全新格式</li>
+<li>WebAssembly 是由主流浏览器厂商组成的 W3C 社区团体 制定的一个新的规范。</li>
+</ul>
+<p>简书：</p>
+<ul>
+<li>WebAssembly 是一种可以使用非 JavaScript 编程语言编写代码并且能在浏览器上运行的技术方案。</li>
+</ul>
+</li>
+</ol>
+<h2 id="网易雷火-杭州"><a href="#网易雷火-杭州" class="headerlink" title="网易雷火 杭州"></a>网易雷火 杭州</h2><h3 id="一面-2020-5-11-45min"><a href="#一面-2020-5-11-45min" class="headerlink" title="一面 2020/5/11 45min"></a>一面 2020/5/11 45min</h3><ol>
+<li><p>H5 和 C3 的新特性</p>
+</li>
+<li><p>例举 3 个你最不常用的 css 特性</p>
+</li>
+<li><p>什么是变量提升？如何避免变量提升？如何禁止变量提升</p>
+</li>
+<li><p>什么是浅拷贝？简单的浅拷贝如何实现</p>
+</li>
+<li><p>ES6 有没有新增什么简单的方法浅拷贝</p>
+<ul>
+<li>{…obj}</li>
+<li>Object.assign({}, obj)</li>
+</ul>
+</li>
+<li><p>怎么实现一个简单类型的深拷贝，一行代码</p>
+<pre><code class="hljs reasonml"><span class="hljs-keyword">let</span> newObj = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">JSON</span>.</span></span>parse(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">JSON</span>.</span></span>stringify(oldObj))</code></pre>
+</li>
+<li><p>跨域知道哪几种</p>
+</li>
+<li><p>你用过哪种?(JSONP) JSONP 的回调函数需要定义在什么地方</p>
+</li>
+<li><p>浏览器存储你知道哪些</p>
+</li>
+<li><p>cookie 和 webStorage 的区别</p>
+</li>
+<li><p>cookie 是每次请求都会携带吗？怎么设置不携带 cookie 满足某种条件才会不携带，然后设置某种参数才能携带</p>
+</li>
+<li><p>某种请求默认不携带 cookie fetch 请求默认不携带 cookie</p>
+<pre><code class="hljs pgsql"><span class="hljs-keyword">fetch</span>在默认情况下, 不管是同域还是跨域ajax请求都不会带上cookie, 只有当设置了 credentials 时才会带上该ajax请求所在域的cookie, 服务端需要设置响应头 <span class="hljs-keyword">Access</span>-Control-Allow-Credentials: <span class="hljs-keyword">true</span>, 否则浏览器会因为安全限制而报错, 拿不到响应</code></pre>
+</li>
+<li><p>vue-router 里面有两种路由模式是什么，区别是什么 hash 模式 和 history 模式</p>
+<p>最大的区别：</p>
+<p>hash 模式不会把路径的变化发送到后端（hash 值变化不会导致浏览器向服务器发出请求）， 而 history 模式会</p>
+</li>
+<li><p>了解 SEO 吗？要做 SEO 的话要用哪种路由模式 history 模式</p>
+</li>
+<li><p>vue 里的 nextTick 有什么作用</p>
+</li>
+<li><p>vue 哪些对数据的操作不是响应式的 通过索引值修改数组中的元素 （虽然 data 被更改，但是 View 层不会发生变化 可通过数组中的方法进行改变，或则使用 Vue 的 api： set()</p>
+<p>扯到了 vue3.0 的 proxy 方法</p>
+</li>
+<li><p>vue3 现在是个什么状态？ 为什么不发布正式版本 目前浏览器的生态还不足以支持 vue3，目前浏览器还不支持 vue3，再等待浏览器的升级。</p>
+</li>
+</ol>
+<h3 id="二面-2020-5-13-50min"><a href="#二面-2020-5-13-50min" class="headerlink" title="二面 2020/5/13 50min"></a>二面 2020/5/13 50min</h3><ol>
+<li><p>通用的自我介绍</p>
+</li>
+<li><p>项目</p>
+</li>
+<li><p>rem 和 em 的区别</p>
+</li>
+<li><p>项目城市切换是如何实现的</p>
+</li>
+<li><p>vuex 是什么？主要功能呢</p>
+</li>
+<li><p>浏览器缓存的过程</p>
+</li>
+<li><p>服务器一定会将 Etag 发送给浏览器吗</p>
+</li>
+<li><p>Etag 和 If-Modified-Since 的区别在哪</p>
+</li>
+<li><p>禁用缓存的方式</p>
+</li>
+<li><p>cookie 跟 localStorage 的区别</p>
+</li>
+<li><p>localStorage 会传到服务器端吗？cookie 会传到服务器端吗</p>
+</li>
+<li><p>服务器端能否修改 cookie 服务器端操作 Cookie,主要注意会使用以下三个类: HttpCookie,HttpResponse,HttpRequest</p>
+</li>
+<li><p>闭包</p>
+<p>问这是个闭包吗？</p>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>&#123;
+  <span class="hljs-keyword">const</span> num = <span class="hljs-number">123</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">b</span>(<span class="hljs-params"></span>) </span>&#123;
+    <span class="hljs-built_in">console</span>.log(num)
+  &#125;
+  b()
+&#125;</code></pre>
+</li>
+<li><p>reduce 方法了解吗？怎么用的</p>
+</li>
+<li><p>map 方法了解吗？怎么用的</p>
+</li>
+<li><p>promise 的 then 方法返回的是什么</p>
+</li>
+<li><p>如何在控制台获取页面上所有的事件对象</p>
+<pre><code class="hljs mel">e = <span class="hljs-keyword">event</span> || <span class="hljs-keyword">window</span>.<span class="hljs-keyword">event</span></code></pre>
+</li>
+<li><p>控制台可以显示页面需要的静态资源吗？在哪显示 控制台 Network 里</p>
+</li>
+<li><p>学前端碰到问题是怎么解决</p>
+</li>
+</ol>
+<h3 id="三面-2020-5-18-50min"><a href="#三面-2020-5-18-50min" class="headerlink" title="三面 2020/5/18 50min"></a>三面 2020/5/18 50min</h3><ol>
+<li>常规，自我介绍</li>
+<li>你科研用的是机器学习这块儿的东西，为什么不走这个方向</li>
+<li>介绍项目</li>
+<li>项目用了什么技术</li>
+<li>css 定位 absolute 和 fixed 的区别</li>
+<li>父子组建传值</li>
+<li>vuex</li>
+<li>vue底层原理</li>
+<li>vue-router两种路由模式？区别</li>
+<li>webpack原理</li>
+<li>webpack优化，比如 npm run build 很慢怎么解决</li>
+<li>遇到问题怎么解决</li>
+<li>给你一项任务限期内完成，你会怎么安排</li>
+</ol>
+<h4 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h4><p>单项数据流和双向绑定的区别？（单项数据流是啥？？一脸懵，面试官：比如父子节点传值。父子传值的优点嘛…..安全？子组件无法访问父组件其他数据？然后瞎蒙着就过去了）        </p>
+<p>​     你用过脚手架吧，那你说说脚手架应该有什么功能？（瞎猜的，1.压缩文件、2.能够加密？3. 比如less会简化代码，4. 去除一些无用的文件，其实还想说能进行兼容buble?）</p>
+<h2 id="字节-java"><a href="#字节-java" class="headerlink" title="字节 java"></a>字节 java</h2><h4 id="一面-1"><a href="#一面-1" class="headerlink" title="一面"></a>一面</h4><h5 id="让你设计数据库会注意什么；"><a href="#让你设计数据库会注意什么；" class="headerlink" title="让你设计数据库会注意什么；"></a>让你设计数据库会注意什么；</h5><h5 id="线程和进程的区别和联系"><a href="#线程和进程的区别和联系" class="headerlink" title="线程和进程的区别和联系"></a>线程和进程的区别和联系</h5><h5 id="HTTP的一整套；"><a href="#HTTP的一整套；" class="headerlink" title="HTTP的一整套；"></a>HTTP的一整套；</h5><p>​    还有maven的记不清了，因为直接说了不会…</p>
+<p>​    编程题：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-valid-parentheses/">力扣32最长有效括号</a>，一开始用栈写结果脑抽，最后dp硬刚了出来。</p>
+<h4 id="二面-2"><a href="#二面-2" class="headerlink" title="二面"></a>二面</h4><p>​    说说自己项目的请求过来，服务器内部怎么处理的；</p>
+<p>​    类似秒杀的系统怎么设计，有什么注意事项；</p>
+<p>​    Redis的缓存雪崩和缓存击穿；</p>
+<p>​    因为提到了降级，说说降级策略(自己给自己挖坑，面完立马去总结了)；</p>
+<p>​    MySQL的索引；</p>
+<p>​    JVM GC的一整套(算法、分区、判断方法、GC器)；</p>
+<p>​    Spring的AOP和IOC的偏底层实现；</p>
+<p>​    介绍Spring MVC以及其底层原理；</p>
+<p>​    聊聊MQ，你项目用了RabbitMQ仔细说说底层的东西；</p>
+<p>​    几十G的数据都是URL，内存空间只有1G，磁盘空间无限，统计频率最高的Top 10；</p>
+<p>​    编程题：</p>
+<p>​    一个SQL，和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/customers-who-never-order/">从不订购的客户</a>一样，左连接完事；</p>
+<p>​    一个判断<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/balanced-binary-tree/">平衡二叉树</a>。</p>
+<h3 id="快手java"><a href="#快手java" class="headerlink" title="快手java"></a>快手java</h3><h3 id="一面-2"><a href="#一面-2" class="headerlink" title="一面"></a>一面</h3><p>作者：切假腿<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/432743">https://www.nowcoder.com/discuss/432743</a><br>来源：牛客网</p>
+<p>自我介绍 </p>
+<p>​    项目相关 </p>
+<p>​    Java </p>
+<p>​    Java异常处理机制 </p>
+<p>​    哈希的原理 </p>
+<p>​    熟悉哪些数据结构 </p>
+<p>​    栈和队列的区别 </p>
+<p>​    你知道的Map集合 </p>
+<p>​    List重新排序怎么实现 </p>
+<p>​    你知道哪些List，ArrayList和LinkedList的底层结构，有啥差别，为啥一个适合插入和删除一个适合插入</p>
+<p>​    反射及其应用场景 </p>
+<p>​    HashMap原理 </p>
+<p>​    解决哈希碰撞除了使用链表还知道别的方法吗 </p>
+<p>​    TreeMap原理 </p>
+<p>​    知道或者使用过JUC下的工具类</p>
+<p>​    线程和进程</p>
+<p>​    算法： </p>
+<p>​    非递归写出中序遍历</p>
+<p>​    反转链表</p>
+<h3 id="小米（电话面试）"><a href="#小米（电话面试）" class="headerlink" title="小米（电话面试）"></a>小米（电话面试）</h3><p>1.简单介绍自己学过的东西，做过的项目</p>
+<p>2.简单介绍下ES6</p>
+<p>3.面向对象是咋回事？JS</p>
+<p>在编程中，对象是现实生活中的模型的一种代码结构。您可以有一个简单的对象，代表一个停车场，并包含有关其宽度和长度的信息，或者您可以有一个代表一个人的对象，并包含有关他们的名字，身高，体重，他们说什么语言，如何说 你好，他们，等等。</p>
+<p> 多处可以用到</p>
+<p>4.对页面布局有了解吗？啥方法？CSS咋写？CSS3</p>
+<p>基础布局，弹性盒模型</p>
+<h4 id="正常布局流"><a href="#正常布局流" class="headerlink" title="正常布局流"></a>正常布局流</h4><h5 id="弹性盒子"><a href="#弹性盒子" class="headerlink" title="弹性盒子"></a>弹性盒子</h5><p>我们可以在我们的所有子元素上添加<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex"><code>flex</code></a> 属性，并赋值为<code>1</code>，这会使得所有的子元素都伸展并填充容器，而不是在尾部留下空白，如果有更多空间，那么子元素们就会变得更宽，反之，他们就会变得更窄。</p>
+<h5 id="Grid布局"><a href="#Grid布局" class="headerlink" title="Grid布局"></a>Grid布局</h5><p>用于同时在两个维度上把元素按行和列排列整齐。</p>
+<h5 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h5><h5 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h5><h5 id="表格布局"><a href="#表格布局" class="headerlink" title="表格布局"></a>表格布局</h5><p>5.Ajax？异步请求的方法</p>
+<p>异步的 javaScript 和 Xml</p>
+<p>是一种无需加载整个页面的情况下，对页面进行局部刷新。提升用户体验。</p>
+<p>异步 客户端不需要等待服务器端的响应</p>
+<p>6.咋理解MVVM的呢？</p>
+<p>MVVM促进了前端开发与后端业务逻辑的分离，极大的提高了前端开发效率。MVVM的核心是ViewModel层，它就像一个中转站，负责转换Model中数据对象来让数据变得容易管理和使用，该层向上与视图层进行双向数据绑定，向下与Model层通过接口请求进行数据交互，起承上启下作用。</p>
+<p>7.Nginx咋反向代理的，咋实现的，什么时候用到，为什么要用到，正向代理是咋回事。</p>
+<h4 id="怎样理解MVVM"><a href="#怎样理解MVVM" class="headerlink" title="怎样理解MVVM"></a>怎样理解MVVM</h4><p>MVVM促进了前端开发与后端业务逻辑的分离，极大的提高了前端开发效率。MVVM的核心是ViewModel层，它就像一个中转站，负责转换Model中数据对象来让数据变得容易管理和使用，该层向上与视图层进行双向数据绑定，向下与Model层通过接口请求进行数据交互，起承上启下作用。</p>
+<h3 id="学而思（笔试）"><a href="#学而思（笔试）" class="headerlink" title="学而思（笔试）"></a>学而思（笔试）</h3><h4 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h4><h5 id="条件表达式优先级高于赋值运算"><a href="#条件表达式优先级高于赋值运算" class="headerlink" title="条件表达式优先级高于赋值运算"></a>条件表达式优先级高于赋值运算</h5><p>int x=5?0:1   0</p>
+<h4 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h4><h5 id="01-字符串回文串和自己相等-true，不相等-false"><a href="#01-字符串回文串和自己相等-true，不相等-false" class="headerlink" title="01. 字符串回文串和自己相等 true，不相等 false"></a>01. 字符串回文串和自己相等 true，不相等 false</h5><pre><code class="hljs C++">
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstdio&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstring&gt;</span></span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> maxn = <span class="hljs-number">256</span>;
+
+
+<span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">judge</span><span class="hljs-params">(<span class="hljs-keyword">char</span> str[])</span> </span>&#123;
+
+  <span class="hljs-keyword">int</span> length = <span class="hljs-built_in">strlen</span>(str);
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; length / <span class="hljs-number">2</span>; i++) &#123;
+
+    <span class="hljs-keyword">if</span> (str[i] != str[length - <span class="hljs-number">1</span> - i])
+ 
+     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+
+  &#125;
+
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+
+&#125;
+
+
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;
+
+  <span class="hljs-keyword">char</span> str[maxn];
+
+  <span class="hljs-keyword">while</span> (gets_s(str)) &#123;
+
+    <span class="hljs-keyword">bool</span> flag = judge(str);
+
+    <span class="hljs-keyword">if</span> (flag)
+
+     <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;True&quot;</span>);
+
+   <span class="hljs-keyword">else</span>
+
+      <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;False&quot;</span>);
+
+  &#125;
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+
+&#125;
+
+</code></pre>
+
+<h5 id="02-截取最长不重复子串（leetcode-03）"><a href="#02-截取最长不重复子串（leetcode-03）" class="headerlink" title="02. 截取最长不重复子串（leetcode 03）"></a>02. 截取最长不重复子串（leetcode 03）</h5><p>⽤两个指针ij从头开始遍历字符串。 ij分别表示最⻓字串的⾸尾下标。如果第j个与i与j当中的某<br>处k重复，那么只需i从k+1开始继续判断是否有重复的就好。当然，在i++⼀直到k的过程中，不要忘记<br>把已经收录的字符存在标记为不存在。所以⽤⼀个book数组标记该字符在i<del>j当中是否出现过。每⼀次<br>找到重复的字符的时候判断j-i是否⽐最⼤值⼤。⼀个特例是，如果i</del>j中⼀直让j到了最后⼀个字符都没<br>有重复但是此时的j-i是最⻓的⻓度，所以要在return语句前再加上⼀句判断j-i的⼤⼩是否⽐当前<br>maxlen⼤。因为i和j都只遍历了字符串⼀次，所以时间复杂度为O(n)。</p>
+<pre><code class="hljs C++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> &#123;</span>
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">lengthOfLongestSubstring</span><span class="hljs-params">(<span class="hljs-built_in">string</span> s)</span> </span>&#123;
+        <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, j = <span class="hljs-number">0</span>, len = s.length();
+        <span class="hljs-keyword">int</span> maxlen = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">int</span> book[<span class="hljs-number">256</span>] = &#123;<span class="hljs-number">0</span>&#125;;
+        <span class="hljs-keyword">while</span>(j &lt; len) &#123;
+            <span class="hljs-keyword">if</span>(book[s[j]] == <span class="hljs-number">1</span>) &#123;
+                maxlen = max(maxlen, j - i);
+                <span class="hljs-keyword">while</span>(s[i] != s[j]) &#123;
+                    book[s[i]] = <span class="hljs-number">0</span>;
+                    i++;
+                &#125;
+                i++;
+            &#125; <span class="hljs-keyword">else</span> &#123;
+                book[s[j]] = <span class="hljs-number">1</span>;
+            &#125;
+            j++;
+        &#125;
+        maxlen = max(maxlen, j - i);
+        <span class="hljs-keyword">return</span> maxlen;
+    &#125;
+&#125;;
+
+</code></pre>
+
+
+
+
+
+<h3 id="如何面试头条"><a href="#如何面试头条" class="headerlink" title="如何面试头条"></a>如何面试头条</h3><p>未完待续…</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/10/03/HTML%E5%9F%BA%E7%A1%80-%E5%AE%9E%E9%AA%8C%E6%A5%BC/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">HTML基础-实验楼</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
