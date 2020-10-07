@@ -19,7 +19,7 @@
   <meta name="description" content="keep youny.">
   <meta name="author" content="Gloria">
   <meta name="keywords" content="Gloria">
-  <title>HTML基础-实验楼 - Gloria</title>
+  <title>检索英语中的冒犯语 - Gloria</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -167,8 +167,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-10-03 20:19" pubdate>
-        2020年10月3日 晚上
+      <time datetime="2020-10-07 22:43" pubdate>
+        2020年10月7日 晚上
       </time>
     </span>
   
@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.6k 字
+      225 字
     </span>
   
 
@@ -189,7 +189,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      17
+      3
        分钟
     </span>
   
@@ -219,141 +219,46 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">HTML基础-实验楼</h1>
+            <h1 style="display: none">检索英语中的冒犯语</h1>
             
             <div class="markdown-body" id="post-body">
-              <h4 id="请求方法"><a href="#请求方法" class="headerlink" title="请求方法"></a>请求方法</h4><p>HTTP/1.1 定义的请求方法有 8 种：GET、POST、PUT、DELETE、PATCH、HEAD、OPTIONS、TRACE。最常的两种是 GET 和 POST，如果是 RESTful 接口的话一般会用到 GET、POST、DELETE、PUT。</p>
-<h4 id="常见状态码"><a href="#常见状态码" class="headerlink" title="常见状态码"></a>常见状态码</h4><ul>
-<li>200 ：成功。</li>
-<li>400 ：客户端请求有语法错误，服务器端不能理解。</li>
-<li>401 ：该请求可能未经过授权。</li>
-<li>403 ：服务器端收到该请求，但是拒绝为它提供服务，可能是没有权限等等。</li>
-<li>404 ：该资源没找到。</li>
-<li>500 ：服务器端发生了一个不可预知的错误。</li>
-<li>503 ：服务器端当前还不能处理客户端的这个请求，可能过段时间之后才能恢复正常。</li>
-</ul>
-<h4 id="浏览器的访问过程具体是什么呢？"><a href="#浏览器的访问过程具体是什么呢？" class="headerlink" title="浏览器的访问过程具体是什么呢？"></a>浏览器的访问过程具体是什么呢？</h4><ol>
-<li>首先浏览器请求 DNS 服务器，通过 DNS 获取相应的域名对应的 IP。</li>
-<li>通过 IP 与目的主机建立 TCP 连接。</li>
-<li>发送和接受数据（获取网页内容）。</li>
-<li>断开 TCP 连接。</li>
-</ol>
-<h4 id="文件的上传与下载到底是怎么回事？-前端的各种处理方式："><a href="#文件的上传与下载到底是怎么回事？-前端的各种处理方式：" class="headerlink" title="文件的上传与下载到底是怎么回事？ 前端的各种处理方式："></a>文件的上传与下载到底是怎么回事？ 前端的各种处理方式：</h4><ul>
-<li>传统 flash 上传</li>
-<li>新增 iframe 框 ajax 上传</li>
-<li>表单数据提交</li>
-<li>HTML5 的新工具——File API</li>
-</ul>
-<h4 id="iframe-框-Ajax-上传和表单数据提交："><a href="#iframe-框-Ajax-上传和表单数据提交：" class="headerlink" title="iframe 框 Ajax 上传和表单数据提交："></a>iframe 框 Ajax 上传和表单数据提交：</h4><ul>
-<li>iframe 框上传：通过新建一个隐藏的 iframe 框，把数据放到这个 iframe 框架里，然后把它提交到服务器端处理，服务器返回的信息也是由 iframe 框调用父框架的方法处理。</li>
-<li>表单数据提交：重点有两个，一个是 FormData 的数据对象，一个是 level2 的 XMLHttpRequest 对象。</li>
-</ul>
-<h4 id="有序列表（ol）"><a href="#有序列表（ol）" class="headerlink" title="有序列表（ol）"></a>有序列表（ol）</h4><p>定义：有序列表是一列项目，列表项目使用数字进行标记。有序列表始于<ol> 标签。每个列表项始于 <li> 标签。</p>
+              <p>今天发现一个很有趣的英语检索冒犯语（profanity）的网站，这个网站由 Google 开发的。<br>网站名称为：What do you like.<br>用法如下：</p>
 <ul>
-<li>有序列表有 type 和 start 属性。</li>
-<li>语法格式：</li>
-</ul>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">type</span>=<span class="hljs-string">value1</span> <span class="hljs-attr">start</span>=<span class="hljs-string">value2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>        
-<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>
-
-<p>注：value1 表示有序列表项目符号的类型, value2 表示项目开始的数值。</p>
-<table>
-<thead>
-<tr>
-<th>type类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>type=1</td>
-<td>表示列表项目用数字表示（1，2，3…)</td>
-</tr>
-<tr>
-<td>type=a</td>
-<td>表示列表项目用小写字母表示（a,b,c…)</td>
-</tr>
-<tr>
-<td>type=A</td>
-<td>表示列表项目用大写字母表示（A,B,C…)</td>
-</tr>
-<tr>
-<td>type=i</td>
-<td>表示列表项目用小写罗马数字表示(i,ii,iii….)</td>
-</tr>
-<tr>
-<td>type=I</td>
-<td>表示列表项目用大写罗马数字表示(I,II,III…)</td>
-</tr>
-</tbody></table>
-<h4 id="自定义列表（dl）"><a href="#自定义列表（dl）" class="headerlink" title="自定义列表（dl）"></a>自定义列表（dl）</h4><p>定义：自定义列表不仅仅是一列项目，而是项目及其注释的组合。自定义列表以<dl> 标签开始。每个自定义列表项以 <dt> 开始。每个自定义列表项的定义以 <dd> 开始。自定义列表的列表项前没有任何项目符号。</p>
-<p>语法格式：</p>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>名词1<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>名词1解释1<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>名词2<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>名词2解释1<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-    ...
-<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre>
-
-<h4 id="HTML-元数据"><a href="#HTML-元数据" class="headerlink" title="HTML 元数据"></a>HTML 元数据</h4><meta>标签提供关于 HTML 文档的元数据：描述（description）、关键词（keywords）、文档的作者（author）等其他元数据。
-
-
-
-<h4 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h4><ul>
-<li>标题：header</li>
-<li>导航栏：nav</li>
-<li>主要内容：main 具有代表性的内容段落主题可以使用 article   section，div元素。</li>
-<li>侧栏：aside经常嵌套在main中</li>
-<li>页脚：footer</li>
-</ul>
-<h4 id="表单基本标签"><a href="#表单基本标签" class="headerlink" title="表单基本标签"></a>表单基本标签</h4><p>表格的其他常用属性：</p>
-<p>colspan  合并行</p>
-<p>rowspan 和并列</p>
-<p>caption 定义标题</p>
-<ul>
-<li><p>thead：用于定义表格的头部，一般包含网页的logo和导航等头部信息,位于table之中。</p>
+<li><p>地址栏输入如下链接</p>
+<p><a target="_blank" rel="noopener" href="http://www.wdylike.appspot.com/?q=">http://www.wdylike.appspot.com/?q=</a></p>
 </li>
-<li><p>tfoot：用于定义表格的页脚，一般包含网页底部的企业信息，地址联系方式等，位于table标记之中，thead标记之后。</p>
-</li>
-<li><p>tbody：用于定义表格的主体，一般包含网页中除头部和底部之外的其他内容，位于table标记之中，tfoot标记之后。</p>
-<h5 id="注：案例-：搜狐股票"><a href="#注：案例-：搜狐股票" class="headerlink" title="注：案例 ：搜狐股票"></a>注：案例 ：搜狐股票</h5></li>
-</ul>
-<h4 id="多媒体嵌入"><a href="#多媒体嵌入" class="headerlink" title="多媒体嵌入"></a>多媒体嵌入</h4><ul>
-<li><p>video </p>
-</li>
-<li><p>audio </p>
-</li>
-<li><p>音频播放器所占用的空间比视频播放器要小，由于没有视觉部件，只需要显示出能控制音频播放的控件。它不支持 width/height 属性。</p>
-</li>
-<li><p>iframe </p>
+<li><p>后面输入你要检索的词语（句子也可）</p>
 </li>
 </ul>
-<h4 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h4><p>表单在网页中主要负责数据采集功能。一个表单有三个基本组成部分：</p>
-<ul>
-<li>表单标签：这里面包含了处理表单数据所用 CGI 程序的 URL 以及数据提交到服务器的方法。</li>
-<li>表单域：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。</li>
-<li>表单按钮：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的 CGI 脚本或者取消输入，还可以用表单按钮来控制其他定义了处理脚本的处理工作。</li>
-</ul>
-<p>fieldset 元素组合表单中的相关数据，legend 元素为 fieldset元素定义标题。</p>
-<p>label 标签的 for 属性应当与相关元素的 id 属性相同，使得label 标签与 input 正确相关联。</p>
-<p>原生表单组件，主要包含文本输入框、单行文本框、e-mail 输入框、密码输入框、搜索框、电话号码输入框、URL 输入框、多行文本框、下拉组件、可勾选组件、按钮。</p>
-<h4 id="文本输入框"><a href="#文本输入框" class="headerlink" title="文本输入框"></a>文本输入框</h4><p>所有文本域的通用规范：</p>
-<ul>
-<li><p>它们可以被标记为 readonly (用户不能修改输入值)甚至是 disabled (输入值永远不会与表单数据的其余部分一起发送)。</p>
-</li>
-<li><p>它们可以有一个 placeholder; 这是文本输入框中出现的文本，用来简略描述输入框的目的。</p>
-</li>
-<li><p>它们都受 size (输入框的物理尺寸) 和 length (文本框可以输入的最大字符数)约束。</p>
-</li>
-<li><p>如果浏览器支持的话，可以进行拼写检查。</p>
-<p>文本区域在右下角有一个拖放操作，允许用户调整它的大小。这种调整能力可以通过使用 CSS 设置文本区域的 resize 值为 none 来关闭。</p>
-</li>
-</ul>
-<h4 id="下拉组件"><a href="#下拉组件" class="headerlink" title="下拉组件"></a>下拉组件</h4><p>自动补全组件:</p>
-<p> 使用 datalist 元素来为表单小部件提供建议 的、自动完成的值，并使用一些 option 子元素来指定要显示的值。然后使用 list 属性将数据列表绑定到一个文本域(通常是一个 input元素)。</p>
+<p>可以这样：  <a target="_blank" rel="noopener" href="http://www.wdylike.appspot.com/?q=fuck">http://www.wdylike.appspot.com/?q=fuck</a></p>
+<p>敲下 回车，是不是冒犯语地址栏给你答案～</p>
+<hr>
+<p>那么如何用 Pthon检索文档中的冒犯语呢？</p>
+<h4 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h4><p>读取文本 -&gt; 检查文本 -&gt; 判断输出</p>
+<p><a target="_blank" rel="noopener" href="https://docs.python.org/2/library/functions.html">Python 内置函数文档</a><br><a target="_blank" rel="noopener" href="https://docs.python.org/2/library/urllib.html">urllib 的文档</a></p>
+<pre><code class="hljs routeros">import urllib
+def read_text():
+    quotes = open(<span class="hljs-string">&quot;/Users/gloriazhang/Documents/movie_quotes.txt&quot;</span>)
+    contents_of_file = quotes.read()
+    <span class="hljs-builtin-name">print</span>(contents_of_file)
+    quotes.close()
+    check_profanity(contents_of_file)
 
+def check_profanity(text_to_check):
+   <span class="hljs-built_in"> connection </span>= urllib.urlopen(<span class="hljs-string">&quot;http://www.wdylike.appspot.com/?q=&quot;</span>+text_to_check)
+    output = connection.read()
+    #<span class="hljs-builtin-name">print</span>(output)
+    <span class="hljs-keyword">if</span> <span class="hljs-string">&quot;true&quot;</span> <span class="hljs-keyword">in</span> output:
+        <span class="hljs-builtin-name">print</span>(<span class="hljs-string">&quot;Profanity!&quot;</span>)
+    elif <span class="hljs-string">&quot;false&quot;</span> <span class="hljs-keyword">in</span> output:
+        <span class="hljs-builtin-name">print</span>(<span class="hljs-string">&quot;This ducument has no curse words!&quot;</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-builtin-name">print</span>(<span class="hljs-string">&quot;Could not scan&quot;</span>)
+    connection.close()
+    
+read_text()
+</code></pre>
+<h4 id="输出如下："><a href="#输出如下：" class="headerlink" title="输出如下："></a>输出如下：<img src="https://img-blog.csdnimg.cn/20190128203119503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dsb3JpYV9tNjY2,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="检索冒犯语句"></h4>
             </div>
             <hr>
             <div>
@@ -362,9 +267,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%89%8D%E7%AB%AF/%E7%AC%94%E8%AE%B0/">笔记</a>
+                      <a class="hover-with-bg" href="/categories/Python/">Python</a>
                     
                   </div>
                 
@@ -372,9 +275,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%AE%9E%E9%AA%8C%E6%A5%BC/">实验楼</a>
-                    
-                      <a class="hover-with-bg" href="/tags/HTML/">HTML</a>
+                      <a class="hover-with-bg" href="/tags/Python/">Python</a>
                     
                   </div>
                 
@@ -387,15 +288,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/10/03/CSS%E5%9F%BA%E7%A1%80-%E5%AE%9E%E9%AA%8C%E6%A5%BC/">
+                      <a href="/2020/10/07/%E9%80%92%E5%BD%92%E4%B8%8E%E8%BF%AD%E4%BB%A3%E7%9A%84%E5%8C%BA%E5%88%AB%E5%88%86%E6%9E%90/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">CSS基础-实验楼</span>
+                        <span class="hidden-mobile">递归与迭代的区别分析</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2020/10/07/VScode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/">
+                        <span class="hidden-mobile">VScode常用快捷键整理</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -561,7 +468,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "HTML基础-实验楼&nbsp;",
+        "检索英语中的冒犯语&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

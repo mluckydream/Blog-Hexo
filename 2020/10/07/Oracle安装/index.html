@@ -19,7 +19,7 @@
   <meta name="description" content="keep youny.">
   <meta name="author" content="Gloria">
   <meta name="keywords" content="Gloria">
-  <title>HTML基础-实验楼 - Gloria</title>
+  <title>Oracle安装 - Gloria</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -167,8 +167,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-10-03 20:19" pubdate>
-        2020年10月3日 晚上
+      <time datetime="2020-10-07 22:03" pubdate>
+        2020年10月7日 晚上
       </time>
     </span>
   
@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.6k 字
+      784 字
     </span>
   
 
@@ -189,7 +189,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      17
+      14
        分钟
     </span>
   
@@ -219,162 +219,148 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">HTML基础-实验楼</h1>
+            <h1 style="display: none">Oracle安装</h1>
             
             <div class="markdown-body" id="post-body">
-              <h4 id="请求方法"><a href="#请求方法" class="headerlink" title="请求方法"></a>请求方法</h4><p>HTTP/1.1 定义的请求方法有 8 种：GET、POST、PUT、DELETE、PATCH、HEAD、OPTIONS、TRACE。最常的两种是 GET 和 POST，如果是 RESTful 接口的话一般会用到 GET、POST、DELETE、PUT。</p>
-<h4 id="常见状态码"><a href="#常见状态码" class="headerlink" title="常见状态码"></a>常见状态码</h4><ul>
-<li>200 ：成功。</li>
-<li>400 ：客户端请求有语法错误，服务器端不能理解。</li>
-<li>401 ：该请求可能未经过授权。</li>
-<li>403 ：服务器端收到该请求，但是拒绝为它提供服务，可能是没有权限等等。</li>
-<li>404 ：该资源没找到。</li>
-<li>500 ：服务器端发生了一个不可预知的错误。</li>
-<li>503 ：服务器端当前还不能处理客户端的这个请求，可能过段时间之后才能恢复正常。</li>
-</ul>
-<h4 id="浏览器的访问过程具体是什么呢？"><a href="#浏览器的访问过程具体是什么呢？" class="headerlink" title="浏览器的访问过程具体是什么呢？"></a>浏览器的访问过程具体是什么呢？</h4><ol>
-<li>首先浏览器请求 DNS 服务器，通过 DNS 获取相应的域名对应的 IP。</li>
-<li>通过 IP 与目的主机建立 TCP 连接。</li>
-<li>发送和接受数据（获取网页内容）。</li>
-<li>断开 TCP 连接。</li>
-</ol>
-<h4 id="文件的上传与下载到底是怎么回事？-前端的各种处理方式："><a href="#文件的上传与下载到底是怎么回事？-前端的各种处理方式：" class="headerlink" title="文件的上传与下载到底是怎么回事？ 前端的各种处理方式："></a>文件的上传与下载到底是怎么回事？ 前端的各种处理方式：</h4><ul>
-<li>传统 flash 上传</li>
-<li>新增 iframe 框 ajax 上传</li>
-<li>表单数据提交</li>
-<li>HTML5 的新工具——File API</li>
-</ul>
-<h4 id="iframe-框-Ajax-上传和表单数据提交："><a href="#iframe-框-Ajax-上传和表单数据提交：" class="headerlink" title="iframe 框 Ajax 上传和表单数据提交："></a>iframe 框 Ajax 上传和表单数据提交：</h4><ul>
-<li>iframe 框上传：通过新建一个隐藏的 iframe 框，把数据放到这个 iframe 框架里，然后把它提交到服务器端处理，服务器返回的信息也是由 iframe 框调用父框架的方法处理。</li>
-<li>表单数据提交：重点有两个，一个是 FormData 的数据对象，一个是 level2 的 XMLHttpRequest 对象。</li>
-</ul>
-<h4 id="有序列表（ol）"><a href="#有序列表（ol）" class="headerlink" title="有序列表（ol）"></a>有序列表（ol）</h4><p>定义：有序列表是一列项目，列表项目使用数字进行标记。有序列表始于<ol> 标签。每个列表项始于 <li> 标签。</p>
-<ul>
-<li>有序列表有 type 和 start 属性。</li>
-<li>语法格式：</li>
-</ul>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">type</span>=<span class="hljs-string">value1</span> <span class="hljs-attr">start</span>=<span class="hljs-string">value2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>        
-<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>
-
-<p>注：value1 表示有序列表项目符号的类型, value2 表示项目开始的数值。</p>
-<table>
-<thead>
-<tr>
-<th>type类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>type=1</td>
-<td>表示列表项目用数字表示（1，2，3…)</td>
-</tr>
-<tr>
-<td>type=a</td>
-<td>表示列表项目用小写字母表示（a,b,c…)</td>
-</tr>
-<tr>
-<td>type=A</td>
-<td>表示列表项目用大写字母表示（A,B,C…)</td>
-</tr>
-<tr>
-<td>type=i</td>
-<td>表示列表项目用小写罗马数字表示(i,ii,iii….)</td>
-</tr>
-<tr>
-<td>type=I</td>
-<td>表示列表项目用大写罗马数字表示(I,II,III…)</td>
-</tr>
-</tbody></table>
-<h4 id="自定义列表（dl）"><a href="#自定义列表（dl）" class="headerlink" title="自定义列表（dl）"></a>自定义列表（dl）</h4><p>定义：自定义列表不仅仅是一列项目，而是项目及其注释的组合。自定义列表以<dl> 标签开始。每个自定义列表项以 <dt> 开始。每个自定义列表项的定义以 <dd> 开始。自定义列表的列表项前没有任何项目符号。</p>
-<p>语法格式：</p>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>名词1<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>名词1解释1<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>名词2<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>名词2解释1<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-    ...
-<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre>
-
-<h4 id="HTML-元数据"><a href="#HTML-元数据" class="headerlink" title="HTML 元数据"></a>HTML 元数据</h4><meta>标签提供关于 HTML 文档的元数据：描述（description）、关键词（keywords）、文档的作者（author）等其他元数据。
+              <h3 id="LInux-下-Oracle安装"><a href="#LInux-下-Oracle安装" class="headerlink" title="LInux 下 Oracle安装"></a>LInux 下 Oracle安装</h3><h4 id="1-下载插件"><a href="#1-下载插件" class="headerlink" title="1. 下载插件"></a>1. 下载插件</h4><p>在目前有网络的情况下下载如下插件，使用yum即可</p>
+<p>libstdc++-devel(x86_64)</p>
+<p> libaio-devel(x86_64)</p>
+<p> gcc-c++(x86_64) </p>
+<p>elfutils-libelf-devel</p>
+<p>进入/etc/sysconfig/network-scirpts/</p>
+<p>看是否有ifcfg-eth0和ifcfg-eth1</p>
+<p>hostnamectl set-hostname name01</p>
+<p>Hostname</p>
+<h4 id="2-添加组"><a href="#2-添加组" class="headerlink" title="2.添加组"></a>2.添加组</h4><pre><code class="hljs routeros">groupadd oinstall
+groupadd dba
+useradd -g oinstall -G dba oracle
+passwd oracle
+TYPE THE PASSWORD
+vim /etc/sysctl.conf</code></pre>
 
 
 
-<h4 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h4><ul>
-<li>标题：header</li>
-<li>导航栏：nav</li>
-<li>主要内容：main 具有代表性的内容段落主题可以使用 article   section，div元素。</li>
-<li>侧栏：aside经常嵌套在main中</li>
-<li>页脚：footer</li>
-</ul>
-<h4 id="表单基本标签"><a href="#表单基本标签" class="headerlink" title="表单基本标签"></a>表单基本标签</h4><p>表格的其他常用属性：</p>
-<p>colspan  合并行</p>
-<p>rowspan 和并列</p>
-<p>caption 定义标题</p>
-<ul>
-<li><p>thead：用于定义表格的头部，一般包含网页的logo和导航等头部信息,位于table之中。</p>
-</li>
-<li><p>tfoot：用于定义表格的页脚，一般包含网页底部的企业信息，地址联系方式等，位于table标记之中，thead标记之后。</p>
-</li>
-<li><p>tbody：用于定义表格的主体，一般包含网页中除头部和底部之外的其他内容，位于table标记之中，tfoot标记之后。</p>
-<h5 id="注：案例-：搜狐股票"><a href="#注：案例-：搜狐股票" class="headerlink" title="注：案例 ：搜狐股票"></a>注：案例 ：搜狐股票</h5></li>
-</ul>
-<h4 id="多媒体嵌入"><a href="#多媒体嵌入" class="headerlink" title="多媒体嵌入"></a>多媒体嵌入</h4><ul>
-<li><p>video </p>
-</li>
-<li><p>audio </p>
-</li>
-<li><p>音频播放器所占用的空间比视频播放器要小，由于没有视觉部件，只需要显示出能控制音频播放的控件。它不支持 width/height 属性。</p>
-</li>
-<li><p>iframe </p>
-</li>
-</ul>
-<h4 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h4><p>表单在网页中主要负责数据采集功能。一个表单有三个基本组成部分：</p>
-<ul>
-<li>表单标签：这里面包含了处理表单数据所用 CGI 程序的 URL 以及数据提交到服务器的方法。</li>
-<li>表单域：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。</li>
-<li>表单按钮：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的 CGI 脚本或者取消输入，还可以用表单按钮来控制其他定义了处理脚本的处理工作。</li>
-</ul>
-<p>fieldset 元素组合表单中的相关数据，legend 元素为 fieldset元素定义标题。</p>
-<p>label 标签的 for 属性应当与相关元素的 id 属性相同，使得label 标签与 input 正确相关联。</p>
-<p>原生表单组件，主要包含文本输入框、单行文本框、e-mail 输入框、密码输入框、搜索框、电话号码输入框、URL 输入框、多行文本框、下拉组件、可勾选组件、按钮。</p>
-<h4 id="文本输入框"><a href="#文本输入框" class="headerlink" title="文本输入框"></a>文本输入框</h4><p>所有文本域的通用规范：</p>
-<ul>
-<li><p>它们可以被标记为 readonly (用户不能修改输入值)甚至是 disabled (输入值永远不会与表单数据的其余部分一起发送)。</p>
-</li>
-<li><p>它们可以有一个 placeholder; 这是文本输入框中出现的文本，用来简略描述输入框的目的。</p>
-</li>
-<li><p>它们都受 size (输入框的物理尺寸) 和 length (文本框可以输入的最大字符数)约束。</p>
-</li>
-<li><p>如果浏览器支持的话，可以进行拼写检查。</p>
-<p>文本区域在右下角有一个拖放操作，允许用户调整它的大小。这种调整能力可以通过使用 CSS 设置文本区域的 resize 值为 none 来关闭。</p>
-</li>
-</ul>
-<h4 id="下拉组件"><a href="#下拉组件" class="headerlink" title="下拉组件"></a>下拉组件</h4><p>自动补全组件:</p>
-<p> 使用 datalist 元素来为表单小部件提供建议 的、自动完成的值，并使用一些 option 子元素来指定要显示的值。然后使用 list 属性将数据列表绑定到一个文本域(通常是一个 input元素)。</p>
+<pre><code class="hljs ini"><span class="hljs-attr">fs.aio-max-nr</span> = <span class="hljs-number">1048576</span>
+<span class="hljs-attr">fs.file-max</span> = <span class="hljs-number">6815744</span>
+<span class="hljs-attr">kernel.shmall</span> = <span class="hljs-number">2097152</span>
+<span class="hljs-attr">kernel.shmmax</span> = <span class="hljs-number">2147483648</span>
+<span class="hljs-attr">kernel.shmmni</span> = <span class="hljs-number">4096</span>
+<span class="hljs-attr">kernel.sem</span> = <span class="hljs-number">250</span> <span class="hljs-number">32000</span> <span class="hljs-number">100</span> <span class="hljs-number">128</span>
+<span class="hljs-attr">net.ipv4.ip_local_port_range</span> = <span class="hljs-number">9000</span> <span class="hljs-number">65500</span>
+<span class="hljs-attr">net.core.rmem_default</span> = <span class="hljs-number">262144</span>
+<span class="hljs-attr">net.core.rmem_max</span> = <span class="hljs-number">4194304</span>
+<span class="hljs-attr">net.core.wmem_default</span> = <span class="hljs-number">262144</span>
+<span class="hljs-attr">net.core.wmem_max</span> = <span class="hljs-number">1048586</span></code></pre>
+
+
+
+<pre><code class="hljs properties"><span class="hljs-attr">sysctl</span> <span class="hljs-string">-p</span>
+<span class="hljs-attr">sysctl</span> <span class="hljs-string">-a</span></code></pre>
+
+
+
+<pre><code class="hljs awk">vim <span class="hljs-regexp">/etc/</span>security/limits.conf</code></pre>
+
+
+
+<pre><code class="hljs angelscript">oracle soft nproc <span class="hljs-number">2047</span>
+oracle hard nproc <span class="hljs-number">16384</span>
+oracle soft nofile <span class="hljs-number">1024</span>
+oracle hard nofile <span class="hljs-number">65536</span></code></pre>
+
+
+
+<p>127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6</p>
+<p>​    #public ip</p>
+<p>192.168.122.100  ym01 192.168.122.101  ym02</p>
+<p>​    # Virtual</p>
+<p>192.168.122.103  ym01-vip 192.168.122.104  ym02-vip</p>
+<p>​    # private ip </p>
+<p>10.10.10.10 ym01-priv 10.10.10.20  ym02-priv</p>
+<p>​    # Scan ip</p>
+<p>192.168.122.105 rac-scan</p>
+<h4 id="2、找出scsi的id号"><a href="#2、找出scsi的id号" class="headerlink" title="2、找出scsi的id号"></a>2、找出scsi的id号</h4><p>/usr/lib/udev/scsi_id -g -u /dev/sdb #注意scsi_id的二进制文件路径</p>
+<h4 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h4><pre><code class="hljs angelscript">yum groupinstall -y <span class="hljs-string">&quot;X Window System&quot;</span>
+ssh -X <span class="hljs-symbol">oracle@</span><span class="hljs-number">192.168</span><span class="hljs-number">.33</span><span class="hljs-number">.15</span></code></pre>
+
+<p>cd /stage/grid</p>
+<p>检查环境</p>
+<p>./runcluvfy.sh stage -pre crsinst -n ym01,ym02 -fixup -verbose</p>
+<pre><code class="hljs jboss-cli"><span class="hljs-string">./runInstaller</span></code></pre>
+
+<p>后面后弹出安装Oracle图形界面，根据提示走就好，大致流程如下</p>
+<p>Skip software updates. =&gt; Advanced installation =&gt; Simplified Chinese =&gt; raw-scan ran-scan 1521 =&gt;ym01-vip =&gt; eth0 eth1</p>
+<p><strong>一、查看系统环境</strong></p>
+<p><strong>内核版本：</strong></p>
+<p><strong>[root@rh64 rules.d]# uname -a</strong></p>
+<p><strong>Linux rh64 2.6.32-358.el6.x86_64 #1 SMP Tue Jan 29 11:47:41 EST 2013 x86_64 x86_64 x86_64 GNU/Linux</strong></p>
+<p><strong>系统用户：</strong></p>
+<p><strong>[root@rh64 rules.d]# id grid</strong></p>
+<p>uid=400(grid) gid=400(asmadmin) groups=400(asmadmin)</p>
+<p><strong>二、创建共享磁盘（可以采用分区或独立的磁盘）</strong></p>
+<p>[root@rh64 ~]# fdisk -l</p>
+<p>Disk /dev/sdc: 24.3 GB, 24323964928 bytes</p>
+<p>255 heads, 63 sectors/track, 2957 cylinders</p>
+<p>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
+<p>Sector size (logical/physical): 512 bytes / 512 bytes</p>
+<p>I/O size (minimum/optimal): 512 bytes / 512 bytes</p>
+<p>Disk identifier: 0x00000000</p>
+<p><strong>查看磁盘UUID:</strong></p>
+<p><strong>[root@rh64 ~]# /sbin/scsi_id -g -u -d /dev/sdc</strong></p>
+<p><strong>1ATA_VBOX_HARDDISK_VB3d5ccb5e-9c197b67</strong></p>
+<hr>
+<p><strong>scsi_id -gud /dev/sdc</strong></p>
+<hr>
+<p><strong>磁盘分区：</strong></p>
+<p><strong>[root@rh64 ~]# fdisk -l</strong></p>
+<p>Disk /dev/sdc: 24.3 GB, 24323964928 bytes</p>
+<p>255 heads, 63 sectors/track, 2957 cylinders</p>
+<p>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
+<p>Sector size (logical/physical): 512 bytes / 512 bytes</p>
+<p>I/O size (minimum/optimal): 512 bytes / 512 bytes</p>
+<p>Disk identifier: 0xeb09f8d3</p>
+<p> Device Boot   Start     End   Blocks  Id System</p>
+<p><strong>/dev/sdc1        1     915   7349706  83 Linux</strong></p>
+<p><strong>/dev/sdc2       916    1830   7349737+ 83 Linux</strong></p>
+<p><strong>/dev/sdc3      1831    2957   9052627+ 83 Linux</strong></p>
+<p><strong>三、建立UDEV规则文件</strong></p>
+<p><strong>[root@rh64 ~]# cd /etc/udev/rules.d/</strong></p>
+<p>[root@rh64 rules.d]# ls</p>
+<p>60-fprint-autosuspend.rules 60-raw.rules       80-kvm.rules  97-bluetooth-serial.rules</p>
+<p>60-openct.rules       70-persistent-cd.rules  90-alsa.rules 98-kexec.rules</p>
+<p>60-pcmcia.rules       70-persistent-net.rules 90-hal.rules  99-fuse.rules</p>
+<p><strong>[root@rh64 rules.d]# cat 99-oracle-asmdisk.rules</strong></p>
+<p>KERNEL==”sdc1”, BUS==”scsi”, PROGRAM==”/sbin/scsi_id -g -u -d /dev/$parent”, RESULT==”1ATA_VBOX_HARDDISK_VB3d5ccb5e-9c197b67”, NAME=”asm_disk1”, OWNER=”grid”, GROUP=”asmadmin”, MODE=”0660”</p>
+<p>KERNEL==”sdc2”, BUS==”scsi”, PROGRAM==”/sbin/scsi_id -g -u -d /dev/$parent”, RESULT==”1ATA_VBOX_HARDDISK_VB3d5ccb5e-9c197b67”, NAME=”asm_disk2”, OWNER=”grid”, GROUP=”asmadmin”, MODE=”0660”</p>
+<p>KERNEL==”sdc3”, BUS==”scsi”, PROGRAM==”/sbin/scsi_id -g -u -d /dev/$parent”, RESULT==”1ATA_VBOX_HARDDISK_VB3d5ccb5e-9c197b67”, NAME=”asm_disk3”, OWNER=”grid”, GROUP=”asmadmin”, MODE=”0660”</p>
+<p><strong>四、启动udev service</strong></p>
+<p><strong>载入配置文件**</strong>：**</p>
+<p><strong>[root@rh64 rules.d]# udevadm control –reload-rules</strong></p>
+<p><strong>启动udev service：</strong></p>
+<p><strong>[root@rh64 rules.d]# start_udev</strong></p>
+<p>Starting udev:</p>
+<p><strong>查看asm disks：</strong></p>
+<p>[root@rh64 rules.d]# ls -l /dev/asm*</p>
+<p><strong>brw-rw—- 1 grid asmadmin 8, 33 Jan 13 16:52 /dev/asm_disk1</strong></p>
+<p><strong>brw-rw—- 1 grid asmadmin 8, 34 Jan 13 16:52 /dev/asm_disk2</strong></p>
+<p><strong>brw-rw—- 1 grid asmadmin 8, 35 Jan 13 16:52 /dev/asm_disk3</strong></p>
+<hr>
+<p><strong>——–至此，asm disk创建成功 ！</strong></p>
+<p>1c3b15b1-cd13-4a73-b2a8-449fa3aa039f</p>
+<p>babf62f1-d914-434c-a1a3-d323a01d1e81</p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%89%8D%E7%AB%AF/%E7%AC%94%E8%AE%B0/">笔记</a>
-                    
-                  </div>
-                
                 
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%AE%9E%E9%AA%8C%E6%A5%BC/">实验楼</a>
+                      <a class="hover-with-bg" href="/tags/Linux/">Linux</a>
                     
-                      <a class="hover-with-bg" href="/tags/HTML/">HTML</a>
+                      <a class="hover-with-bg" href="/tags/Oracle/">Oracle</a>
                     
                   </div>
                 
@@ -387,15 +373,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/10/03/CSS%E5%9F%BA%E7%A1%80-%E5%AE%9E%E9%AA%8C%E6%A5%BC/">
+                      <a href="/2020/10/07/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E8%B7%AF%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">CSS基础-实验楼</span>
+                        <span class="hidden-mobile">计算机网路常用命令</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2020/10/07/SSL%E8%AF%81%E4%B9%A6%E9%85%8D%E7%BD%AE/">
+                        <span class="hidden-mobile">SSL证书配置</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -561,7 +553,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "HTML基础-实验楼&nbsp;",
+        "Oracle安装&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

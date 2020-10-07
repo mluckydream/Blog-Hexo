@@ -19,7 +19,7 @@
   <meta name="description" content="keep youny.">
   <meta name="author" content="Gloria">
   <meta name="keywords" content="Gloria">
-  <title>HTML基础-实验楼 - Gloria</title>
+  <title>递归与迭代的区别分析 - Gloria</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -167,8 +167,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-10-03 20:19" pubdate>
-        2020年10月3日 晚上
+      <time datetime="2020-10-07 22:51" pubdate>
+        2020年10月7日 晚上
       </time>
     </span>
   
@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.6k 字
+      983 字
     </span>
   
 
@@ -189,7 +189,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      17
+      12
        分钟
     </span>
   
@@ -219,140 +219,39 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">HTML基础-实验楼</h1>
+            <h1 style="display: none">递归与迭代的区别分析</h1>
             
             <div class="markdown-body" id="post-body">
-              <h4 id="请求方法"><a href="#请求方法" class="headerlink" title="请求方法"></a>请求方法</h4><p>HTTP/1.1 定义的请求方法有 8 种：GET、POST、PUT、DELETE、PATCH、HEAD、OPTIONS、TRACE。最常的两种是 GET 和 POST，如果是 RESTful 接口的话一般会用到 GET、POST、DELETE、PUT。</p>
-<h4 id="常见状态码"><a href="#常见状态码" class="headerlink" title="常见状态码"></a>常见状态码</h4><ul>
-<li>200 ：成功。</li>
-<li>400 ：客户端请求有语法错误，服务器端不能理解。</li>
-<li>401 ：该请求可能未经过授权。</li>
-<li>403 ：服务器端收到该请求，但是拒绝为它提供服务，可能是没有权限等等。</li>
-<li>404 ：该资源没找到。</li>
-<li>500 ：服务器端发生了一个不可预知的错误。</li>
-<li>503 ：服务器端当前还不能处理客户端的这个请求，可能过段时间之后才能恢复正常。</li>
-</ul>
-<h4 id="浏览器的访问过程具体是什么呢？"><a href="#浏览器的访问过程具体是什么呢？" class="headerlink" title="浏览器的访问过程具体是什么呢？"></a>浏览器的访问过程具体是什么呢？</h4><ol>
-<li>首先浏览器请求 DNS 服务器，通过 DNS 获取相应的域名对应的 IP。</li>
-<li>通过 IP 与目的主机建立 TCP 连接。</li>
-<li>发送和接受数据（获取网页内容）。</li>
-<li>断开 TCP 连接。</li>
-</ol>
-<h4 id="文件的上传与下载到底是怎么回事？-前端的各种处理方式："><a href="#文件的上传与下载到底是怎么回事？-前端的各种处理方式：" class="headerlink" title="文件的上传与下载到底是怎么回事？ 前端的各种处理方式："></a>文件的上传与下载到底是怎么回事？ 前端的各种处理方式：</h4><ul>
-<li>传统 flash 上传</li>
-<li>新增 iframe 框 ajax 上传</li>
-<li>表单数据提交</li>
-<li>HTML5 的新工具——File API</li>
-</ul>
-<h4 id="iframe-框-Ajax-上传和表单数据提交："><a href="#iframe-框-Ajax-上传和表单数据提交：" class="headerlink" title="iframe 框 Ajax 上传和表单数据提交："></a>iframe 框 Ajax 上传和表单数据提交：</h4><ul>
-<li>iframe 框上传：通过新建一个隐藏的 iframe 框，把数据放到这个 iframe 框架里，然后把它提交到服务器端处理，服务器返回的信息也是由 iframe 框调用父框架的方法处理。</li>
-<li>表单数据提交：重点有两个，一个是 FormData 的数据对象，一个是 level2 的 XMLHttpRequest 对象。</li>
-</ul>
-<h4 id="有序列表（ol）"><a href="#有序列表（ol）" class="headerlink" title="有序列表（ol）"></a>有序列表（ol）</h4><p>定义：有序列表是一列项目，列表项目使用数字进行标记。有序列表始于<ol> 标签。每个列表项始于 <li> 标签。</p>
-<ul>
-<li>有序列表有 type 和 start 属性。</li>
-<li>语法格式：</li>
-</ul>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">type</span>=<span class="hljs-string">value1</span> <span class="hljs-attr">start</span>=<span class="hljs-string">value2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>        
-<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>
+              <p>递归和迭代是很重要的编程思想，所以对于其原理还是很有必要清楚的。</p>
+<p><strong>迭代(iteration)</strong>   在 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Iteration"><strong>维基百科</strong></a> 上是这样介绍的：</p>
+<blockquote>
+<p>Iteration is the repetition of a process in order to generate a (possibly unbounded) sequence of outcomes. The sequence will approach some end point or end value. Each repetition of the process is a single iteration, and the outcome of each iteration is then the starting point of the next iteration.</p>
+<p>迭代是重复反馈过程的活动，其目的通常是为了接近并到达所需的目标或结果。每一次对过程的重复被称为一次“迭代”，而每一次迭代得到的结果会被用来作为下一次迭代的初始值。</p>
+</blockquote>
+<p>上面介绍可以说是非常细致详尽了，这里还是来个小例子具体说明下迭代的我对迭代的理解吧～</p>
+<h5 id="分析过程"><a href="#分析过程" class="headerlink" title="分析过程"></a>分析过程</h5><p>目的： 接近并达到所需的 <strong>目标或结果</strong><br>过程：重复反馈每一次 <strong>过程</strong><br>文字描述：可以这么想，我左手一袋小球(3个)，右手一袋小球（5个），我想知道这两袋里面一共有几个小球，可是我不会加法运算啊（我朋友们也不会），咋办呢，把它给我朋友折腾吧，折腾完给我个结果。<br>于是我把它交给朋友A，朋友A把左手袋子里的小球拿出一个放到了右手袋子里，告诉朋友B：我左手这袋子有两个小球，右手这袋子里有6个小球，又给了朋友B，朋友B照做又给了朋友C……</p>
+<h5 id="图示如下："><a href="#图示如下：" class="headerlink" title="图示如下："></a>图示如下：</h5><pre><code class="hljs mermaid">graph LR
+A[我 3,5] -- 2,6--&gt; B
+B -- 1,7--&gt; C
+C -- 0,8--&gt; D
+D -- 8 --&gt; A</code></pre>
 
-<p>注：value1 表示有序列表项目符号的类型, value2 表示项目开始的数值。</p>
-<table>
-<thead>
-<tr>
-<th>type类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>type=1</td>
-<td>表示列表项目用数字表示（1，2，3…)</td>
-</tr>
-<tr>
-<td>type=a</td>
-<td>表示列表项目用小写字母表示（a,b,c…)</td>
-</tr>
-<tr>
-<td>type=A</td>
-<td>表示列表项目用大写字母表示（A,B,C…)</td>
-</tr>
-<tr>
-<td>type=i</td>
-<td>表示列表项目用小写罗马数字表示(i,ii,iii….)</td>
-</tr>
-<tr>
-<td>type=I</td>
-<td>表示列表项目用大写罗马数字表示(I,II,III…)</td>
-</tr>
-</tbody></table>
-<h4 id="自定义列表（dl）"><a href="#自定义列表（dl）" class="headerlink" title="自定义列表（dl）"></a>自定义列表（dl）</h4><p>定义：自定义列表不仅仅是一列项目，而是项目及其注释的组合。自定义列表以<dl> 标签开始。每个自定义列表项以 <dt> 开始。每个自定义列表项的定义以 <dd> 开始。自定义列表的列表项前没有任何项目符号。</p>
-<p>语法格式：</p>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>名词1<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>名词1解释1<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>名词2<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>名词2解释1<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
-    ...
-<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span></code></pre>
-
-<h4 id="HTML-元数据"><a href="#HTML-元数据" class="headerlink" title="HTML 元数据"></a>HTML 元数据</h4><meta>标签提供关于 HTML 文档的元数据：描述（description）、关键词（keywords）、文档的作者（author）等其他元数据。
-
-
-
-<h4 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h4><ul>
-<li>标题：header</li>
-<li>导航栏：nav</li>
-<li>主要内容：main 具有代表性的内容段落主题可以使用 article   section，div元素。</li>
-<li>侧栏：aside经常嵌套在main中</li>
-<li>页脚：footer</li>
-</ul>
-<h4 id="表单基本标签"><a href="#表单基本标签" class="headerlink" title="表单基本标签"></a>表单基本标签</h4><p>表格的其他常用属性：</p>
-<p>colspan  合并行</p>
-<p>rowspan 和并列</p>
-<p>caption 定义标题</p>
-<ul>
-<li><p>thead：用于定义表格的头部，一般包含网页的logo和导航等头部信息,位于table之中。</p>
-</li>
-<li><p>tfoot：用于定义表格的页脚，一般包含网页底部的企业信息，地址联系方式等，位于table标记之中，thead标记之后。</p>
-</li>
-<li><p>tbody：用于定义表格的主体，一般包含网页中除头部和底部之外的其他内容，位于table标记之中，tfoot标记之后。</p>
-<h5 id="注：案例-：搜狐股票"><a href="#注：案例-：搜狐股票" class="headerlink" title="注：案例 ：搜狐股票"></a>注：案例 ：搜狐股票</h5></li>
-</ul>
-<h4 id="多媒体嵌入"><a href="#多媒体嵌入" class="headerlink" title="多媒体嵌入"></a>多媒体嵌入</h4><ul>
-<li><p>video </p>
-</li>
-<li><p>audio </p>
-</li>
-<li><p>音频播放器所占用的空间比视频播放器要小，由于没有视觉部件，只需要显示出能控制音频播放的控件。它不支持 width/height 属性。</p>
-</li>
-<li><p>iframe </p>
-</li>
-</ul>
-<h4 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h4><p>表单在网页中主要负责数据采集功能。一个表单有三个基本组成部分：</p>
-<ul>
-<li>表单标签：这里面包含了处理表单数据所用 CGI 程序的 URL 以及数据提交到服务器的方法。</li>
-<li>表单域：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。</li>
-<li>表单按钮：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的 CGI 脚本或者取消输入，还可以用表单按钮来控制其他定义了处理脚本的处理工作。</li>
-</ul>
-<p>fieldset 元素组合表单中的相关数据，legend 元素为 fieldset元素定义标题。</p>
-<p>label 标签的 for 属性应当与相关元素的 id 属性相同，使得label 标签与 input 正确相关联。</p>
-<p>原生表单组件，主要包含文本输入框、单行文本框、e-mail 输入框、密码输入框、搜索框、电话号码输入框、URL 输入框、多行文本框、下拉组件、可勾选组件、按钮。</p>
-<h4 id="文本输入框"><a href="#文本输入框" class="headerlink" title="文本输入框"></a>文本输入框</h4><p>所有文本域的通用规范：</p>
-<ul>
-<li><p>它们可以被标记为 readonly (用户不能修改输入值)甚至是 disabled (输入值永远不会与表单数据的其余部分一起发送)。</p>
-</li>
-<li><p>它们可以有一个 placeholder; 这是文本输入框中出现的文本，用来简略描述输入框的目的。</p>
-</li>
-<li><p>它们都受 size (输入框的物理尺寸) 和 length (文本框可以输入的最大字符数)约束。</p>
-</li>
-<li><p>如果浏览器支持的话，可以进行拼写检查。</p>
-<p>文本区域在右下角有一个拖放操作，允许用户调整它的大小。这种调整能力可以通过使用 CSS 设置文本区域的 resize 值为 none 来关闭。</p>
-</li>
-</ul>
-<h4 id="下拉组件"><a href="#下拉组件" class="headerlink" title="下拉组件"></a>下拉组件</h4><p>自动补全组件:</p>
-<p> 使用 datalist 元素来为表单小部件提供建议 的、自动完成的值，并使用一些 option 子元素来指定要显示的值。然后使用 list 属性将数据列表绑定到一个文本域(通常是一个 input元素)。</p>
+<p>即：<br>3 + 5 &nbsp; |<br>2 + 6 &nbsp;   |<br>1 + 7 &nbsp; |<br>0 + 8 &nbsp; |<br>8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  |<br>————<br>时间复杂度为 O(x)<br>空间复杂度为O(1)</p>
+<hr>
+<p><strong>递归（Recursion）</strong> 在 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Recursion"><strong>维基百科</strong></a> 上是这样介绍的：</p>
+<blockquote>
+<p>Recursion occurs when a thing is defined in terms of itself or of its type. Recursion is used in a variety of disciplines ranging from linguistics to logic. The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.<br>递归（英语：Recursion），又译为递回，在数学与计算机科学中，是指在函数的定义中使用函数自身的方法。递归一词还较常用于描述以自相似方法重复事物的过程。例如，当两面镜子相互之间近似平行时，镜中嵌套的图像是以无限递归的形式出现的。也可以理解为自我复制的过程。</p>
+</blockquote>
+<p><strong>通俗点说</strong>，递归就是那个脍炙人口的故事：从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？“从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？‘从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？……’”<br>典型案例：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97">斐波那契数列</a><br>还是上面分小球的例子，递归就是在过程中得到的结果，还要将结果返回给自身，然后继续传下去…小伙伴们一起忙起来～啦啦啦～</p>
+<h4 id="图示如下：-1"><a href="#图示如下：-1" class="headerlink" title="图示如下："></a>图示如下：</h4><pre><code class="hljs mermaid">graph LR
+A[ 我] -- 3,5--&gt; B(B +1)
+B -- 8--&gt; A[ 我] 
+B -- 2,5--&gt; C(C+1)
+C -- 7 --&gt; B
+C -- 1,5 --&gt; D(D ...)
+D -- 6 --&gt; C</code></pre>
+<p>即：<br>3 + 5&nbsp; |<br>1 + 2 + 5&nbsp; |<br>1 + 1 + 1 + 5&nbsp; |<br>1 + 1 + 1 + 0 +5&nbsp; |<br>1 + 1 + 1 + 5&nbsp; |<br>1 + 1 + 6&nbsp; |<br>1 + 7&nbsp; |<br>8&nbsp; |<br>时间复杂度为 O(x)<br>空间复杂度为O(x)</p>
+<p>若发生事物故障，迭代过程中的数据已经保存在了程序中了，而递归会有一些不可见的过程在暗暗发生…（蹊跷地那种呦～/逃</p>
 
             </div>
             <hr>
@@ -362,9 +261,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%89%8D%E7%AB%AF/%E7%AC%94%E8%AE%B0/">笔记</a>
+                      <a class="hover-with-bg" href="/categories/CSAPP/">CSAPP</a>
                     
                   </div>
                 
@@ -372,9 +269,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%AE%9E%E9%AA%8C%E6%A5%BC/">实验楼</a>
-                    
-                      <a class="hover-with-bg" href="/tags/HTML/">HTML</a>
+                      <a class="hover-with-bg" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%80%9D%E7%BB%B4/">计算机思维</a>
                     
                   </div>
                 
@@ -387,15 +282,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/10/03/CSS%E5%9F%BA%E7%A1%80-%E5%AE%9E%E9%AA%8C%E6%A5%BC/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">CSS基础-实验楼</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2020/10/07/%E6%A3%80%E7%B4%A2%E8%8B%B1%E8%AF%AD%E4%B8%AD%E7%9A%84%E5%86%92%E7%8A%AF%E8%AF%AD/">
+                        <span class="hidden-mobile">检索英语中的冒犯语</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -561,7 +456,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "HTML基础-实验楼&nbsp;",
+        "递归与迭代的区别分析&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
