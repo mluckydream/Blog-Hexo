@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      19.8k 字
+      20k 字
     </span>
   
 
@@ -189,7 +189,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      219
+      221
        分钟
     </span>
   
@@ -317,6 +317,11 @@
 <li>本地 DNS 向域名解析服务器发出请求，收到域名与 IP 地址对应关系</li>
 <li>本地 DNS 服务器将 IP 地址返回电脑，且保存副本到缓存已备下次查询</li>
 </ol>
+<p>本地访问一个域名，首先会读取 /etc/hosts 看看里面有没有匹配的，如果没有就会走默认的 DNS 服务器</p>
+<p>然后 默认 DNS 服务器自己看下自己有没有，没有就告诉你它的上游 DNS 服务器 DNS</p>
+<p>就这样一直会递归到域名的根服务器上</p>
+<p>如果根服务器有了，那么就会逐级进行 cache</p>
+<p>最后返回给你</p>
 <h4 id="Cookie-和-WebStorage-SessionStorage-和-LocalStorage-的区别"><a href="#Cookie-和-WebStorage-SessionStorage-和-LocalStorage-的区别" class="headerlink" title="Cookie 和 WebStorage(SessionStorage 和 LocalStorage)的区别"></a>Cookie 和 WebStorage(SessionStorage 和 LocalStorage)的区别</h4><ol>
 <li>都会在浏览器端保存，有大小限制，同源限制</li>
 <li>cookie 会在请求时发送到服务器，作为会话标识，服务器可修改 cookie；web storage 不会发送到服务器</li>
