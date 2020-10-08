@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>hexo搭建博客</title>
-    <link href="/2020/10/08/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2020/10/08/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <title>Hexo搭建博客</title>
+    <link href="/2020/10/08/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2020/10/08/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
     
-    <content type="html"><![CDATA[<h2 id="1-1-安装-Hexo"><a href="#1-1-安装-Hexo" class="headerlink" title="1.1 安装 Hexo"></a>1.1 安装 Hexo</h2><p>首先要安装 node.js， git </p><pre><code class="hljs javascript">sudo apt-get updatesudo apt-get install git nginx -y</code></pre><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。终端输入如下命令:</p><pre><code class="hljs javascript">npm install hexo-cli hexo-server -g</code></pre><p>初始化指定文件夹</p><pre><code class="hljs powershell"><span class="hljs-variable">$</span> hexo init &lt;folder&gt;<span class="hljs-variable">$</span> <span class="hljs-built_in">cd</span> &lt;folder&gt;<span class="hljs-variable">$</span> npm install</code></pre><p>启动本地服务器查看样例</p><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo s</code></pre><h4 id="2-1-配置-Nginx-托管文件目录"><a href="#2-1-配置-Nginx-托管文件目录" class="headerlink" title="2.1 配置 Nginx 托管文件目录"></a>2.1 配置 Nginx 托管文件目录</h4><pre><code class="hljs javascript">sudo mkdir /<span class="hljs-keyword">var</span>/repo/sudo chown -R $USER:$USER /<span class="hljs-keyword">var</span>/repo/sudo chmod -R <span class="hljs-number">755</span> /<span class="hljs-keyword">var</span>/repo/</code></pre><p>然后，执行如下命令：</p><pre><code class="hljs javascript">cd /<span class="hljs-keyword">var</span>/repo/git init --bare hexo_static.git</code></pre><p>接下来，创建 <code>/var/www/hexo</code> 目录，用于 Nginx 托管。</p><pre><code class="hljs javascript">sudo mkdir -p /<span class="hljs-keyword">var</span>/www/hexo</code></pre><p>和上一步类似，这里也需要修改目录的所有权和权限。</p><pre><code class="hljs javascript">sudo chown -R $USER:$USER /<span class="hljs-keyword">var</span>/www/hexosudo chmod -R <span class="hljs-number">755</span> /<span class="hljs-keyword">var</span>/www/hexo</code></pre><p>然后，修改 Nginx 的 <code>default</code> 设置：</p><pre><code class="hljs javascript">sudo vim /etc/nginx/sites-available/<span class="hljs-keyword">default</span></code></pre><p>重启 Nginx 服务，使得改动生效。</p><pre><code class="hljs javascript">sudo service nginx restart</code></pre><h3 id="2-2-创建-Git-钩子"><a href="#2-2-创建-Git-钩子" class="headerlink" title="2.2 创建 Git 钩子"></a>2.2 创建 Git 钩子</h3><p>接下来，在服务器上的裸仓库 hexo_static 创建一个钩子，在满足特定条件时将静态 HTML 文件传送到 Web 服务器的目录下，即 /var/www/hexo。</p><p>在自动生成的 hooks 目录下创建一个新的钩子文件：</p><pre><code class="hljs javascript">vim /<span class="hljs-keyword">var</span>/repo/hexo_static.git/hooks/post-receive</code></pre><p>在该文件中添加两行代码，指定 Git 的工作树（源代码）和 Git 目录（配置文件等）。</p><pre><code class="hljs javascript">#!<span class="hljs-regexp">/bin/</span>bashgit --work-tree=<span class="hljs-regexp">/var/</span>www/hexo --git-dir=<span class="hljs-regexp">/var/</span>repo/hexo_static.git checkout -f</code></pre><p>保存并退出文件，并让该文件变为可执行文件。</p><pre><code class="hljs javascript">chmod +x /<span class="hljs-keyword">var</span>/repo/hexo_static.git/hooks/post-receive</code></pre><h3 id="2-3-通过-Git-部署"><a href="#2-3-通过-Git-部署" class="headerlink" title="2.3 通过 Git 部署"></a>2.3 通过 Git 部署</h3><p>继续编辑 <code>_config.yml</code> 文件，找到 <strong>Deployment</strong> 部分，按照如下情况修改：</p><pre><code class="hljs javascript">deploy:    type: git    repo: ubuntu@CVM 云服务器的IP地址:<span class="hljs-regexp">/var/</span>repo/hexo_static    branch: master</code></pre><p>需要安装一个 Hexo 包，负责将博客所需的静态内容发送到设置好的 Git 仓库。</p><pre><code class="hljs javascript">npm install hexo-deployer-git --save</code></pre><p>安装好后可以上传服务器测试部署：</p><pre><code class="hljs javascript">hexo g -d</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-1-安装-Hexo"><a href="#1-1-安装-Hexo" class="headerlink" title="1.1 安装 Hexo"></a>1.1 安装 Hexo</h2><p>首先要安装 node.js， git </p><pre><code class="hljs javascript">sudo apt-get updatesudo apt-get install git nginx -y</code></pre><p>安装完成后，使用 npm 安装 Hexo:</p><pre><code class="hljs javascript">npm install hexo-cli hexo-server -g</code></pre><p>初始化指定文件夹</p><pre><code class="hljs powershell"><span class="hljs-variable">$</span> hexo init &lt;folder&gt;<span class="hljs-variable">$</span> <span class="hljs-built_in">cd</span> &lt;folder&gt;<span class="hljs-variable">$</span> npm install</code></pre><p>启动本地服务器查看样例</p><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo s</code></pre><h4 id="2-1-配置-Nginx-托管文件目录"><a href="#2-1-配置-Nginx-托管文件目录" class="headerlink" title="2.1 配置 Nginx 托管文件目录"></a>2.1 配置 Nginx 托管文件目录</h4><pre><code class="hljs javascript">sudo mkdir /<span class="hljs-keyword">var</span>/repo/sudo chown -R $USER:$USER /<span class="hljs-keyword">var</span>/repo/sudo chmod -R <span class="hljs-number">755</span> /<span class="hljs-keyword">var</span>/repo/</code></pre><p>然后，执行如下命令：</p><pre><code class="hljs javascript">cd /<span class="hljs-keyword">var</span>/repo/git init --bare hexo_static.git</code></pre><p>接下来，创建 <code>/var/www/hexo</code> 目录，用于 Nginx 托管。</p><pre><code class="hljs javascript">sudo mkdir -p /<span class="hljs-keyword">var</span>/www/hexo</code></pre><p>和上一步类似，这里也需要修改目录的所有权和权限。</p><pre><code class="hljs javascript">sudo chown -R $USER:$USER /<span class="hljs-keyword">var</span>/www/hexosudo chmod -R <span class="hljs-number">755</span> /<span class="hljs-keyword">var</span>/www/hexo</code></pre><p>然后，修改 Nginx 的 <code>default</code> 设置：</p><pre><code class="hljs javascript">sudo vim /etc/nginx/sites-available/<span class="hljs-keyword">default</span></code></pre><p>重启 Nginx 服务，使得改动生效。</p><pre><code class="hljs javascript">sudo service nginx restart</code></pre><h3 id="2-2-创建-Git-钩子"><a href="#2-2-创建-Git-钩子" class="headerlink" title="2.2 创建 Git 钩子"></a>2.2 创建 Git 钩子</h3><p>接下来，在服务器上的裸仓库 hexo_static 创建一个钩子，在满足特定条件时将静态 HTML 文件传送到 Web 服务器的目录下，即 /var/www/hexo。</p><p>在自动生成的 hooks 目录下创建一个新的钩子文件：</p><pre><code class="hljs javascript">vim /<span class="hljs-keyword">var</span>/repo/hexo_static.git/hooks/post-receive</code></pre><p>在该文件中添加两行代码，指定 Git 的工作树（源代码）和 Git 目录（配置文件等）。</p><pre><code class="hljs javascript">#!<span class="hljs-regexp">/bin/</span>bashgit --work-tree=<span class="hljs-regexp">/var/</span>www/hexo --git-dir=<span class="hljs-regexp">/var/</span>repo/hexo_static.git checkout -f</code></pre><p>保存并退出文件，并让该文件变为可执行文件。</p><pre><code class="hljs javascript">chmod +x /<span class="hljs-keyword">var</span>/repo/hexo_static.git/hooks/post-receive</code></pre><h3 id="2-3-通过-Git-部署"><a href="#2-3-通过-Git-部署" class="headerlink" title="2.3 通过 Git 部署"></a>2.3 通过 Git 部署</h3><p>继续编辑 <code>_config.yml</code> 文件，找到 <strong>Deployment</strong> 部分，按照如下情况修改：</p><pre><code class="hljs javascript">deploy:    type: git    repo: ubuntu@CVM 云服务器的IP地址:<span class="hljs-regexp">/var/</span>repo/hexo_static    branch: master</code></pre><p>需要安装一个 Hexo 包，负责将博客所需的静态内容发送到设置好的 Git 仓库。</p><pre><code class="hljs javascript">npm install hexo-deployer-git --save</code></pre><p>安装好后可以上传服务器测试部署：</p><pre><code class="hljs javascript">hexo g -d</code></pre>]]></content>
     
     
     <categories>
@@ -218,9 +218,9 @@
     
     <tags>
       
-      <tag>Linux</tag>
-      
       <tag>Oracle</tag>
+      
+      <tag>Linux</tag>
       
     </tags>
     
@@ -324,9 +324,9 @@
     
     <tags>
       
-      <tag>CSS</tag>
-      
       <tag>实验楼</tag>
+      
+      <tag>CSS</tag>
       
     </tags>
     
@@ -346,16 +346,16 @@
       
       <category>前端</category>
       
-      <category>笔记</category>
+      <category>学习笔记</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>实验楼</tag>
-      
       <tag>HTML</tag>
+      
+      <tag>实验楼</tag>
       
     </tags>
     
