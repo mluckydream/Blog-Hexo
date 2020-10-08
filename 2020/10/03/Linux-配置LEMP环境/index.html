@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      977 字
+      510 字
     </span>
   
 
@@ -189,7 +189,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      14
+      7
        分钟
     </span>
   
@@ -326,75 +326,6 @@ phpinfo();</code></pre>
 <p>最后，我们最好删除测试文件，因为它实际上可以为未经授权的用户提供有关您的配置的一些提示，这些提示可能有助于他人尝试闯入。</p>
 <pre><code class="hljs awk">sudo rm <span class="hljs-regexp">/var/</span>html/info.php</code></pre>
 
-
-
-<h3 id="四、SSL证书配置"><a href="#四、SSL证书配置" class="headerlink" title="四、SSL证书配置"></a>四、SSL证书配置</h3><h4 id="1-需要准备"><a href="#1-需要准备" class="headerlink" title="1. 需要准备"></a>1. 需要准备</h4><p>   腾讯云证书，Nginx 服务，例： 1inc.cn</p>
-<h4 id="2-证书安装"><a href="#2-证书安装" class="headerlink" title="2. 证书安装"></a>2. 证书安装</h4><h5 id="1）在-SSL-证书管理控制台-中下载并解压缩-www-domain-com-证书文件包到本地目录。"><a href="#1）在-SSL-证书管理控制台-中下载并解压缩-www-domain-com-证书文件包到本地目录。" class="headerlink" title="1）在 SSL 证书管理控制台 中下载并解压缩 www.domain.com 证书文件包到本地目录。"></a>1）在 <a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/ssl">SSL 证书管理控制台</a> 中下载并解压缩 <code>www.domain.com</code> 证书文件包到本地目录。</h5><p>解压缩后，可获得相关类型的证书文件。其中包含 Nginx 文件夹和 CSR 文件：</p>
-<ul>
-<li><strong>文件夹名称</strong>：Nginx</li>
-<li>文件夹内容<ul>
-<li><code>1_www.domain.com_bundle.crt</code> 证书文件</li>
-<li><code>2_www.domain.com.key</code> 私钥文件</li>
-</ul>
-</li>
-</ul>
-<h5 id="2）使用文件传输工具例如-filezilla-将上面两个文件传到服务器上，移动到Nginx目录下"><a href="#2）使用文件传输工具例如-filezilla-将上面两个文件传到服务器上，移动到Nginx目录下" class="headerlink" title="2）使用文件传输工具例如 filezilla 将上面两个文件传到服务器上，移动到Nginx目录下"></a>2）使用文件传输工具例如 <a target="_blank" rel="noopener" href="https://filezilla-project.org/download.php?platform=osx">filezilla</a> 将上面两个文件传到服务器上，移动到Nginx目录下</h5><h5 id="3）在-etc-nginx-sites-available-目录下新建一个配置文件"><a href="#3）在-etc-nginx-sites-available-目录下新建一个配置文件" class="headerlink" title="3）在 /etc/nginx/sites-available 目录下新建一个配置文件"></a>3）在 /etc/nginx/sites-available 目录下新建一个配置文件</h5><pre><code class="hljs awk">sudo vi <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-available/</span><span class="hljs-number">1</span>inc.cn</code></pre>
-
-<pre><code class="hljs nginx"><span class="hljs-section">server</span> &#123;
-        <span class="hljs-attribute">listen</span> <span class="hljs-number">443</span>;
-        <span class="hljs-attribute">ssl</span> <span class="hljs-literal">on</span>;
-        <span class="hljs-attribute">root</span> /var/html;
-        <span class="hljs-attribute">index</span> index.php index.html index.htm index.nginx-debian.html;
-        <span class="hljs-attribute">server_name</span> www.1inc.cn;
-        <span class="hljs-attribute">ssl_certificate</span> 1_www.1inc.cn_bundle.crt;
-         <span class="hljs-attribute">ssl_certificate_key</span> 2_www.1inc.cn.key; 
-        <span class="hljs-attribute">location</span> / &#123;
-                <span class="hljs-attribute">try_files</span> <span class="hljs-variable">$uri</span> <span class="hljs-variable">$uri</span>/ =<span class="hljs-number">404</span>;
-        &#125;
-
-        <span class="hljs-attribute">location</span> <span class="hljs-regexp">~ \.php$</span> &#123;
-                <span class="hljs-attribute">include</span> snippets/fastcgi-php.conf;
-                <span class="hljs-attribute">fastcgi_pass</span> unix:/var/run/php/php7.2-fpm.sock;
-        &#125;
-
-        <span class="hljs-attribute">location</span> <span class="hljs-regexp">~ /\.ht</span> &#123;
-                <span class="hljs-attribute">deny</span> all;
-        &#125;
-&#125;</code></pre>
-
-
-
-<p>以下为官方配置文件，可参照更改</p>
-<pre><code class="hljs nginx"><span class="hljs-section">server</span> &#123;
-     <span class="hljs-comment">#SSL 访问端口号为 443</span>
-     <span class="hljs-attribute">ssl</span> <span class="hljs-literal">on</span>; 
-     <span class="hljs-comment">#填写绑定证书的域名</span>
-     <span class="hljs-attribute">server_name</span> <span class="hljs-regexp">www.*</span>*<span class="hljs-regexp">*.cn</span>; 
-     <span class="hljs-comment">#证书文件名称</span>
-     <span class="hljs-attribute">ssl_certificate</span> 1_www.1inc.cn_bundle.crt; 
-     <span class="hljs-comment">#私钥文件名称</span>
-     <span class="hljs-attribute">ssl_certificate_key</span> 2_www.1inc.cn.key; 
-     <span class="hljs-attribute">ssl_session_timeout</span> <span class="hljs-number">5m</span>;
-     <span class="hljs-comment">#请按照以下协议配置</span>
-     <span class="hljs-attribute">ssl_protocols</span> TLSv1 TLSv1.<span class="hljs-number">1</span> TLSv1.<span class="hljs-number">2</span>; 
-     <span class="hljs-comment">#请按照以下套件配置，配置加密套件，写法遵循 openssl 标准。</span>
-     <span class="hljs-attribute">ssl_ciphers</span> ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE; 
-     <span class="hljs-attribute">ssl_prefer_server_ciphers</span> <span class="hljs-literal">on</span>;
-     <span class="hljs-attribute">location</span> / &#123;
-        <span class="hljs-comment">#网站主页路径。此路径仅供参考，具体请您按照实际目录操作。</span>
-         <span class="hljs-attribute">root</span> /var/html/<span class="hljs-regexp">www.*</span>*<span class="hljs-regexp">*.cn</span>; 
-         <span class="hljs-attribute">index</span>  index.html index.htm;
-     &#125;
- &#125;</code></pre>
-
-<h5 id="4）创建链接启动服务器"><a href="#4）创建链接启动服务器" class="headerlink" title="4）创建链接启动服务器"></a>4）创建链接启动服务器</h5><pre><code class="hljs awk">sudo ln -s <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-available/</span><span class="hljs-number">1</span>inc.cn <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-enabled/</span>
-</code></pre>
-
-<h5 id="5）然后，从-sites-enabled-目录中取消默认配置文件的链接："><a href="#5）然后，从-sites-enabled-目录中取消默认配置文件的链接：" class="headerlink" title="5）然后，从/ sites-enabled /目录中取消默认配置文件的链接："></a>5）然后，从/ sites-enabled /目录中取消默认配置文件的链接：</h5><pre><code class="hljs gradle">sudo unlink <span class="hljs-regexp">/etc/</span>nginx<span class="hljs-regexp">/sites-enabled/</span><span class="hljs-keyword">default</span></code></pre>
-
-<h5 id="6）检查配置文件，直到不出错"><a href="#6）检查配置文件，直到不出错" class="headerlink" title="6）检查配置文件，直到不出错"></a>6）检查配置文件，直到不出错</h5><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo nginx -t</span></code></pre>
-
-<h5 id="7）最后，重新加载Nginx进行必要的更改"><a href="#7）最后，重新加载Nginx进行必要的更改" class="headerlink" title="7）最后，重新加载Nginx进行必要的更改"></a>7）最后，重新加载Nginx进行必要的更改</h5><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo systemctl reload nginx</span></code></pre>
 
 
             </div>
