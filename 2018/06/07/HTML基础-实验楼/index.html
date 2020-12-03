@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="HTML基础-实验楼"><meta name="keywords" content="实验楼,HTML"><meta name="author" content="Gloria"><meta name="copyright" content="Gloria"><title>HTML基础-实验楼 | Gloria's Blog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '5.2.0'
+} </script><meta name="generator" content="Hexo 5.2.0"></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">请求方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">常见状态码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B%E5%85%B7%E4%BD%93%E6%98%AF%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">浏览器的访问过程具体是什么呢？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E4%B8%8A%E4%BC%A0%E4%B8%8E%E4%B8%8B%E8%BD%BD%E5%88%B0%E5%BA%95%E6%98%AF%E6%80%8E%E4%B9%88%E5%9B%9E%E4%BA%8B%EF%BC%9F-%E5%89%8D%E7%AB%AF%E7%9A%84%E5%90%84%E7%A7%8D%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">文件的上传与下载到底是怎么回事？ 前端的各种处理方式：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#iframe-%E6%A1%86-Ajax-%E4%B8%8A%E4%BC%A0%E5%92%8C%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE%E6%8F%90%E4%BA%A4%EF%BC%9A"><span class="toc-number">5.</span> <span class="toc-text">iframe 框 Ajax 上传和表单数据提交：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%EF%BC%88ol%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">有序列表（ol）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8%EF%BC%88dl%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">自定义列表（dl）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML-%E5%85%83%E6%95%B0%E6%8D%AE"><span class="toc-number">8.</span> <span class="toc-text">HTML 元数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE"><span class="toc-number">9.</span> <span class="toc-text">语义化标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE"><span class="toc-number">10.</span> <span class="toc-text">表单基本标签</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%EF%BC%9A%E6%A1%88%E4%BE%8B-%EF%BC%9A%E6%90%9C%E7%8B%90%E8%82%A1%E7%A5%A8"><span class="toc-number">10.1.</span> <span class="toc-text">注：案例 ：搜狐股票</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E5%AA%92%E4%BD%93%E5%B5%8C%E5%85%A5"><span class="toc-number">11.</span> <span class="toc-text">多媒体嵌入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95"><span class="toc-number">12.</span> <span class="toc-text">表单</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E8%BE%93%E5%85%A5%E6%A1%86"><span class="toc-number">13.</span> <span class="toc-text">文本输入框</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E6%8B%89%E7%BB%84%E4%BB%B6"><span class="toc-number">14.</span> <span class="toc-text">下拉组件</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://7375-super-coupons-8ghqy9408b8f106f-1304374191.tcb.qcloud.la/hd.jpg?sign=d3286f9b518ac2b464abba8598225ae1&amp;t=1606968464;"></div><div class="author-info__name text-center">Gloria</div><div class="author-info__description text-center"></div><div class="follow-button"><a target="_blank" rel="noopener" href="https://blog.csdn.net/Gloria_m666">Follow me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">14</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">12</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">8</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Gloria's Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title">HTML基础-实验楼</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-06-07</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h4 id="请求方法"><a href="#请求方法" class="headerlink" title="请求方法"></a>请求方法</h4><p>HTTP/1.1 定义的请求方法有 8 种：GET、POST、PUT、DELETE、PATCH、HEAD、OPTIONS、TRACE。最常的两种是 GET 和 POST，如果是 RESTful 接口的话一般会用到 GET、POST、DELETE、PUT。</p>
+<h4 id="常见状态码"><a href="#常见状态码" class="headerlink" title="常见状态码"></a>常见状态码</h4><ul>
+<li>200 ：成功。</li>
+<li>400 ：客户端请求有语法错误，服务器端不能理解。</li>
+<li>401 ：该请求可能未经过授权。</li>
+<li>403 ：服务器端收到该请求，但是拒绝为它提供服务，可能是没有权限等等。</li>
+<li>404 ：该资源没找到。</li>
+<li>500 ：服务器端发生了一个不可预知的错误。</li>
+<li>503 ：服务器端当前还不能处理客户端的这个请求，可能过段时间之后才能恢复正常。</li>
+</ul>
+<h4 id="浏览器的访问过程具体是什么呢？"><a href="#浏览器的访问过程具体是什么呢？" class="headerlink" title="浏览器的访问过程具体是什么呢？"></a>浏览器的访问过程具体是什么呢？</h4><ol>
+<li>首先浏览器请求 DNS 服务器，通过 DNS 获取相应的域名对应的 IP。</li>
+<li>通过 IP 与目的主机建立 TCP 连接。</li>
+<li>发送和接受数据（获取网页内容）。</li>
+<li>断开 TCP 连接。</li>
+</ol>
+<h4 id="文件的上传与下载到底是怎么回事？-前端的各种处理方式："><a href="#文件的上传与下载到底是怎么回事？-前端的各种处理方式：" class="headerlink" title="文件的上传与下载到底是怎么回事？ 前端的各种处理方式："></a>文件的上传与下载到底是怎么回事？ 前端的各种处理方式：</h4><ul>
+<li>传统 flash 上传</li>
+<li>新增 iframe 框 ajax 上传</li>
+<li>表单数据提交</li>
+<li>HTML5 的新工具——File API</li>
+</ul>
+<h4 id="iframe-框-Ajax-上传和表单数据提交："><a href="#iframe-框-Ajax-上传和表单数据提交：" class="headerlink" title="iframe 框 Ajax 上传和表单数据提交："></a>iframe 框 Ajax 上传和表单数据提交：</h4><ul>
+<li>iframe 框上传：通过新建一个隐藏的 iframe 框，把数据放到这个 iframe 框架里，然后把它提交到服务器端处理，服务器返回的信息也是由 iframe 框调用父框架的方法处理。</li>
+<li>表单数据提交：重点有两个，一个是 FormData 的数据对象，一个是 level2 的 XMLHttpRequest 对象。</li>
+</ul>
+<h4 id="有序列表（ol）"><a href="#有序列表（ol）" class="headerlink" title="有序列表（ol）"></a>有序列表（ol）</h4><p>定义：有序列表是一列项目，列表项目使用数字进行标记。有序列表始于<ol> 标签。每个列表项始于 <li> 标签。</p>
+<ul>
+<li>有序列表有 type 和 start 属性。</li>
+<li>语法格式：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">value1</span> <span class="attr">start</span>=<span class="string">value2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>        </span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>注：value1 表示有序列表项目符号的类型, value2 表示项目开始的数值。</p>
+<table>
+<thead>
+<tr>
+<th>type类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type=1</td>
+<td>表示列表项目用数字表示（1，2，3…)</td>
+</tr>
+<tr>
+<td>type=a</td>
+<td>表示列表项目用小写字母表示（a,b,c…)</td>
+</tr>
+<tr>
+<td>type=A</td>
+<td>表示列表项目用大写字母表示（A,B,C…)</td>
+</tr>
+<tr>
+<td>type=i</td>
+<td>表示列表项目用小写罗马数字表示(i,ii,iii….)</td>
+</tr>
+<tr>
+<td>type=I</td>
+<td>表示列表项目用大写罗马数字表示(I,II,III…)</td>
+</tr>
+</tbody></table>
+<h4 id="自定义列表（dl）"><a href="#自定义列表（dl）" class="headerlink" title="自定义列表（dl）"></a>自定义列表（dl）</h4><p>定义：自定义列表不仅仅是一列项目，而是项目及其注释的组合。自定义列表以<dl> 标签开始。每个自定义列表项以 <dt> 开始。每个自定义列表项的定义以 <dd> 开始。自定义列表的列表项前没有任何项目符号。</p>
+<p>语法格式：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>名词1<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>名词1解释1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>名词2<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>名词2解释1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="HTML-元数据"><a href="#HTML-元数据" class="headerlink" title="HTML 元数据"></a>HTML 元数据</h4><meta>标签提供关于 HTML 文档的元数据：描述（description）、关键词（keywords）、文档的作者（author）等其他元数据。
+
+
+
+<h4 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h4><ul>
+<li>标题：header</li>
+<li>导航栏：nav</li>
+<li>主要内容：main 具有代表性的内容段落主题可以使用 article   section，div元素。</li>
+<li>侧栏：aside经常嵌套在main中</li>
+<li>页脚：footer</li>
+</ul>
+<h4 id="表单基本标签"><a href="#表单基本标签" class="headerlink" title="表单基本标签"></a>表单基本标签</h4><p>表格的其他常用属性：</p>
+<p>colspan  合并行</p>
+<p>rowspan 和并列</p>
+<p>caption 定义标题</p>
+<ul>
+<li><p>thead：用于定义表格的头部，一般包含网页的logo和导航等头部信息,位于table之中。</p>
+</li>
+<li><p>tfoot：用于定义表格的页脚，一般包含网页底部的企业信息，地址联系方式等，位于table标记之中，thead标记之后。</p>
+</li>
+<li><p>tbody：用于定义表格的主体，一般包含网页中除头部和底部之外的其他内容，位于table标记之中，tfoot标记之后。</p>
+<h5 id="注：案例-：搜狐股票"><a href="#注：案例-：搜狐股票" class="headerlink" title="注：案例 ：搜狐股票"></a>注：案例 ：搜狐股票</h5></li>
+</ul>
+<h4 id="多媒体嵌入"><a href="#多媒体嵌入" class="headerlink" title="多媒体嵌入"></a>多媒体嵌入</h4><ul>
+<li><p>video </p>
+</li>
+<li><p>audio </p>
+</li>
+<li><p>音频播放器所占用的空间比视频播放器要小，由于没有视觉部件，只需要显示出能控制音频播放的控件。它不支持 width/height 属性。</p>
+</li>
+<li><p>iframe </p>
+</li>
+</ul>
+<h4 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h4><p>表单在网页中主要负责数据采集功能。一个表单有三个基本组成部分：</p>
+<ul>
+<li>表单标签：这里面包含了处理表单数据所用 CGI 程序的 URL 以及数据提交到服务器的方法。</li>
+<li>表单域：包含了文本框、密码框、隐藏域、多行文本框、复选框、单选框、下拉选择框和文件上传框等。</li>
+<li>表单按钮：包括提交按钮、复位按钮和一般按钮；用于将数据传送到服务器上的 CGI 脚本或者取消输入，还可以用表单按钮来控制其他定义了处理脚本的处理工作。</li>
+</ul>
+<p>fieldset 元素组合表单中的相关数据，legend 元素为 fieldset元素定义标题。</p>
+<p>label 标签的 for 属性应当与相关元素的 id 属性相同，使得label 标签与 input 正确相关联。</p>
+<p>原生表单组件，主要包含文本输入框、单行文本框、e-mail 输入框、密码输入框、搜索框、电话号码输入框、URL 输入框、多行文本框、下拉组件、可勾选组件、按钮。</p>
+<h4 id="文本输入框"><a href="#文本输入框" class="headerlink" title="文本输入框"></a>文本输入框</h4><p>所有文本域的通用规范：</p>
+<ul>
+<li><p>它们可以被标记为 readonly (用户不能修改输入值)甚至是 disabled (输入值永远不会与表单数据的其余部分一起发送)。</p>
+</li>
+<li><p>它们可以有一个 placeholder; 这是文本输入框中出现的文本，用来简略描述输入框的目的。</p>
+</li>
+<li><p>它们都受 size (输入框的物理尺寸) 和 length (文本框可以输入的最大字符数)约束。</p>
+</li>
+<li><p>如果浏览器支持的话，可以进行拼写检查。</p>
+<p>文本区域在右下角有一个拖放操作，允许用户调整它的大小。这种调整能力可以通过使用 CSS 设置文本区域的 resize 值为 none 来关闭。</p>
+</li>
+</ul>
+<h4 id="下拉组件"><a href="#下拉组件" class="headerlink" title="下拉组件"></a>下拉组件</h4><p>自动补全组件:</p>
+<p> 使用 datalist 元素来为表单小部件提供建议 的、自动完成的值，并使用一些 option 子元素来指定要显示的值。然后使用 list 属性将数据列表绑定到一个文本域(通常是一个 input元素)。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Gloria</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://1inc.cn/2018/06/07/HTML基础-实验楼/">https://1inc.cn/2018/06/07/HTML基础-实验楼/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://1inc.cn">Gloria's Blog</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AE%9E%E9%AA%8C%E6%A5%BC/">实验楼</a><a class="post-meta__tags" href="/tags/HTML/">HTML</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2018/06/07/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%AE%9E%E9%AA%8C%E6%A5%BC/"><i class="fa fa-chevron-left">  </i><span>操作系统-实验楼</span></a></div></nav><div id="vssue-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vssue@1.4.6/dist/vssue.css"><script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vssue@1.4.6/dist/vssue.github.min.js"></script><script>var vssue = new Vue({
+  el: '#vssue',
+  
+  data: {
+    options: {
+      owner: '',
+      repo: '',
+      clientId:'',
+      clientSecret: '',
+      autoCreateIssue: false,
+      baseURL: '',
+      perPage: 10,
+      labels: [''],
+    },
+  },
+})
+vssue.render('vssue-container')</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2020 By Gloria</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.0"></script><script src="/js/fancybox.js?version=1.9.0"></script><script src="/js/sidebar.js?version=1.9.0"></script><script src="/js/copy.js?version=1.9.0"></script><script src="/js/fireworks.js?version=1.9.0"></script><script src="/js/transition.js?version=1.9.0"></script><script src="/js/scroll.js?version=1.9.0"></script><script src="/js/head.js?version=1.9.0"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script src="/js/katex.js"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
