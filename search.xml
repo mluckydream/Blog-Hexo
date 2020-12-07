@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Enabling Deep Residual Networks for Weakly Supervised Object Detection</title>
+      <link href="2020/12/07/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%B1%87%E6%80%BB/"/>
+      <url>2020/12/07/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%B1%87%E6%80%BB/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Enabling-Deep-Re-sidual-Networks-for-Weakly-Supervised-Object-Detection"><a href="#Enabling-Deep-Re-sidual-Networks-for-Weakly-Supervised-Object-Detection" class="headerlink" title="Enabling Deep Re sidual Networks for Weakly Supervised Object Detection"></a>Enabling Deep Re sidual Networks for Weakly Supervised Object Detection</h3><p>作者 | Yunhang Shen, Rongrong Ji , Yan Wang, Zhiwei Chen, Feng Zheng ,Feiyue Huang , Yunsheng Wu</p><p>单位 | 厦门大学；Pinterest；南科大；腾讯优图（上海）</p><p><strong>论文地址</strong>： <a href="chrome-extension://ikhdkkncnoglghljlkmcimlnlhkeamad/pdf-viewer/web/viewer.html?file=https%3A%2F%2Farxiv.org%2Fpdf%2F2008.09694.pdf">2008.09694.pdf</a></p><p><strong>GIthub： <a href="https://github.com/shenyunhang/DRN-WSOD">https://github.com/shenyunhang/DRN-WSOD</a></strong></p><h3 id="Cheaper-Pre-training-Lunch-An-Efficient-Paradigm-for-Object-Detection"><a href="#Cheaper-Pre-training-Lunch-An-Efficient-Paradigm-for-Object-Detection" class="headerlink" title="Cheaper Pre-training Lunch: An Efficient Paradigm for Object Detection"></a>Cheaper Pre-training Lunch: An Efficient Paradigm for Object Detection</h3><p>作者 | Dongzhan Zhou, Xinchi Zhou, Hongwen Zhang, Shuai Yi, Wanli Ouyang</p><p>单位 | 悉尼大学，商汤CV研究小组；中科院&amp;国科大；商汤</p><p>论文地址 ：<a href="https://arxiv.org/pdf/2004.12178.pdf">https://arxiv.org/pdf/2004.12178.pdf</a></p><p>GitHub | 暂无</p><p>提出了一种通用而有效的训练前范式，Montage预训练用于目标检测。Montage预训练只需要目标检测数据集，而与广泛采用的ImageNet相比，该http URL构建了这样一个高效的范式，通过仔细地从原始图像中提取有用的样本，以Montage的方式组装样本作为输入，以及使用ERF自适应密集分类策略进行模型预训练来减少潜在的冗余。这些设计不仅包括一种新的输入模式来提高空间利用率，而且还包括一种新的学习目标，以扩大预先训练模型的有效接受领域。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 目标检测 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端基础知识汇总</title>
       <link href="2020/10/23/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/"/>
       <url>2020/10/23/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%B1%87%E6%80%BB/</url>
