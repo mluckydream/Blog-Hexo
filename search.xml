@@ -15,14 +15,14 @@
           
           <category> 前端 </category>
           
-          <category> 笔记 </category>
-          
       </categories>
       
       
         <tags>
             
             <tag> JavaScript </tag>
+            
+            <tag> notes </tag>
             
         </tags>
       
@@ -66,8 +66,6 @@
       <categories>
           
           <category> 前端 </category>
-          
-          <category> 笔记 </category>
           
       </categories>
       
@@ -171,9 +169,7 @@
       
       <categories>
           
-          <category> 前端 </category>
-          
-          <category> 笔记 </category>
+          <category> database </category>
           
       </categories>
       
@@ -181,6 +177,8 @@
         <tags>
             
             <tag> Oracle </tag>
+            
+            <tag> Notes </tag>
             
         </tags>
       
@@ -250,7 +248,7 @@
       
       <categories>
           
-          <category> Python </category>
+          <category> 后端 </category>
           
       </categories>
       
@@ -307,7 +305,7 @@
       
         <tags>
             
-            <tag> Linux </tag>
+            <tag> 计网 </tag>
             
         </tags>
       
@@ -326,8 +324,6 @@
       <categories>
           
           <category> 前端 </category>
-          
-          <category> 笔记 </category>
           
       </categories>
       
@@ -379,7 +375,7 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> O </category>
           
       </categories>
       
@@ -407,8 +403,6 @@
       <categories>
           
           <category> 前端 </category>
-          
-          <category> 笔记 </category>
           
       </categories>
       
