@@ -3,13 +3,13 @@
  var titleTime;
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
-         $('[rel="icon"]').attr('href', "/img/algolia.svg.png");
-         document.title = 'ヽ(●-`Д´-)ノ你走就承认你丑！';
+         $('[rel="icon"]').attr('href', "/img/algolia.svg");
+         document.title = '离开我会变丑！😠';
          clearTimeout(titleTime);
      }
      else {
-         $('[rel="icon"]').attr('href', "/img/algolia.svg.png");
-         document.title = 'ヾ(Ő∀Ő3)ノ你回来就承认你帅！' + OriginTitle;
+         $('[rel="icon"]').attr('href', "/img/algolia.svg");
+         document.title = '拥抱我会变帅！😄 ' + OriginTitle;
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
