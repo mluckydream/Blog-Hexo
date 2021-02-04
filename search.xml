@@ -13,7 +13,9 @@
       
       <categories>
           
-          <category> 前端 </category>
+          <category> FontEnd </category>
+          
+          <category> JS </category>
           
       </categories>
       
@@ -40,7 +42,7 @@
       
       <categories>
           
-          <category> papers </category>
+          <category> Papers </category>
           
       </categories>
       
@@ -94,6 +96,8 @@
           
           <category> Guide </category>
           
+          <category> Blog </category>
+          
       </categories>
       
       
@@ -117,9 +121,9 @@
       
       <categories>
           
-          <category> OS </category>
-          
           <category> Guide </category>
+          
+          <category> Linux </category>
           
       </categories>
       
@@ -146,9 +150,9 @@
       
       <categories>
           
-          <category> OS </category>
-          
           <category> Guide </category>
+          
+          <category> Linux </category>
           
       </categories>
       
@@ -175,6 +179,8 @@
           
           <category> Database </category>
           
+          <category> PLSQL </category>
+          
       </categories>
       
       
@@ -200,9 +206,9 @@
       
       <categories>
           
-          <category> OS </category>
-          
           <category> Guide </category>
+          
+          <category> Linux </category>
           
       </categories>
       
@@ -229,7 +235,7 @@
       
       <categories>
           
-          <category> CSAPP </category>
+          <category> Base </category>
           
       </categories>
       
@@ -237,6 +243,8 @@
         <tags>
             
             <tag> Thinking </tag>
+            
+            <tag> CSAPP </tag>
             
         </tags>
       
@@ -281,6 +289,8 @@
           
           <category> Mac </category>
           
+          <category> VScode </category>
+          
       </categories>
       
       
@@ -303,6 +313,8 @@
       
       
       <categories>
+          
+          <category> Notes </category>
           
           <category> Linux </category>
           
@@ -330,6 +342,8 @@
       <categories>
           
           <category> FontEnd </category>
+          
+          <category> CSS </category>
           
       </categories>
       
@@ -381,6 +395,8 @@
       
       <categories>
           
+          <category> Notes </category>
+          
           <category> OS </category>
           
       </categories>
@@ -401,6 +417,8 @@
       <categories>
           
           <category> FontEnd </category>
+          
+          <category> HTML </category>
           
       </categories>
       
