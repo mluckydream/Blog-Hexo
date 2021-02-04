@@ -40,14 +40,14 @@
       
       <categories>
           
-          <category> 论文 </category>
+          <category> papers </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 目标检测 </tag>
+            <tag> CV </tag>
             
         </tags>
       
@@ -65,7 +65,7 @@
       
       <categories>
           
-          <category> 前端 </category>
+          <category> FontEnd </category>
           
       </categories>
       
@@ -74,7 +74,7 @@
             
             <tag> CSS </tag>
             
-            <tag> 面经 </tag>
+            <tag> Interview </tag>
             
         </tags>
       
@@ -92,7 +92,7 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> Guide </category>
           
       </categories>
       
@@ -117,7 +117,9 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> OS </category>
+          
+          <category> Guide </category>
           
       </categories>
       
@@ -144,7 +146,9 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> OS </category>
+          
+          <category> Guide </category>
           
       </categories>
       
@@ -169,7 +173,7 @@
       
       <categories>
           
-          <category> database </category>
+          <category> Database </category>
           
       </categories>
       
@@ -187,7 +191,7 @@
     
     
     <entry>
-      <title>LInux下Oracle安装</title>
+      <title>Linux下Oracle安装</title>
       <link href="2019/01/07/Linux%E4%B8%8BOracle%E5%AE%89%E8%A3%85/"/>
       <url>2019/01/07/Linux%E4%B8%8BOracle%E5%AE%89%E8%A3%85/</url>
       
@@ -196,7 +200,9 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> OS </category>
+          
+          <category> Guide </category>
           
       </categories>
       
@@ -230,7 +236,7 @@
       
         <tags>
             
-            <tag> 计算机思维 </tag>
+            <tag> Thinking </tag>
             
         </tags>
       
@@ -248,7 +254,7 @@
       
       <categories>
           
-          <category> 后端 </category>
+          <category> RD </category>
           
       </categories>
       
@@ -305,7 +311,7 @@
       
         <tags>
             
-            <tag> 计网 </tag>
+            <tag> Net </tag>
             
         </tags>
       
@@ -323,7 +329,7 @@
       
       <categories>
           
-          <category> 前端 </category>
+          <category> FontEnd </category>
           
       </categories>
       
@@ -332,7 +338,7 @@
             
             <tag> CSS </tag>
             
-            <tag> 实验楼 </tag>
+            <tag> Notes </tag>
             
         </tags>
       
@@ -350,14 +356,14 @@
       
       <categories>
           
-          <category> CSAPP </category>
+          <category> Base </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 计算机思维 </tag>
+            <tag> Thinking </tag>
             
         </tags>
       
@@ -375,18 +381,10 @@
       
       <categories>
           
-          <category> O </category>
+          <category> OS </category>
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> 实验楼 </tag>
-            
-            <tag> 操作系统 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -402,16 +400,16 @@
       
       <categories>
           
-          <category> 前端 </category>
+          <category> FontEnd </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 实验楼 </tag>
-            
             <tag> HTML </tag>
+            
+            <tag> Notes </tag>
             
         </tags>
       
