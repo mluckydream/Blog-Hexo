@@ -1,41 +1,35 @@
 ---
-title: About
+title: 关于我
+date: 2020-12-03 16:33:21
 ---
 
-[![github stars](https://img.shields.io/github/stars/hexojs/hexo?style=for-the-badge&color=0e83cd&logo=github)](https://github.com/hexojs/hexo) [![github forks](https://img.shields.io/github/forks/hexojs/hexo?style=for-the-badge&color=0e83cd&logo=github)](https://github.com/hexojs/hexo) [![npm stats](https://img.shields.io/npm/dm/hexo?style=for-the-badge&color=0e83cd&label=npm%20downloads&logo=npm)](https://www.npmjs.com/package/hexo)
+于千万个不可能中你我相遇又离去，时间终将带走生命中的不可求，那么请珍惜每一次相遇吧，比如此刻。——题记
 
-Hexo was originally created and maintained by [Tommy Chen](https://github.com/tommy351) in 2012. Since then, it has helped thousands of people to build their dream website/blog.
 
-## Join us
 
-We are the passionate people behind the Hexo. If you would like to join Hexo, you should have at least one approved PR. If you have already contributed to Hexo, simply shot out an issue in any Hexo repos.
+#### 学习
 
-If you have any question regarding joining Hexo, feel free to contact the maintainer [Abner Chou](https://github.com/NoahDragon) or simply create an issue to ask.
+- 软件工程专业（21届，求职中...）
+- 主要方向前端（React），对后端（python、Java）、图像识别、网络安全有所了解
+- 喜欢读哲思类、文学类、心理学类书籍
 
-## Contribute
+#### 生活
 
-Don't know where to start? Pick up any item in [Hexo Roadmap](https://github.com/hexojs/hexo/issues/2492), and start from there. Don't hesitate to ask questions, we are glad to help.
+- 坐标北京
+- 喜欢跑步，瑜伽等健身活动
+- 逛吃使我心情舒畅！
 
-## Donate
 
-[![Backers](https://opencollective.com/hexo/tiers/backers.svg?avatarHeight=60&width=600)](https://opencollective.com/hexo)
 
-#### Why?
+#### 联系我
 
-First of all, many people have asked about donation, so here it is!
+- Email:  [mit.m@qq.com](mailto:mit.m@qq.com)
 
-Second, in all good conscience, most of the visible costs (like the domain fees) are already covered by us. We also spend tremendous time to keep Hexo running and functioning. This is the real cost and also invisible.
+  
 
-#### Benefits
+------
 
-We are grateful for every penny donated, here is a list of benefits you and us can achieve:
+#### 今天你读书了吗？
 
-1. Cover our cost.
-2. Motivate and acknowledge our work.
-3. List your name on Hexo.io website (2.5k users and 10k pageviews per day!).
 
-There are two tiers of donation:
-  * Less than $100, your name and website link will be on the donor list.
-  * More than $100, your name, icon, and website link will be on the home page for at least one month (depending on the amount).
 
-Again, thanks for your support!

@@ -1,0 +1,371 @@
+# ---------------
+# Theme color for customize
+# Notice: color value must in double quotes like "#000" or may cause error!
+# ---------------
+# theme_color:
+#   enable: true
+#   main: "#49B1F5"
+#   paginator: "#00C4B6"
+#   button_hover: "#FF7242"
+#   text_selection: "#00C4B6"
+#   link_color: "#858585"
+#   hr_color: "#A4D8FA"
+#   tag_start_color: "#A4D8FA"
+#   tag_end_color: "#1B9EF3"
+#   header_text_color: "#EEEEEE"
+#   footer_text_color: "#EEEEEE"
+theme_color:
+  enable: true
+  main: "#F79BBA"
+  paginator: "#A4D8FA"
+  button_hover: "#dd8fa0"
+  text_selection: "#F79BBA"
+  link_color: "#858585"
+  hr_color: "#A4D8FA"
+  tag_start_color: "#F79BBA"
+  tag_end_color: "#f15187"
+
+# Main menu navigation
+menu:
+  Home: /
+  Archives: /archives
+  Tags: /tags
+  Categories: /categories
+  About: /about
+  #XXX: /xxx
+
+# Favicon
+# ---------------
+favicon: /melody-favicon.ico
+
+# PWA
+# See https://github.com/JLHwung/hexo-offline
+# ---------------
+pwa:
+  enable: false
+  manifest: /manifest.json
+  # If you don't want to trouble, just ignore the following things
+  # See https://realfavicongenerator.net/
+  # theme_color: "#49B1F5"
+  # apple_touch_icon: /apple-touch-icon.png
+  # favicon_32_32: /favicon-32x32.png
+  # favicon_16_16: /favicon-16x16.png
+  # mask_icon: /safari-pinned-tab.svg
+
+# Highlight theme
+# ---------------
+highlight_theme: default
+
+code_word_wrap: true 
+
+# Nav settings
+# see the icon_name in fontawesome website.
+# And you need to add the `fa` or `fab` prefix by your self.
+# ---------------
+
+
+# social:
+#   github fab: https://github.com/mluckydream
+#   zhihu fab: https://www.zhihu.com/people/gloriaxian-er
+
+# icon_name fa: url
+# icon_name fab: url
+
+
+# Algolia search
+# ---------------
+# algolia_search:
+#   enable: true
+#   hits:
+#     per_page: 10
+#   labels:
+#     input_placeholder: Search for Posts
+#     hits_empty: "尴尬了,什么都没找到o(´^｀)o ${query}" # if there are no result
+#     hits_stats: "好快!我在 ${time} 毫秒里找到了 ${hits} 个内容!(✪ω✪)"
+    
+
+# Local search
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/third-party-support.html#local-search
+# ---------------
+local_search:
+  enable: true
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "好像没有${query}的结果诶..." # if there are no result
+
+# MathJax
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/third-party-support.html#mathjax
+# ---------------
+mathjax:
+  enable: false
+  cdn: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# KaTeX
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/third-party-support.html#katex
+# ---------------
+katex:
+  enable: true
+  cdn:
+    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+  #hide_scrollbar: false
+
+# Toggle fireworks (IE >= 10)
+# ---------------
+fireworks: true
+
+# Analysis
+# ---------------
+baidu_analytics:
+
+google_analytics:
+
+# Tencent_analytics ID
+tencent_analytics:
+
+# stylesheets loaded in the <head>
+# ---------------
+stylesheets:
+  - /css/index.css
+# scripts loaded in the end of the body
+# ---------------
+scripts:
+  - /js/utils.js
+  - /js/fancybox.js
+  - /js/sidebar.js
+  - /js/copy.js
+  - /js/fireworks.js
+  - /js/transition.js
+  - /js/scroll.js
+  - /js/head.js
+
+# cdn for third-party library
+# ---------------
+cdn:
+  css:
+    fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
+    #fontawesomeV5: https://use.fontawesome.com/releases/v5.3.1/css/all.css
+  js:
+    anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
+    jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+    fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
+    velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
+    velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+
+# Post info settings
+# ---------------
+avatar: https://7375-super-coupons-8ghqy9408b8f106f-1304374191.tcb.qcloud.la/hd.jpg?sign=d3286f9b518ac2b464abba8598225ae1&t=1606968464;
+
+top_img: true # false or url of img
+
+top_img_height: 60 # best range: 60 - 100
+
+post_meta:
+  date_type: created # created or updated
+  categories: true
+  tags: true
+
+
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/additional-package-support.html#word-counting
+wordcount:
+  enable: true
+
+toc:
+  enable: true
+  # number: true
+
+post_copyright:
+  enable: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/theme-config.html#auto-excerpt
+auto_excerpt:
+  enable: true
+  length: 150
+
+# slide
+# For reveal.js config, see https://github.com/hakimel/reveal.js#configuration
+slide:
+  separator: ---
+  separator_vertical: --
+  charset: utf-8
+  theme: black
+  codeTheme: monokai
+  # optional
+  mouseWheel: false
+  transition: slide
+  transitionSpeed: default
+  parallaxBackgroundImage: ""
+  parallaxBackgroundSize: ""
+  parallaxBackgroundHorizontal: null
+  parallaxBackgroundVertical: null
+  loop: false
+  autoSlide: false
+  controlsBackArrows: 'faded'
+  controlsLayout: 'bottom-right' # Determines where controls appear, "edges" or "bottom-right"
+  progress: true
+  showNotes: false
+  autoPlayMedia: false
+  backgroundTransition: 'fade'
+
+QR_code:
+  - itemlist:
+      img: /assets/img/alipay.png
+      text: 支付宝恰饭打赏
+  - itemlist:
+      img: /assets/img/wechat.png
+      text: 微信恰饭打赏
+
+
+
+# adv:
+# enable: false
+# info:
+
+# Share System
+# ---------------
+addThis:
+  enable: false
+  #pubid:
+
+# sharejs:
+# enable: false
+# disabled_sites:
+
+# Comments System
+# ---------------
+disqus:
+  enable: false
+  #shortname:
+  #count:
+
+# laibili:
+# enable: false
+# uid:
+
+# gitment
+# enable: false
+# owner:
+# repo:
+# client_id:
+# client_secret:
+
+# gitalk:
+#   enable: false
+#   client_id:
+#   client_secret:
+#   repo:
+#   owner:
+#   admin:
+
+# valine comment system. https://valine.js.org
+# valine:
+#   enable: false # if you want use valine,please set this value is true
+#   appId:  # leancloud application app id
+#   appKey:  # leancloud application app key
+#   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+#   verify: false # valine verify code (true/false)
+#   recordip: false # whether record commentor's ip (true/false)
+#   pageSize: 10 # comment list page size
+#   avatar: mm # gravatar style https://valine.js.org/#/avatar
+#   lang: zh-cn # i18n: zh-cn/en
+#   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+#   guest_info: nick,mail,link #valine comment header inf
+
+vssue:
+  enable: true # Set to true to enable
+  # platform: github-v4
+  # owner:
+  # repo:
+  # clientId:
+  # clientSecret: # only required for some of the platforms
+  # autoCreateIssue: false # Auto create issue on platform (github/...)
+  # baseURL: "" # For self-hosted gitlab/bitbucket only, see here: https://vssue.js.org/options/#baseurl
+  perPage: 10 # How much comment/page
+  # labels: 'Vssue'
+
+# Footer Settings
+# ---------------
+since: 2020
+
+# footer_custom_text: put custom text directly or put hitokoto to fetch random texts
+
+ICP:
+  enable: false
+  #text:
+
+# busuanzi count for PV / UV in site
+busuanzi:
+  # count values only if the other configs are false
+  enable: true
+  # custom uv span for the whole site
+  site_uv: true
+  site_uv_header: <i class="fa fa-user"></i>
+  site_uv_footer:
+  # custom pv span for the whole site
+  site_pv: true
+  site_pv_header: <i class="fa fa-eye"></i>
+  site_pv_footer:
+  # custom pv span for one page only
+  page_pv: true
+  page_pv_header: <i class="fa fa-file"></i>
+  page_pv_footer:
+
+# canvas_ribbon
+# See: https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: false
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
+
+# Sidebar Settings
+# ---------------
+# links_title: 友链
+# links:
+# 缘梦的Blog: 'https://blog.csdn.net/Gloria_m666'
+
+# Follow Me Button
+follow:
+  enable: true
+  url: 'https://github.com/mluckydream'
+  text: "Follow me"
+
+# controls the sidebar showing or hidden in different pages
+sidebar_display: post # all/index/post/index-none/post-none/hidden
+
+# Ads
+# ---------------
+# Google Adsense
+google_adsense:
+  enable: false
+  js: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+  client: ca-pub-...........
+  enable_page_level_ads: true
+
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+google_site_verification:
+
+# Bing Webmaster tools verification setting
+# See: https://www.bing.com/webmaster/
+bing_site_verification:
+
+# Yandex Webmaster tools verification setting
+# See: https://webmaster.yandex.ru/
+#yandex_site_verification:
+
+# Baidu Webmaster tools verification setting
+# See: https://ziyuan.baidu.com/site/
+baidu_site_verification:
+
+# 360 Webmaster tools verification setting
+# see http://zhanzhang.so.com/
+qihu_site_verification:
+
+# avoid baidu transformation
+disable_baidu_transformation: true
+
+# 404 Page SubTitle
+404Text:
