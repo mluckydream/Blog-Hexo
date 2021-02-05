@@ -137,6 +137,16 @@ scripts:
   - /js/transition.js
   - /js/scroll.js
   - /js/head.js
+  
+  # layout
+    # <!--单击显示文字--> 
+    # <script type="text/javascript" src="/js/click_show_text.js"></script>
+
+    # <!--浏览器搞笑标题-->
+    # <script type="text/javascript" src="/js/FunnyTitle.js"></script>
+  - /js/click_show_text.js
+  - /js/FunnyTitle.js
+
 
 # cdn for third-party library
 # ---------------
