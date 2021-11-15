@@ -262,7 +262,7 @@
       
       <categories>
           
-          <category> Base </category>
+          <category> Basic </category>
           
       </categories>
       
@@ -271,7 +271,9 @@
             
             <tag> Thinking </tag>
             
-            <tag> CSAPP </tag>
+            <tag> CS61a </tag>
+            
+            <tag> Iteration </tag>
             
         </tags>
       
@@ -350,7 +352,7 @@
       
         <tags>
             
-            <tag> Net </tag>
+            <tag> Thinking </tag>
             
         </tags>
       
@@ -397,7 +399,7 @@
       
       <categories>
           
-          <category> Base </category>
+          <category> Basic </category>
           
       </categories>
       
