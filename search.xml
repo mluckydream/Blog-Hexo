@@ -4,64 +4,6 @@
   
     
     <entry>
-      <title>SSH 免密登录远程服务器</title>
-      <link href="2021/11/16/SSH%20%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/"/>
-      <url>2021/11/16/SSH%20%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</url>
-      
-        <content type="html"><![CDATA[<p>本地通过 SSH 访问远程系统时，登录链接需要频繁手动输入密码，不仅枯燥无趣且不安全。因此，可通过密钥认证访问远程系统。</p><h3 id="本地客户端"><a href="#本地客户端" class="headerlink" title="本地客户端"></a>本地客户端</h3><h4 id="生成密钥，本地普通用户下执行"><a href="#生成密钥，本地普通用户下执行" class="headerlink" title="生成密钥，本地普通用户下执行"></a>生成密钥，本地普通用户下执行</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure><p>可输入密码或按两次回车不设置 SSH 访问密码, 同时可看到密钥保存的路径。</p><p>若想重新设置密码，执行如下</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -p -f ~/username/zhangsan/.ssh/id_rsa</span><br></pre></td></tr></table></figure><p>可以查看  ~/username/zhangsan/.ssh 下已经生成了 公钥 和 私钥 文件。</p><h3 id="远程服务器"><a href="#远程服务器" class="headerlink" title="远程服务器"></a>远程服务器</h3><h4 id="SSH-公钥拷到远程服务器-authorized-keys"><a href="#SSH-公钥拷到远程服务器-authorized-keys" class="headerlink" title="SSH 公钥拷到远程服务器 authorized_keys"></a>SSH 公钥拷到远程服务器 authorized_keys</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id sk@192.168.225.22</span><br></pre></td></tr></table></figure><p>执行上述命令会将本地 <code>~/username/zhangsan/.ssh/id_rsa.pub</code> 文件中的内容拷到远程系统 <code>~/.ssh/authorized_keys</code> 中。</p><p>或者可以使用文件传输工具，例如 <a href="https://filezilla-project.org/download.php?platform=osx">filezilla</a> 将 id_rsa.pub 传到远程服务器上，登录远程服务器，将 id_rsa.pub 文件内容粘到 ~/.ssh/authorized_keys。</p><h4 id="禁用密码验证"><a href="#禁用密码验证" class="headerlink" title="禁用密码验证"></a>禁用密码验证</h4><p>打开 ssh_config 文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/ssh/ssh_config</span><br></pre></td></tr></table></figure><p>去掉如下一行注释然后将值设为 <code>no</code>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PasswordAuthentication no</span><br></pre></td></tr></table></figure><p>重启 ssh 服务</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo systemctl restart ssh</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> Guide </category>
-          
-          <category> Linux </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-            <tag> SSH </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新消费学习笔记</title>
-      <link href="2021/11/16/%E6%96%B0%E6%B6%88%E8%B4%B9%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/"/>
-      <url>2021/11/16/%E6%96%B0%E6%B6%88%E8%B4%B9%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/</url>
-      
-        <content type="html"><![CDATA[<p><strong>消费万变不离其宗——『人』、  『货』、 『场』</strong>   </p><h3 id="人"><a href="#人" class="headerlink" title="人"></a>人</h3><p>用户群：25岁</p><p>针足够细才能扎进去</p><p>95后移动互联网原住民</p><p>人机分离</p><p>DTC</p><p>悦己 &gt; 悦人</p><p>好看、好玩 &gt; 好用</p><p>成图率、可晒性</p><p>ARPU</p><p>相对快消</p><p>绝对耐用</p><p>合法成瘾行消费</p><h3 id="货"><a href="#货" class="headerlink" title="货"></a>货</h3><h4 id="器材——耗材"><a href="#器材——耗材" class="headerlink" title="器材——耗材"></a>器材——耗材</h4><p>悦刻</p><p>素士</p><p>锅圈食味</p><h3 id="场"><a href="#场" class="headerlink" title="场"></a>场</h3><h4 id="线下开店"><a href="#线下开店" class="headerlink" title="线下开店"></a>线下开店</h4><p>高频低客单价，店要足够小</p><p>低频高客单价，店要足够大</p><p>格乐丽雅</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Notes </category>
-          
-          <category> Business </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Notes </tag>
-            
-            <tag> Thinking </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>CS61a 学习笔记</title>
       <link href="2021/11/15/CS61a%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>2021/11/15/CS61a%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
@@ -83,6 +25,35 @@
             <tag> Basic </tag>
             
             <tag> CS61a </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新消费学习笔记</title>
+      <link href="2021/11/01/%E6%96%B0%E6%B6%88%E8%B4%B9%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/"/>
+      <url>2021/11/01/%E6%96%B0%E6%B6%88%E8%B4%B9%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<p><strong>消费万变不离其宗——『人』、  『货』、 『场』</strong>   </p><h3 id="人"><a href="#人" class="headerlink" title="人"></a>人</h3><p>用户群：25岁</p><p>针足够细才能扎进去</p><p>95后移动互联网原住民</p><p>人机分离</p><p>DTC</p><p>悦己 &gt; 悦人</p><p>好看、好玩 &gt; 好用</p><p>成图率、可晒性</p><p>ARPU</p><p>相对快消</p><p>绝对耐用</p><p>合法成瘾行消费</p><h3 id="货"><a href="#货" class="headerlink" title="货"></a>货</h3><h4 id="器材——耗材"><a href="#器材——耗材" class="headerlink" title="器材——耗材"></a>器材——耗材</h4><p>悦刻</p><p>素士</p><p>锅圈食味</p><h3 id="场"><a href="#场" class="headerlink" title="场"></a>场</h3><h4 id="线下开店"><a href="#线下开店" class="headerlink" title="线下开店"></a>线下开店</h4><p>高频低客单价，店要足够小</p><p>低频高客单价，店要足够大</p><p>格乐丽雅</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+          <category> Business </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Notes </tag>
+            
+            <tag> Thinking </tag>
             
         </tags>
       
@@ -220,6 +191,35 @@
             <tag> Linux </tag>
             
             <tag> Nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SSH 免密登录远程服务器</title>
+      <link href="2019/08/03/SSH%20%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/"/>
+      <url>2019/08/03/SSH%20%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<p>本地通过 SSH 访问远程系统时，登录链接需要频繁手动输入密码，不仅枯燥无趣且不安全。因此，可通过密钥认证访问远程系统。</p><h3 id="本地客户端"><a href="#本地客户端" class="headerlink" title="本地客户端"></a>本地客户端</h3><h4 id="生成密钥，本地普通用户下执行"><a href="#生成密钥，本地普通用户下执行" class="headerlink" title="生成密钥，本地普通用户下执行"></a>生成密钥，本地普通用户下执行</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure><p>可输入密码或按两次回车不设置 SSH 访问密码, 同时可看到密钥保存的路径。</p><p>若想重新设置密码，执行如下</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -p -f ~/username/zhangsan/.ssh/id_rsa</span><br></pre></td></tr></table></figure><p>可以查看  ~/username/zhangsan/.ssh 下已经生成了 公钥 和 私钥 文件。</p><h3 id="远程服务器"><a href="#远程服务器" class="headerlink" title="远程服务器"></a>远程服务器</h3><h4 id="SSH-公钥拷到远程服务器-authorized-keys"><a href="#SSH-公钥拷到远程服务器-authorized-keys" class="headerlink" title="SSH 公钥拷到远程服务器 authorized_keys"></a>SSH 公钥拷到远程服务器 authorized_keys</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id sk@192.168.225.22</span><br></pre></td></tr></table></figure><p>执行上述命令会将本地 <code>~/username/zhangsan/.ssh/id_rsa.pub</code> 文件中的内容拷到远程系统 <code>~/.ssh/authorized_keys</code> 中。</p><p>或者可以使用文件传输工具，例如 <a href="https://filezilla-project.org/download.php?platform=osx">filezilla</a> 将 id_rsa.pub 传到远程服务器上，登录远程服务器，将 id_rsa.pub 文件内容粘到 ~/.ssh/authorized_keys。</p><h4 id="禁用密码验证"><a href="#禁用密码验证" class="headerlink" title="禁用密码验证"></a>禁用密码验证</h4><p>打开 ssh_config 文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/ssh/ssh_config</span><br></pre></td></tr></table></figure><p>去掉如下一行注释然后将值设为 <code>no</code>：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PasswordAuthentication no</span><br></pre></td></tr></table></figure><p>重启 ssh 服务</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo systemctl restart ssh</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Guide </category>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> SSH </tag>
             
         </tags>
       
