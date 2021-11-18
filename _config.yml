@@ -109,8 +109,12 @@ deploy:
   repo: ubuntu@106.54.205.5:/var/repo/hexo_static
   branch: master
 - type: git
-  repo: https://github.com/mluckydream/Blog.git
+  repo: https://github.com/mluckydream/Blog-github.io.git
   branch: gh-pages
+- type: git
+  repo: git@github.com:mluckydream/Blog.git
+  branch: gh-pages
+
 
 live2d:
   enable: true
